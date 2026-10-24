@@ -87,6 +87,41 @@ public final class LazyGameListener implements ApplicationListener {
             org.apache.harmony.security.provider.crypto.SHA1PRNG_SecureRandomImpl.class,
     };
 
+    /**
+     * Same reachability problem, second victim: {@code java.net.URL}'s constructor.
+     *
+     * <p>RoboVM's {@code java.net.URL} keeps RoboVM/Android's handler table, so the
+     * first {@code new URL("http://...")} runs
+     * {@code Class.forName("com.android.okhttp.HttpHandler")}. Those classes ship in
+     * robovm-rt but are referenced only by name, so AOT dropped them and the game died
+     * with:
+     * <pre>
+     * java.lang.AssertionError: java.lang.ClassNotFoundException: com.android.okhttp.HttpHandler
+     *     at java.net.URL.setupStreamHandler(URL.java:432)
+     *     at java.net.URL.&lt;init&gt;(URL.java:180)
+     *     at com.net.Http.run(Unknown Source)
+     * </pre>
+     *
+     * <h2>Why that froze the game on the waiting spinner</h2>
+     * {@code AssertionError} is an {@link Error}, and {@code com.net.Http.run()} only
+     * catches {@code IOException} and {@code Exception}. The throw therefore escaped
+     * {@code run()} and killed the network thread <em>after</em> the request had already
+     * been parked in {@code Http.blocks} by {@code sendMessage(req, true, ...)}.
+     * Nothing was left to drain that table, so {@code Http.isBlock()} stayed true
+     * forever, {@code UI_Waiting.isWaiting()} stayed true forever, and
+     * {@code texture/waiting.png} spun over a dead screen — the game never reached the
+     * battle module. Anchoring the handlers lets {@code new URL(...)} succeed; the
+     * connect then fails with an ordinary {@code IOException}, which
+     * {@code Http.run()} does catch, so it clears {@code blocks} and the offline build
+     * continues instead of hanging.
+     */
+    @SuppressWarnings("unused")
+    private static final Class<?>[] URL_HANDLER_ANCHORS = {
+            com.android.okhttp.HttpHandler.class,
+            com.android.okhttp.HttpsHandler.class,
+            libcore.net.url.FileHandler.class,
+    };
+
     static {
         // See "Crash 2" above. Harmless if something else registered it first:
         // insertProviderAt ignores a duplicate class name.
@@ -96,8 +131,31 @@ public final class LazyGameListener implements ApplicationListener {
         } catch (Throwable t) {
             // Never block launch over the provider: the first save would fail
             // instead, which is a smaller blast radius than a dead app.
-            com.badlogic.gdx.Gdx.app.error("LazyGameListener",
-                    "registering CryptoProvider failed", t);
+            // Cannot use Gdx.app here: this static block runs from
+            // createApplication(), which libGDX calls before Gdx.app is assigned.
+            System.err.println("LazyGameListener: registering CryptoProvider failed: " + t);
+            t.printStackTrace();
+        }
+
+        // See URL_HANDLER_ANCHORS below for the reachability side of this. Even with
+        // the handlers present, the game's servers are gone, so every request would
+        // still stall until its socket timeout and then pop a "connection failed"
+        // dialog. The game already ships an offline switch: V2scNetCallBack.isDanji()
+        // returns GameConfig.danJi, and Start.getHttp() routes to com.net.Danji when it
+        // is true. Danji overrides sendMessage() to return true without ever touching
+        // Http.blocks, so Http.isBlock() stays false, UI_Waiting never engages, and the
+        // game proceeds straight into the battle module instead of spinning forever on
+        // texture/waiting.png.
+        try {
+            com.soco.GameEngine.GameConfig.danJi = true;
+            // Danji.getInstance() returns a static field that the game never assigns
+            // (no caller of Danji.setInstance anywhere in the decompiled sources), and
+            // Start.getHttp() calls init() on it unconditionally, so it must be
+            // installed before the first request or offline mode becomes an NPE.
+            com.net.Danji.setInstance(new OfflineHttp());
+        } catch (Throwable t) {
+            System.err.println("LazyGameListener: enabling offline (danji) mode failed: " + t);
+            t.printStackTrace();
         }
     }
 
