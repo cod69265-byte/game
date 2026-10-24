@@ -32,22 +32,31 @@
     </resources>
 
     <!--
-      VegSceneDelegate must survive AOT: UIKit instantiates it by name from the
-      Info.plist UISceneDelegateClassName string, which RoboVM's reachability
-      analysis cannot see. The com.soco.** pattern below already covers it, but
-      the launcher is listed explicitly so the requirement is not silently lost
-      if that pattern is ever narrowed.
+      Same roots as robovm-ios26.xml. VegSceneDelegate survives because
+      com.soco.** already covers it; UIKit instantiates the class by name from
+      the plist, which the reachability analysis cannot see, so it is listed
+      explicitly as well to keep that requirement from being lost if the
+      namespace pattern is ever narrowed.
+
+      org.robovm.apple.** is NOT used: it matches all 14,848 CocoaTouch binding
+      classes and exhausted the AOT heap on the first CI run. See the long
+      comment in ios26/robovm-ios26.xml for the reference counts.
     -->
     <forceLinkClasses>
         <pattern>com.soco.**</pattern>
         <pattern>com.badlogic.gdx.**</pattern>
         <pattern>com.esotericsoftware.**</pattern>
-        <pattern>com.jcraft.**</pattern>
         <pattern>com.main.**</pattern>
         <pattern>com.net.**</pattern>
         <pattern>com.protocol.**</pattern>
         <pattern>javazoom.**</pattern>
-        <pattern>org.robovm.apple.**</pattern>
+        <pattern>org.robovm.apple.uikit.**</pattern>
+        <pattern>org.robovm.apple.foundation.**</pattern>
+        <pattern>org.robovm.apple.coregraphics.**</pattern>
+        <pattern>org.robovm.apple.corehaptic.**</pattern>
+        <pattern>org.robovm.apple.gamecontroller.**</pattern>
+        <pattern>org.robovm.apple.coreanimation.**</pattern>
+        <pattern>org.robovm.apple.audiotoolbox.**</pattern>
     </forceLinkClasses>
 
     <frameworkPaths>

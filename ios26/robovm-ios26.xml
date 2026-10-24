@@ -43,20 +43,49 @@
     </resources>
 
     <!--
-      RoboVM strips every class it cannot prove is reachable. The original code
-      resolves UI screens, Spine skeletons and particle configs by string name,
-      so the whole game namespace has to survive AOT.
+      RoboVM's tree shaker starts from these roots and keeps everything they
+      reference. The game half is listed wholesale because screen classes are
+      looked up through data tables (UI name -> constructor) that the reachability
+      analysis can follow, but the entry points into those tables are spread over
+      150 UI classes; pinning the namespace is cheaper than proving it.
+
+      The Apple half is deliberately NOT `org.robovm.apple.**`.
+
+      That pattern pulls in all 14,848 CocoaTouch binding classes — MetalPS,
+      HealthKit, HomeKit, PassKit, CarPlay, ARKit, Vision, Intents, MapKit and
+      every other framework in the 2.3.19 bindings, none of which this game
+      touches. The first CI run did exactly that and died: with the Gradle
+      daemon's default 512 MB heap the AOT compiler spent 52 minutes logging
+      "Expiring Daemon because JVM heap space is exhausted" and never produced a
+      single class.
+
+      The seven packages below are the ones the app actually references, counted
+      by scanning the constant pools of game-core2.jar, gdx-1.14.2-ios.jar and
+      the MetalANGLE backend:
+
+          uikit          317 refs     foundation      227
+          coregraphics    60          corehaptic       28
+          gamecontroller   2          coreanimation     1
+          audiotoolbox     1
+
+      That is 3,744 classes instead of 14,848 — a 4x cut. Anything else the
+      runtime needs is pulled in by reachability from these roots.
     -->
     <forceLinkClasses>
         <pattern>com.soco.**</pattern>
         <pattern>com.badlogic.gdx.**</pattern>
         <pattern>com.esotericsoftware.**</pattern>
-        <pattern>com.jcraft.**</pattern>
         <pattern>com.main.**</pattern>
         <pattern>com.net.**</pattern>
         <pattern>com.protocol.**</pattern>
         <pattern>javazoom.**</pattern>
-        <pattern>org.robovm.apple.**</pattern>
+        <pattern>org.robovm.apple.uikit.**</pattern>
+        <pattern>org.robovm.apple.foundation.**</pattern>
+        <pattern>org.robovm.apple.coregraphics.**</pattern>
+        <pattern>org.robovm.apple.corehaptic.**</pattern>
+        <pattern>org.robovm.apple.gamecontroller.**</pattern>
+        <pattern>org.robovm.apple.coreanimation.**</pattern>
+        <pattern>org.robovm.apple.audiotoolbox.**</pattern>
     </forceLinkClasses>
 
     <frameworkPaths>

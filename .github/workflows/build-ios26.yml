@@ -28,7 +28,11 @@ jobs:
     # macos-15 ships Xcode 16, which can target the iOS 26 SDK.
     # macos-14 also works; pin explicitly so the toolchain does not drift.
     runs-on: macos-15
-    timeout-minutes: 60
+    # The AOT compile of 1266 classes plus the MetalANGLE bindings takes 20-40
+    # minutes cold. 90 leaves headroom for a slow runner without letting a hung
+    # build burn an hour of quota silently — which is exactly what run #1 did
+    # (see the heap note below).
+    timeout-minutes: 90
 
     steps:
       - name: Checkout
@@ -57,6 +61,15 @@ jobs:
 
       - name: Build IPA
         run: |
+          # gradle.properties sets -Xmx4g for the daemon. That file is the whole
+          # point: RoboVM's AOT compiler runs *inside* the daemon JVM, and the
+          # default fork on JDK 8 is 512 MB. Run #1 proved the failure mode — the
+          # daemon logged "Expiring Daemon because JVM heap space is exhausted"
+          # every 10-30 s for 52 minutes, compiled nothing, and was cancelled by
+          # the job timeout. Echo the effective setting so a regression is
+          # obvious in the log.
+          echo "--- effective JVM args ---"
+          cat gradle.properties
           ./gradlew --no-daemon --stacktrace \
             :${{ inputs.flavour }}:createIPA
 
