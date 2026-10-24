@@ -68,6 +68,25 @@ public final class LazyGameListener implements ApplicationListener {
     private final Platform platform;
     private ApplicationListener delegate;
 
+    /**
+     * RoboVM's AOT only compiles classes reachable from bytecode references.
+     * {@code CryptoProvider} registers its services by class <em>name</em> (a
+     * string in its constructor), and {@code Provider.Service.newInstance} then
+     * resolves the name through reflection at runtime — so without this anchor
+     * the reachability analysis never sees {@code SHA1_MessageDigestImpl} and
+     * the provider registration from run #11 failed with
+     * {@code MessageDigest SHA-1 implementation not found: ClassNotFoundException}.
+     * An {@code LDC} class constant is a real bytecode reference, which pulls
+     * the implementation class (and its dependency chain) into the build.
+     * {@code SHA1PRNG_SecureRandomImpl} is anchored for the same reason:
+     * anything calling {@code new SecureRandom()} would hit it.
+     */
+    @SuppressWarnings("unused")
+    private static final Class<?>[] PROVIDER_ANCHORS = {
+            org.apache.harmony.security.provider.crypto.SHA1_MessageDigestImpl.class,
+            org.apache.harmony.security.provider.crypto.SHA1PRNG_SecureRandomImpl.class,
+    };
+
     static {
         // See "Crash 2" above. Harmless if something else registered it first:
         // insertProviderAt ignores a duplicate class name.
