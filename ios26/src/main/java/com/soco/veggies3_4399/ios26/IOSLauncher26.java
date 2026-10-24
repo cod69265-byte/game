@@ -48,7 +48,7 @@ public class IOSLauncher26 extends IOSApplication.Delegate {
 
         config.statusBarVisible = false;
         config.hideHomeIndicator = true;
-        config.hdpiMode = HdpiMode.Logical;
+        config.hdpiMode = HdpiMode.Pixels;
 
         // The game replaces Ogg with Wav on iOS (IOSPlatForm.useWavRepaceOgg),
         // so the audio engine must be present.

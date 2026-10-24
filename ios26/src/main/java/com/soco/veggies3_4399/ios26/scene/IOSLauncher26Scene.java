@@ -96,7 +96,7 @@ public class IOSLauncher26Scene extends IOSApplication.Delegate {
 
         config.statusBarVisible = false;
         config.hideHomeIndicator = true;
-        config.hdpiMode = HdpiMode.Logical;
+        config.hdpiMode = HdpiMode.Pixels;
 
         config.useAudio = true;
 
