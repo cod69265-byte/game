@@ -59,6 +59,19 @@ jobs:
           chmod +x setupLinks.sh gradlew
           ./setupLinks.sh
 
+      # The RoboVM AOT compiler's object cache (~/.robovm/cache) survives between
+      # runs via actions/cache. Run #3 showed the per-class javac->LLVM stage
+      # only takes ~8 min (1843 classes); the other 73+ silent minutes are the
+      # post-compile link/LLVM-opt phase, which caches per-class .o files. A
+      # warm cache can cut that phase dramatically on repeat runs.
+      - name: Cache RoboVM object cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.robovm/cache
+          key: robovm-cache-${{ inputs.flavour }}-${{ hashFiles('libs/*.jar', 'core/src/**/*.java', 'ios26/src/**/*.java', 'ios26scene/src/**/*.java') }}
+          restore-keys: |
+            robovm-cache-${{ inputs.flavour }}-
+
       - name: Build IPA
         run: |
           # gradle.properties sets -Xmx4g for the daemon. That file matters: the
@@ -89,9 +102,7 @@ jobs:
             exit 1
           fi
           echo "ipa=$IPA" >> "$GITHUB_OUTPUT"
-          ls -lh "$IPA"
-
-      - name: Upload IPA
+          ls -lh "$IPA"      - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
           name: Veggies3HD-${{ inputs.flavour }}-unsigned
@@ -102,14 +113,34 @@ jobs:
       # `always()` rather than `failure()`: a timeout shows up as `cancelled`,
       # which skips failure-only steps. Run #2 produced zero diagnostics for
       # exactly that reason.
+      #
+      # Glob note (run #3): RoboVM's intermediate objects do NOT live under
+      # build/robovm/ — the gradle plugin runs the compiler with the project
+      # dir as cwd and the object cache is ~/.robovm/cache. So we upload the
+      # cache dir tree listing plus any object/archive files actually present
+      # in the workspace instead of guessing at log paths.
       - name: Upload build logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: build-logs-${{ github.run_number }}
           path: |
-            **/build/robovm/**/*.log
-            **/build/robovm/**/*.xml
-            **/build/reports/**
+            **/*.log
+            **/*.o
+            **/*.a
+            !**/offline-repo/**
+            !**/.gradle/**
           retention-days: 7
           if-no-files-found: ignore
+
+      # Even when nothing matched above, a plain listing of where RoboVM put
+      # things is enough to point the next fix at the right directory.
+      - name: Dump RoboVM work dirs
+        if: always()
+        run: |
+          echo "=== ~/.robovm/cache tree (top 2 levels) ==="
+          find ~/.robovm/cache -maxdepth 2 2>/dev/null | head -n 80 || true
+          echo "=== workspace object/archive files ==="
+          find . -path ./offline-repo -prune -o \( -name '*.o' -o -name '*.a' -o -name '*.ipa' -o -name 'robovm.xml' \) -print 2>/dev/null | head -n 60 || true
+          echo "=== gradle daemon log tail ==="
+          tail -n 100 ~/.gradle/daemon/8.0.10/*.log 2>/dev/null || ls ~/.gradle/daemon 2>/dev/null || true
