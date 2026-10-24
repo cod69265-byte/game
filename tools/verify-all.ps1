@@ -115,7 +115,22 @@ try {
     # classes they inspect.
     $jorbis = Join-Path $L 'jorbis.jar'
     $toolSrc = Get-ChildItem (Join-Path $root 'tools\src') -Filter *.java | ForEach-Object { $_.FullName }
-    $toolBuildCp = "$asmcp;$jorbis;$gdx;$game;$B\classes-core26;$B\classes-ios26;$($rt -join ';')"
+    $metalangle = Join-Path $MavenDir 'ios26\gdx-backend-robovm-metalangle-1.14.2.jar'
+    $vcd0 = Join-Path $root 'tools\vcdeps'
+    $toolBuildCp = @($asmcp.Split(';')) + @(
+        $jorbis, $gdx, $game, $metalangle,
+        "$B\classes-core26", "$B\classes-ios26"
+    ) + $rt + @(
+        (Join-Path $vcd0 'robovm-compiler-2.3.19.jar'),
+        (Join-Path $vcd0 'simple-xml-2.7.1.jar'),
+        (Join-Path $vcd0 'commons-io-2.7.jar'),
+        (Join-Path $vcd0 'commons-lang3-3.9.jar'),
+        (Join-Path $vcd0 'commons-compress-1.5.jar'),
+        (Join-Path $vcd0 'asm-9.0.jar'),
+        (Join-Path $vcd0 'xz-1.2.jar'),
+        (Join-Path $vcd0 'jsoup-1.7.1.jar')
+    )
+    $toolBuildCp = $toolBuildCp -join ';'
     & $javac -nowarn -encoding UTF-8 -cp $toolBuildCp -d "$B\classes-tools" @toolSrc 2>&1 | Out-Null
     if ($LASTEXITCODE -ne 0) { throw 'tool compilation failed' }
 
@@ -145,6 +160,37 @@ try {
                           (Join-Path $rv 'robovm-cocoatouch-2.3.19.jar'),
                           (Join-Path $root 'ios26\Info.plist.xml'),
                           (Join-Path $root 'ios26scene\Info-scene.plist.xml'))
+
+    # ---- 5. RoboVM config XML validation (parse + path resolution, no Xcode) ----
+    # RoboVM's Simple-XML mapping rejects unknown elements wholesale. Running
+    # Config.Builder.read() here catches a config typo in seconds instead of
+    # after an hour-long CI build. Framework paths inside ios26*/ resolve
+    # through the junctions recreated by setupLinks.sh (or created locally).
+    #
+    # ValidateConfig's runtime deps (Simple-XML, commons-io, commons-lang3,
+    # commons-compress, ASM, XZ, jsoup, robovm-compiler) are vendored under
+    # tools/vcdeps so this works identically on a dev box and on CI.
+    $vcd = Join-Path $root 'tools\vcdeps'
+    $vccp = @(
+        (Join-Path $vcd 'robovm-compiler-2.3.19.jar'),
+        (Join-Path $vcd 'robovm-gradle-plugin-2.3.19.jar'),
+        (Join-Path $vcd 'simple-xml-2.7.1.jar'),
+        (Join-Path $vcd 'commons-io-2.7.jar'),
+        (Join-Path $vcd 'commons-lang3-3.9.jar'),
+        (Join-Path $vcd 'commons-compress-1.5.jar'),
+        (Join-Path $vcd 'asm-9.0.jar'),
+        (Join-Path $vcd 'xz-1.2.jar'),
+        (Join-Path $vcd 'jsoup-1.7.1.jar')
+    )
+    foreach ($j in $vccp) {
+        if (-not (Test-Path $j)) { throw "missing vendored dep: $j" }
+    }
+    $vcCp = ($vccp + @("$B\classes-tools")) -join ';'
+    Run 'ValidateConfig ios26' (@('-cp', $vcCp, 'ValidateConfig',
+                                  (Join-Path $root 'ios26\robovm-ios26.xml')))
+    Run 'ValidateConfig scene' (@('-cp', $vcCp, 'ValidateConfig',
+                                  (Join-Path $root 'ios26scene\robovm-ios26scene.xml')))
+
 
     Write-Host ''
     if ($script:failures -gt 0) {

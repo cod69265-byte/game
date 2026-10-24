@@ -21,6 +21,41 @@
     <target>ios</target>
     <iosInfoPList>Info-scene.plist.xml</iosInfoPList>
 
+    <!--
+      Speed knobs. Each one was read out of the RoboVM 2.3.19 bytecode, not
+      guessed; see README-iOS26.md §5.6 for the javap evidence.
+
+      treeShaker
+        Config.getTreeShakerMode() falls back to TreeShakerMode.none when the
+        field is null, i.e. by default RoboVM compiles *every method of every
+        reachable class* into LLVM and then hands it to clang. DependencyGraph's
+        constructor shows what "conservative" actually skips: while walking the
+        dependency edges, a MethodNode with isWeaklyLinked()==true is neither
+        added to reachableNodes nor enqueued, so its whole subtree drops out.
+        "aggressive" keeps only isStronglyLinked() methods plus <init>.
+
+        conservative, not aggressive: this game reaches libGDX through its own
+        SocoTexture / SocoFreeTypeFontGenerator shims and through reflection-free
+        direct calls, but an aggressive pass can strip a method that only the
+        ObjC plugin or a framework callback would have reached, and the failure
+        mode is a runtime crash on device — not something a Windows box can test.
+        conservative is the largest cut that cannot remove a strongly-linked
+        method.
+
+      threads
+        Left at the default on purpose. Config.threads carries no @Element
+        annotation, so <threads> is not a legal element and Simple-XML would
+        reject the whole file. The default is Runtime.availableProcessors(),
+        which is 3 on a macos-15 runner — the same value we would have written.
+
+      cache
+        Also left at the default. Config.clean carries no @Element annotation
+        either, and the default (false) is already what lets an incremental
+        rebuild on a real Mac print "No classes were modified. Skipping
+        compilation and linking."
+    -->
+    <treeShaker>conservative</treeShaker>
+
     <resources>
         <resource>
             <directory>resources</directory>
