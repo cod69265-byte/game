@@ -61,16 +61,21 @@ jobs:
 
       - name: Build IPA
         run: |
-          # gradle.properties sets -Xmx4g for the daemon. That file is the whole
-          # point: RoboVM's AOT compiler runs *inside* the daemon JVM, and the
-          # default fork on JDK 8 is 512 MB. Run #1 proved the failure mode — the
-          # daemon logged "Expiring Daemon because JVM heap space is exhausted"
-          # every 10-30 s for 52 minutes, compiled nothing, and was cancelled by
-          # the job timeout. Echo the effective setting so a regression is
-          # obvious in the log.
+          # gradle.properties sets -Xmx4g for the daemon. That file matters: the
+          # RoboVM AOT compiler runs *inside* the daemon JVM, and the default
+          # fork on JDK 8 is 512 MB.
+          #
+          # --info is not noise here. RoboVM routes its Logger through Gradle's
+          # logger, and ConsoleLogger only prints info() when verbose — so at the
+          # default LIFECYCLE level the only AOT output is warn/error. Run #2
+          # showed exactly that: createIPA sat for 89 minutes with a completely
+          # empty log, which is indistinguishable from a hang. --info surfaces
+          # "Compiling classes using N threads", "Compiled N classes in X
+          # seconds" and "Linked N classes in X seconds", which is what tells us
+          # whether the tree shaker is making progress.
           echo "--- effective JVM args ---"
           cat gradle.properties
-          ./gradlew --no-daemon --stacktrace \
+          ./gradlew --no-daemon --stacktrace --info \
             :${{ inputs.flavour }}:createIPA
 
       - name: Locate artifact
@@ -94,13 +99,17 @@ jobs:
           retention-days: 14
 
       # The RoboVM AOT log is the only place that says *why* a link failed.
-      - name: Upload build logs on failure
-        if: failure()
+      # `always()` rather than `failure()`: a timeout shows up as `cancelled`,
+      # which skips failure-only steps. Run #2 produced zero diagnostics for
+      # exactly that reason.
+      - name: Upload build logs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: build-logs
+          name: build-logs-${{ github.run_number }}
           path: |
             **/build/robovm/**/*.log
+            **/build/robovm/**/*.xml
             **/build/reports/**
           retention-days: 7
           if-no-files-found: ignore

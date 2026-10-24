@@ -32,15 +32,20 @@
     </resources>
 
     <!--
-      Same roots as robovm-ios26.xml. VegSceneDelegate survives because
-      com.soco.** already covers it; UIKit instantiates the class by name from
-      the plist, which the reachability analysis cannot see, so it is listed
-      explicitly as well to keep that requirement from being lost if the
-      namespace pattern is ever narrowed.
+      Same roots as robovm-ios26.xml, minus every org.robovm.apple pattern.
 
-      org.robovm.apple.** is NOT used: it matches all 14,848 CocoaTouch binding
-      classes and exhausted the AOT heap on the first CI run. See the long
-      comment in ios26/robovm-ios26.xml for the reference counts.
+      The scene delegate is the one class here that UIKit really does
+      instantiate by name — from UISceneDelegateClassName in
+      Info-scene.plist.xml. com.soco.** already covers it, and unlike a
+      Class.forName call the ObjC runtime handshake is visible to the ObjC
+      plugin, which registers custom classes before linking. It is listed
+      explicitly anyway so the requirement survives if that pattern is ever
+      narrowed.
+
+      Dropping org.robovm.apple.* is deliberate: the app references 97 Apple
+      binding classes out of 14,848, and force-linking whole packages pushed
+      the AOT set to ~5,400 classes, which ran past 89 minutes on CI. See the
+      long comment in ios26/robovm-ios26.xml for both failure runs.
     -->
     <forceLinkClasses>
         <pattern>com.soco.**</pattern>
@@ -50,13 +55,6 @@
         <pattern>com.net.**</pattern>
         <pattern>com.protocol.**</pattern>
         <pattern>javazoom.**</pattern>
-        <pattern>org.robovm.apple.uikit.**</pattern>
-        <pattern>org.robovm.apple.foundation.**</pattern>
-        <pattern>org.robovm.apple.coregraphics.**</pattern>
-        <pattern>org.robovm.apple.corehaptic.**</pattern>
-        <pattern>org.robovm.apple.gamecontroller.**</pattern>
-        <pattern>org.robovm.apple.coreanimation.**</pattern>
-        <pattern>org.robovm.apple.audiotoolbox.**</pattern>
     </forceLinkClasses>
 
     <frameworkPaths>

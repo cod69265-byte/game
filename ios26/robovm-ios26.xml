@@ -44,32 +44,51 @@
 
     <!--
       RoboVM's tree shaker starts from these roots and keeps everything they
-      reference. The game half is listed wholesale because screen classes are
-      looked up through data tables (UI name -> constructor) that the reachability
-      analysis can follow, but the entry points into those tables are spread over
-      150 UI classes; pinning the namespace is cheaper than proving it.
+      reference. forceLinkClasses only ADDS roots — reachability from mainClass
+      always applies on top. So a pattern here is only needed for code that is
+      reached in a way the analysis cannot see.
 
-      The Apple half is deliberately NOT `org.robovm.apple.**`.
+      There is none. Scanning the constant pools of game-core2.jar and
+      gdx-1.14.2-ios.jar for every reflection entry point came back empty:
 
-      That pattern pulls in all 14,848 CocoaTouch binding classes — MetalPS,
-      HealthKit, HomeKit, PassKit, CarPlay, ARKit, Vision, Intents, MapKit and
-      every other framework in the 2.3.19 bindings, none of which this game
-      touches. The first CI run did exactly that and died: with the Gradle
-      daemon's default 512 MB heap the AOT compiler spent 52 minutes logging
-      "Expiring Daemon because JVM heap space is exhausted" and never produced a
-      single class.
+          Class.forName                0
+          Class.newInstance            0
+          Class.getConstructor         0
+          Class.getDeclaredConstructor 0
+          Class.getMethod              0
+          Class.getDeclaredMethod      0
+          ClassLoader.loadClass        0
 
-      The seven packages below are the ones the app actually references, counted
-      by scanning the constant pools of game-core2.jar, gdx-1.14.2-ios.jar and
-      the MetalANGLE backend:
+      Screens are `new UI_Title()`, not lookups by name. So the game half below
+      is belt-and-braces, not a requirement, and it is cheap (~530 classes).
 
-          uikit          317 refs     foundation      227
-          coregraphics    60          corehaptic       28
-          gamecontroller   2          coreanimation     1
-          audiotoolbox     1
+      The Apple half is GONE, and that is the point of this revision.
 
-      That is 3,744 classes instead of 14,848 — a 4x cut. Anything else the
-      runtime needs is pulled in by reachability from these roots.
+      History, because both failure modes looked identical from the outside:
+
+        run #1  org.robovm.apple.**  -> 14,848 binding classes force-linked
+                (MetalPS 919, HealthKit 328, HomeKit 225, PassKit 224,
+                CarPlay 173, ARKit 164, Vision 206, Intents 896, MapKit 205...)
+                plus the 512 MB daemon heap. Died after 52 min of
+                "Expiring Daemon because JVM heap space is exhausted".
+
+        run #2  seven Apple packages -> 3,744 classes, heap raised to 4 GB.
+                No heap errors at all, but createIPA then sat for 89 minutes
+                with zero output and hit the timeout. The heap was fine; the
+                AOT compiler was just grinding through ~5,400 classes.
+
+      Counting the Apple classes the app actually references gives 97:
+
+          uikit 63, foundation 23, corehaptic 7, coregraphics 3,
+          gamecontroller 1
+
+      Everything else in those packages is unreachable and does not need a root.
+      Dropping all seven patterns takes the forced set from ~5,400 to ~530 and
+      lets the tree shaker do its job — it keeps exactly the 97 plus whatever
+      they transitively need.
+
+      If a future change introduces string-based instantiation, add the specific
+      package back here rather than the whole org.robovm.apple namespace.
     -->
     <forceLinkClasses>
         <pattern>com.soco.**</pattern>
@@ -79,13 +98,6 @@
         <pattern>com.net.**</pattern>
         <pattern>com.protocol.**</pattern>
         <pattern>javazoom.**</pattern>
-        <pattern>org.robovm.apple.uikit.**</pattern>
-        <pattern>org.robovm.apple.foundation.**</pattern>
-        <pattern>org.robovm.apple.coregraphics.**</pattern>
-        <pattern>org.robovm.apple.corehaptic.**</pattern>
-        <pattern>org.robovm.apple.gamecontroller.**</pattern>
-        <pattern>org.robovm.apple.coreanimation.**</pattern>
-        <pattern>org.robovm.apple.audiotoolbox.**</pattern>
     </forceLinkClasses>
 
     <frameworkPaths>
