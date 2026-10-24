@@ -143,3 +143,23 @@ git 存不了链接，克隆后跑一次 `./setupLinks.sh` 重建。
 
 原版游戏版权归 SOCO / 4399 所有。本仓库只包含移植所需的构建配置、平台层代码
 和逆向工程产物，不主张任何权利。请自行确认在你所在地区的合法性。
+
+---
+
+## CI run #7 复盘：80 分钟沉默期定位完成（进程级证据）
+
+`tools/ci_sample.sh` 采样器在 run #7 抓到了决定性数据：
+
+| 证据 | 内容 |
+|---|---|
+| proc.log | java 进程（Gradle daemon）**100% CPU 单核**持续 84 分钟，无任何 clang/lipo 子进程 |
+| 6 份栈采样（横跨 12–84 min） | ~70% 样本落在 JIT 编译的 Java 代码（0x104b–0x10799，Binary Images 之外），GC 线程/主线程全部 park |
+| Binary Images | `librobovm-llvm*.dylib` 已加载（0x129944000）但栈上无其帧 → LLVM 本体没在跑 |
+| `~/.robovm/cache/ios/arm64` | **空目录** —— soot 没完成，从未走到写缓存 |
+
+时间线：10 分钟编完 1943 类的 toC（"Compiling X (ios arm64 release)"，10:11–10:12 + 10:19–10:20 两批 + cancel 前 100 类收尾）；中间 80 分钟零日志 = **soot 全程序分析（单线程，RoboVM 2.3.19 硬限制）**。
+
+结论：toC/LLVM 不是瓶颈；瓶颈是 soot 对 ~4,700 类闭包的单线程 Java 分析。加速选项：
+1. `actions/cache`（本轮已加）对 soot 无效——缓存写发生在 soot 之后，首跑取消则永远存不进。
+2. 真正杠杆：升级 RoboVM 3.0.0（soot 新版 + 改进的分析管线）或削减类闭包。
+3. force-link 的 7 个包（com.soco/com.badlogic.gdx/com.esotericsoftware/com.main/com.net/com.protocol/javazoom）经字节码引用检查全部为真实引用，无法删除。
