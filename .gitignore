@@ -26,3 +26,5 @@ xcuserdata/
 *.ipa
 *.app/
 *.dSYM/
+maven-robovm/
+tools/asm/

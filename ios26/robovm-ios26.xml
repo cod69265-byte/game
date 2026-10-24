@@ -97,7 +97,6 @@
         <pattern>com.main.**</pattern>
         <pattern>com.net.**</pattern>
         <pattern>com.protocol.**</pattern>
-        <pattern>javazoom.**</pattern>
     </forceLinkClasses>
 
     <frameworkPaths>
