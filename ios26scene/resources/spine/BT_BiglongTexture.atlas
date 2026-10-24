@@ -1,0 +1,104 @@
+
+BT_BiglongTexture.png
+size: 886,901
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BT_Biglong/BT_BigLong01
+  rotate: false
+  xy: 2, 2
+  size: 156, 115
+  orig: 156, 115
+  offset: 0, 0
+  index: -1
+BT_Biglong/BT_BigLong02
+  rotate: false
+  xy: 178, 198
+  size: 156, 115
+  orig: 156, 115
+  offset: 0, 0
+  index: -1
+BT_Biglong/BT_BigLong03
+  rotate: false
+  xy: 442, 394
+  size: 156, 115
+  orig: 156, 115
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong06
+  rotate: false
+  xy: 540, 511
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong11
+  rotate: false
+  xy: 540, 511
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong07
+  rotate: false
+  xy: 722, 707
+  size: 164, 194
+  orig: 164, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong08
+  rotate: false
+  xy: 271, 315
+  size: 169, 194
+  orig: 169, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong09
+  rotate: false
+  xy: 540, 707
+  size: 180, 194
+  orig: 180, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong10
+  rotate: false
+  xy: 2, 119
+  size: 174, 194
+  orig: 174, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong20001
+  rotate: false
+  xy: 2, 707
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong20002
+  rotate: false
+  xy: 2, 511
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong20003
+  rotate: false
+  xy: 271, 707
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong20004
+  rotate: false
+  xy: 2, 315
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1
+BT_Biglong/Biglong20005
+  rotate: false
+  xy: 271, 511
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,251 @@
+
+PC_OnionTexture.png
+size: 904,126
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PC_Onion/PC_OnionA_arm1
+  rotate: false
+  xy: 432, 55
+  size: 12, 10
+  orig: 12, 10
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_arm2
+  rotate: false
+  xy: 560, 80
+  size: 14, 10
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_arm3
+  rotate: false
+  xy: 671, 88
+  size: 14, 10
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_body1
+  rotate: false
+  xy: 321, 48
+  size: 81, 78
+  orig: 81, 78
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_eye1
+  rotate: false
+  xy: 778, 102
+  size: 28, 24
+  orig: 28, 24
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_eye2
+  rotate: false
+  xy: 808, 102
+  size: 20, 24
+  orig: 20, 24
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_eye3
+  rotate: false
+  xy: 404, 55
+  size: 26, 10
+  orig: 26, 10
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_eye4
+  rotate: false
+  xy: 497, 70
+  size: 18, 8
+  orig: 18, 8
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_eye5
+  rotate: false
+  xy: 321, 32
+  size: 26, 14
+  orig: 26, 14
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_eye6
+  rotate: false
+  xy: 872, 110
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_eye7
+  rotate: false
+  xy: 713, 102
+  size: 32, 24
+  orig: 32, 24
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_eye8
+  rotate: false
+  xy: 830, 102
+  size: 20, 24
+  orig: 20, 24
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_hair1
+  rotate: false
+  xy: 2, 3
+  size: 26, 20
+  orig: 26, 20
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_hair2
+  rotate: false
+  xy: 30, 7
+  size: 20, 16
+  orig: 20, 16
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_hair3
+  rotate: false
+  xy: 671, 100
+  size: 40, 26
+  orig: 40, 26
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_hair4
+  rotate: false
+  xy: 404, 67
+  size: 91, 59
+  orig: 91, 59
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_leg1
+  rotate: false
+  xy: 366, 36
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_leg2
+  rotate: false
+  xy: 52, 9
+  size: 10, 14
+  orig: 10, 14
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_mouth1
+  rotate: false
+  xy: 576, 84
+  size: 12, 6
+  orig: 12, 6
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_mouth2
+  rotate: false
+  xy: 852, 104
+  size: 18, 22
+  orig: 18, 22
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_zhuangshi
+  rotate: false
+  xy: 747, 101
+  size: 29, 25
+  orig: 29, 25
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_zhuangshi2
+  rotate: false
+  xy: 622, 87
+  size: 47, 39
+  orig: 47, 39
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionA_zhuangshi3
+  rotate: false
+  xy: 497, 80
+  size: 61, 46
+  orig: 61, 46
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_body3
+  rotate: false
+  xy: 82, 25
+  size: 77, 101
+  orig: 77, 101
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_body4
+  rotate: false
+  xy: 2, 25
+  size: 78, 101
+  orig: 78, 101
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_body5
+  rotate: false
+  xy: 242, 26
+  size: 77, 100
+  orig: 77, 100
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_body6
+  rotate: false
+  xy: 161, 27
+  size: 79, 99
+  orig: 79, 99
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_eyebrow1
+  rotate: false
+  xy: 52, 2
+  size: 9, 5
+  orig: 9, 5
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_eyebrow2
+  rotate: false
+  xy: 64, 17
+  size: 6, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_eyebrow3
+  rotate: false
+  xy: 890, 118
+  size: 14, 8
+  orig: 14, 8
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_heart1
+  rotate: false
+  xy: 349, 32
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_mouth1
+  rotate: false
+  xy: 321, 26
+  size: 11, 4
+  orig: 11, 4
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_mouth2
+  rotate: false
+  xy: 687, 88
+  size: 8, 10
+  orig: 8, 10
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_OnionB_mouth3
+  rotate: false
+  xy: 517, 70
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+PC_Onion/PC_Onion_shadow
+  rotate: false
+  xy: 560, 92
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1

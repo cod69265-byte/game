@@ -1,0 +1,34 @@
+
+PC_Un_12Texture.png
+size: 408,42
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PC_Un_12
+  rotate: false
+  xy: 2, 2
+  size: 100, 40
+  orig: 100, 40
+  offset: 0, 0
+  index: 1
+PC_Un_12
+  rotate: false
+  xy: 104, 2
+  size: 100, 40
+  orig: 100, 40
+  offset: 0, 0
+  index: 2
+PC_Un_12
+  rotate: false
+  xy: 206, 2
+  size: 100, 40
+  orig: 100, 40
+  offset: 0, 0
+  index: 3
+PC_Un_12
+  rotate: false
+  xy: 308, 2
+  size: 100, 40
+  orig: 100, 40
+  offset: 0, 0
+  index: 4

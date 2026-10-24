@@ -1,0 +1,146 @@
+
+giftTexture.png
+size: 994,510
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bankdiamond01
+  rotate: false
+  xy: 390, 64
+  size: 122, 124
+  orig: 122, 124
+  offset: 0, 0
+  index: -1
+button
+  rotate: false
+  xy: 314, 2
+  size: 160, 60
+  orig: 160, 60
+  offset: 0, 0
+  index: 1
+completetitle
+  rotate: false
+  xy: 2, 66
+  size: 386, 122
+  orig: 386, 122
+  offset: 0, 0
+  index: -1
+dazhe
+  rotate: false
+  xy: 2, 190
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: 1
+dazhe
+  rotate: false
+  xy: 643, 108
+  size: 73, 32
+  orig: 73, 32
+  offset: 0, 0
+  index: 3
+dzbutton_close
+  rotate: false
+  xy: 643, 142
+  size: 72, 72
+  orig: 72, 72
+  offset: 0, 0
+  index: -1
+ui_VS01
+  rotate: false
+  xy: 484, 309
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+ui_chongzhi
+  rotate: false
+  xy: 514, 82
+  size: 124, 33
+  orig: 124, 33
+  offset: 0, 0
+  index: -1
+ui_daheibian
+  rotate: false
+  xy: 484, 216
+  size: 220, 28
+  orig: 220, 28
+  offset: 0, 0
+  index: -1
+ui_diandian
+  rotate: false
+  xy: 984, 491
+  size: 10, 19
+  orig: 10, 19
+  offset: 0, 0
+  index: -1
+ui_hongbao
+  rotate: false
+  xy: 514, 117
+  size: 127, 97
+  orig: 127, 97
+  offset: 0, 0
+  index: -1
+ui_lingqu
+  rotate: false
+  xy: 247, 2
+  size: 63, 32
+  orig: 63, 32
+  offset: 0, 0
+  index: -1
+ui_shuzi
+  rotate: false
+  xy: 2, 36
+  size: 310, 28
+  orig: 310, 28
+  offset: 0, 0
+  index: -1
+ui_tai
+  rotate: false
+  xy: 687, 425
+  size: 234, 60
+  orig: 234, 60
+  offset: 0, 0
+  index: -1
+ui_tisheng
+  rotate: false
+  xy: 514, 47
+  size: 123, 33
+  orig: 123, 33
+  offset: 0, 0
+  index: -1
+ui_zi
+  rotate: false
+  xy: 687, 329
+  size: 242, 27
+  orig: 242, 27
+  offset: 0, 0
+  index: -1
+ui_zi01
+  rotate: false
+  xy: 2, 7
+  size: 243, 27
+  orig: 243, 27
+  offset: 0, 0
+  index: -1
+ui_zi02
+  rotate: false
+  xy: 687, 487
+  size: 295, 23
+  orig: 295, 23
+  offset: 0, 0
+  index: -1
+ui_zi03
+  rotate: false
+  xy: 484, 246
+  size: 210, 61
+  orig: 210, 61
+  offset: 0, 0
+  index: -1
+ui_zi04
+  rotate: false
+  xy: 687, 358
+  size: 228, 65
+  orig: 228, 65
+  offset: 0, 0
+  index: -1

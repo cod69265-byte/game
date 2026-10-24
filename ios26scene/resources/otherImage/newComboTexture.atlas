@@ -1,0 +1,41 @@
+
+newComboTexture.png
+size: 784,788
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dg0
+  rotate: false
+  xy: 2, 514
+  size: 355, 274
+  orig: 355, 274
+  offset: 0, 0
+  index: -1
+dg1
+  rotate: false
+  xy: 359, 532
+  size: 338, 256
+  orig: 338, 256
+  offset: 0, 0
+  index: -1
+dg2
+  rotate: false
+  xy: 2, 2
+  size: 335, 255
+  orig: 335, 255
+  offset: 0, 0
+  index: -1
+dg3
+  rotate: false
+  xy: 2, 259
+  size: 346, 253
+  orig: 346, 253
+  offset: 0, 0
+  index: -1
+ui_hold
+  rotate: false
+  xy: 699, 759
+  size: 85, 29
+  orig: 85, 29
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,551 @@
+
+GameBgTexture.png
+size: 1022,1022
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Number01
+  rotate: false
+  xy: 266, 96
+  size: 240, 29
+  orig: 240, 29
+  offset: 0, 0
+  index: -1
+Number02
+  rotate: false
+  xy: 266, 127
+  size: 280, 36
+  orig: 280, 36
+  offset: 0, 0
+  index: -1
+Number03
+  rotate: false
+  xy: 632, 18
+  size: 121, 15
+  orig: 121, 15
+  offset: 0, 0
+  index: -1
+SL_YiL
+  rotate: false
+  xy: 530, 760
+  size: 189, 157
+  orig: 189, 157
+  offset: 0, 0
+  index: 0
+aim01
+  rotate: false
+  xy: 530, 623
+  size: 135, 135
+  orig: 135, 135
+  offset: 0, 0
+  index: -1
+ball_fire_1
+  rotate: false
+  xy: 765, 471
+  size: 106, 110
+  orig: 106, 110
+  offset: 0, 0
+  index: 1
+ball_fire_1
+  rotate: false
+  xy: 765, 359
+  size: 106, 110
+  orig: 106, 110
+  offset: 0, 0
+  index: 2
+ball_fire_1
+  rotate: false
+  xy: 765, 247
+  size: 106, 110
+  orig: 106, 110
+  offset: 0, 0
+  index: 3
+ball_fire_1
+  rotate: false
+  xy: 902, 620
+  size: 106, 110
+  orig: 106, 110
+  offset: 0, 0
+  index: 4
+ball_fire_1
+  rotate: false
+  xy: 915, 508
+  size: 106, 110
+  orig: 106, 110
+  offset: 0, 0
+  index: 5
+button_pause
+  rotate: false
+  xy: 678, 113
+  size: 72, 72
+  orig: 72, 72
+  offset: 0, 0
+  index: -1
+cd
+  rotate: false
+  xy: 641, 35
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+cd01
+  rotate: false
+  xy: 719, 35
+  size: 76, 76
+  orig: 76, 76
+  offset: 0, 0
+  index: -1
+combonum
+  rotate: false
+  xy: 386, 919
+  size: 320, 36
+  orig: 320, 36
+  offset: 0, 0
+  index: -1
+dg0
+  rotate: false
+  xy: 721, 732
+  size: 233, 147
+  orig: 233, 147
+  offset: 0, 0
+  index: -1
+dg0
+  rotate: false
+  xy: 958, 340
+  size: 42, 78
+  orig: 42, 78
+  offset: 0, 0
+  index: 0
+dg1
+  rotate: false
+  xy: 667, 583
+  size: 233, 147
+  orig: 233, 147
+  offset: 0, 0
+  index: -1
+dg1
+  rotate: false
+  xy: 958, 260
+  size: 42, 78
+  orig: 42, 78
+  offset: 0, 0
+  index: 0
+dg2
+  rotate: false
+  xy: 530, 434
+  size: 233, 147
+  orig: 233, 147
+  offset: 0, 0
+  index: -1
+dg2
+  rotate: false
+  xy: 464, 16
+  size: 42, 78
+  orig: 42, 78
+  offset: 0, 0
+  index: 0
+dg3
+  rotate: false
+  xy: 530, 285
+  size: 233, 147
+  orig: 233, 147
+  offset: 0, 0
+  index: -1
+dg3
+  rotate: false
+  xy: 813, 100
+  size: 42, 78
+  orig: 42, 78
+  offset: 0, 0
+  index: 0
+feveren01
+  rotate: false
+  xy: 530, 224
+  size: 193, 59
+  orig: 193, 59
+  offset: 0, 0
+  index: -1
+feveren01_bg
+  rotate: false
+  xy: 269, 35
+  size: 193, 59
+  orig: 193, 59
+  offset: 0, 0
+  index: -1
+iboos01
+  rotate: false
+  xy: 857, 116
+  size: 47, 62
+  orig: 47, 62
+  offset: 0, 0
+  index: -1
+iboos02
+  rotate: false
+  xy: 959, 198
+  size: 46, 60
+  orig: 46, 60
+  offset: 0, 0
+  index: -1
+iboos03
+  rotate: false
+  xy: 843, 180
+  size: 52, 60
+  orig: 52, 60
+  offset: 0, 0
+  index: -1
+iboos04
+  rotate: false
+  xy: 853, 38
+  size: 45, 60
+  orig: 45, 60
+  offset: 0, 0
+  index: -1
+iboos05
+  rotate: false
+  xy: 956, 824
+  size: 66, 55
+  orig: 66, 55
+  offset: 0, 0
+  index: -1
+iboos06
+  rotate: false
+  xy: 752, 118
+  size: 59, 60
+  orig: 59, 60
+  offset: 0, 0
+  index: -1
+iboos07
+  rotate: false
+  xy: 906, 69
+  size: 60, 51
+  orig: 60, 51
+  offset: 0, 0
+  index: -1
+iboos08
+  rotate: false
+  xy: 906, 122
+  size: 49, 60
+  orig: 49, 60
+  offset: 0, 0
+  index: -1
+icon_clock
+  rotate: false
+  xy: 961, 15
+  size: 47, 46
+  orig: 47, 46
+  offset: 0, 0
+  index: -1
+icon_mimi
+  rotate: false
+  xy: 900, 15
+  size: 59, 52
+  orig: 59, 52
+  offset: 0, 0
+  index: -1
+iseed
+  rotate: false
+  xy: 725, 187
+  size: 49, 57
+  orig: 49, 57
+  offset: 0, 0
+  index: 1
+iseed
+  rotate: false
+  xy: 797, 37
+  size: 54, 61
+  orig: 54, 61
+  offset: 0, 0
+  index: 2
+iseed
+  rotate: false
+  xy: 968, 63
+  size: 51, 57
+  orig: 51, 57
+  offset: 0, 0
+  index: 3
+item
+  rotate: false
+  xy: 508, 2
+  size: 60, 53
+  orig: 60, 53
+  offset: 0, 0
+  index: 4
+item
+  rotate: false
+  xy: 570, 3
+  size: 60, 52
+  orig: 60, 52
+  offset: 0, 0
+  index: 3
+item
+  rotate: false
+  xy: 897, 184
+  size: 60, 56
+  orig: 60, 56
+  offset: 0, 0
+  index: 1
+item
+  rotate: false
+  xy: 957, 122
+  size: 42, 60
+  orig: 42, 60
+  offset: 0, 0
+  index: 2
+item_bg
+  rotate: false
+  xy: 991, 991
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+moneydiamond
+  rotate: false
+  xy: 725, 246
+  size: 38, 37
+  orig: 38, 37
+  offset: 0, 0
+  index: 1
+paoxian
+  rotate: false
+  xy: 915, 420
+  size: 88, 86
+  orig: 88, 86
+  offset: 0, 0
+  index: -1
+pet
+  rotate: false
+  xy: 873, 327
+  size: 83, 83
+  orig: 83, 83
+  offset: 0, 0
+  index: -1
+pet2
+  rotate: false
+  xy: 873, 242
+  size: 83, 83
+  orig: 83, 83
+  offset: 0, 0
+  index: -1
+progress_bar01
+  rotate: false
+  xy: 2, 44
+  size: 265, 37
+  orig: 265, 37
+  offset: 0, 0
+  index: -1
+progress_bar02
+  rotate: false
+  xy: 2, 5
+  size: 265, 37
+  orig: 265, 37
+  offset: 0, 0
+  index: -1
+progress_bar03
+  rotate: false
+  xy: 266, 165
+  size: 265, 37
+  orig: 265, 37
+  offset: 0, 0
+  index: -1
+progress_bar04
+  rotate: false
+  xy: 2, 941
+  size: 382, 34
+  orig: 382, 34
+  offset: 0, 0
+  index: -1
+propbar01
+  rotate: false
+  xy: 548, 113
+  size: 128, 72
+  orig: 128, 72
+  offset: 0, 0
+  index: -1
+propbar02
+  rotate: false
+  xy: 956, 750
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+propgird
+  rotate: false
+  xy: 776, 180
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 266, 920
+  size: 33, 19
+  orig: 33, 19
+  offset: 0, 0
+  index: -1
+target
+  rotate: false
+  xy: 873, 412
+  size: 40, 169
+  orig: 40, 169
+  offset: 0, 0
+  index: -1
+text_combo
+  rotate: false
+  xy: 530, 593
+  size: 122, 28
+  orig: 122, 28
+  offset: 0, 0
+  index: -1
+text_fever
+  rotate: false
+  xy: 404, 957
+  size: 321, 65
+  orig: 321, 65
+  offset: 0, 0
+  index: -1
+text_prize
+  rotate: false
+  xy: 533, 187
+  size: 168, 35
+  orig: 168, 35
+  offset: 0, 0
+  index: -1
+timebar
+  rotate: false
+  xy: 269, 4
+  size: 111, 29
+  orig: 111, 29
+  offset: 0, 0
+  index: -1
+wave
+  rotate: false
+  xy: 508, 57
+  size: 131, 54
+  orig: 131, 54
+  offset: 0, 0
+  index: -1
+wavenum
+  rotate: false
+  xy: 2, 977
+  size: 400, 45
+  orig: 400, 45
+  offset: 0, 0
+  index: -1
+zhalan1
+  rotate: false
+  xy: 2, 798
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 1
+zhalan1
+  rotate: false
+  xy: 2, 655
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 2
+zhalan1
+  rotate: false
+  xy: 2, 512
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 3
+zhalan2
+  rotate: false
+  xy: 2, 369
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 1
+zhalan2
+  rotate: false
+  xy: 2, 226
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 2
+zhalan2
+  rotate: false
+  xy: 2, 83
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 3
+zhalan3
+  rotate: false
+  xy: 727, 881
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 1
+zhalan3
+  rotate: false
+  xy: 266, 776
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 2
+zhalan3
+  rotate: false
+  xy: 266, 633
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 3
+zhalan4
+  rotate: false
+  xy: 266, 490
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 1
+zhalan4
+  rotate: false
+  xy: 266, 347
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 2
+zhalan4
+  rotate: false
+  xy: 266, 204
+  size: 262, 141
+  orig: 262, 141
+  offset: 0, 0
+  index: 3
+
+GameBgTexture2.png
+size: 156,38
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+moneyicon1
+  rotate: false
+  xy: 2, 2
+  size: 37, 36
+  orig: 37, 36
+  offset: 0, 0
+  index: -1
+moneyicon2
+  rotate: false
+  xy: 41, 2
+  size: 37, 36
+  orig: 37, 36
+  offset: 0, 0
+  index: -1
+moneyicon3
+  rotate: false
+  xy: 80, 2
+  size: 37, 36
+  orig: 37, 36
+  offset: 0, 0
+  index: -1
+moneyicon4
+  rotate: false
+  xy: 119, 2
+  size: 37, 36
+  orig: 37, 36
+  offset: 0, 0
+  index: -1

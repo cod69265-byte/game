@@ -5,7 +5,6 @@ import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
 import com.badlogic.gdx.backends.iosrobovm.bindings.metalangle.MGLDrawableColorFormat;
 import com.badlogic.gdx.backends.iosrobovm.bindings.metalangle.MGLDrawableDepthFormat;
 import com.badlogic.gdx.graphics.glutils.HdpiMode;
-import com.soco.V3Main;
 import com.soco.veggies3_4399.IOSPlatForm;
 import org.robovm.apple.foundation.NSAutoreleasePool;
 import org.robovm.apple.uikit.UIApplication;
@@ -55,7 +54,10 @@ public class IOSLauncher26 extends IOSApplication.Delegate {
         // so the audio engine must be present.
         config.useAudio = true;
 
-        return new IOSApplication(new V3Main(new IOSPlatForm()), config);
+        // LazyGameListener, not "new V3Main(...)": createApplication() runs before
+        // IOSApplication assigns Gdx.app, and V3Main's constructor needs Gdx.app.
+        // See LazyGameListener for the full failure trace.
+        return new IOSApplication(new LazyGameListener(new IOSPlatForm()), config);
     }
 
     public static void main(String[] args) {

@@ -153,6 +153,12 @@ try {
     Run 'LaunchCheck26'      @('-cp', $runCp, 'LaunchCheck26')
     Run 'LaunchCheck26Scene' @('-cp', $runCp, 'LaunchCheck26Scene')
 
+    # ---- 3b. launch-order check: nothing may touch Gdx inside createApplication() ----
+    # libGDX 1.14.2 calls Delegate.createApplication() BEFORE IOSApplication assigns
+    # Gdx.app, so a V3Main built there throws "Gdx.app not available." LazyGameListener
+    # defers the construction to listener.create(), which runs after Gdx is ready.
+    Run 'OrderCheck'         @('-cp', $toolcp, 'OrderCheck', $i26, $c26)
+
     # ---- 4. RoboVM ObjC class-name cross-check against both plists ----
     Run 'ObjCNameCheck' @('-cp', $toolcp, 'ObjCNameCheck', $i26,
                           (Join-Path $rv 'robovm-rt-2.3.19.jar'),

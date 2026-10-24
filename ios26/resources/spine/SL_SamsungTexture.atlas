@@ -1,0 +1,20 @@
+
+SL_SamsungTexture.png
+size: 250,121
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SL_Samsung/SL_Samsung
+  rotate: false
+  xy: 2, 2
+  size: 123, 119
+  orig: 123, 119
+  offset: 0, 0
+  index: -1
+SL_Samsung/SL_Samsung2
+  rotate: false
+  xy: 127, 2
+  size: 123, 119
+  orig: 123, 119
+  offset: 0, 0
+  index: -1

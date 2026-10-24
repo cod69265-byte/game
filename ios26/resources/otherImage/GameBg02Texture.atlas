@@ -1,0 +1,244 @@
+
+GameBg02Texture.png
+size: 1003,228
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Item10
+  rotate: false
+  xy: 877, 168
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item11
+  rotate: false
+  xy: 939, 168
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item12
+  rotate: false
+  xy: 85, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item13
+  rotate: false
+  xy: 147, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item14
+  rotate: false
+  xy: 209, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item15
+  rotate: false
+  xy: 271, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item16
+  rotate: false
+  xy: 333, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item17
+  rotate: false
+  xy: 395, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item18
+  rotate: false
+  xy: 953, 116
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Item19
+  rotate: false
+  xy: 76, 44
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Item20
+  rotate: false
+  xy: 128, 44
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Item21
+  rotate: false
+  xy: 180, 44
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+Item40
+  rotate: false
+  xy: 457, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item41
+  rotate: false
+  xy: 519, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item42
+  rotate: false
+  xy: 581, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item43
+  rotate: false
+  xy: 643, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item44
+  rotate: false
+  xy: 705, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item45
+  rotate: false
+  xy: 767, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item46
+  rotate: false
+  xy: 829, 96
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+Item47
+  rotate: false
+  xy: 891, 106
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+button_chongwu
+  rotate: false
+  xy: 2, 74
+  size: 72, 72
+  orig: 72, 72
+  offset: 0, 0
+  index: -1
+skillicon08
+  rotate: false
+  xy: 85, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon09
+  rotate: false
+  xy: 2, 2
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon10
+  rotate: false
+  xy: 157, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon11
+  rotate: false
+  xy: 229, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon12
+  rotate: false
+  xy: 301, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon13
+  rotate: false
+  xy: 373, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon14
+  rotate: false
+  xy: 445, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon15
+  rotate: false
+  xy: 517, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon16
+  rotate: false
+  xy: 589, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon17
+  rotate: false
+  xy: 661, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon18
+  rotate: false
+  xy: 733, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+skillicon19
+  rotate: false
+  xy: 805, 158
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+towerset
+  rotate: false
+  xy: 2, 148
+  size: 81, 80
+  orig: 81, 80
+  offset: 0, 0
+  index: -1

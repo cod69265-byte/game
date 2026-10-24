@@ -1,0 +1,264 @@
+
+achievementTexture.png
+size: 1000,1022
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ac_icon
+  rotate: false
+  xy: 463, 833
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 1
+ac_icon
+  rotate: false
+  xy: 2, 518
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 2
+ac_icon
+  rotate: false
+  xy: 707, 833
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 3
+ac_icon
+  rotate: false
+  xy: 2, 327
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 4
+ac_icon
+  rotate: false
+  xy: 2, 136
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 5
+ac_icon
+  rotate: false
+  xy: 246, 518
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 6
+ac_icon
+  rotate: false
+  xy: 246, 327
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 7
+ac_icon
+  rotate: false
+  xy: 246, 136
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 8
+ac_icon
+  rotate: false
+  xy: 490, 564
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 9
+ac_icon
+  rotate: false
+  xy: 490, 373
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 10
+ac_icon
+  rotate: false
+  xy: 490, 182
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 11
+ac_icon
+  rotate: false
+  xy: 734, 642
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 12
+ac_icon
+  rotate: false
+  xy: 734, 451
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 13
+ac_icon
+  rotate: false
+  xy: 734, 260
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 14
+ac_icon
+  rotate: false
+  xy: 734, 69
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 15
+acseed
+  rotate: false
+  xy: 951, 965
+  size: 49, 57
+  orig: 49, 57
+  offset: 0, 0
+  index: 1
+button
+  rotate: false
+  xy: 2, 74
+  size: 160, 60
+  orig: 160, 60
+  offset: 0, 0
+  index: 1
+clear_bg03
+  rotate: false
+  xy: 2, 833
+  size: 459, 189
+  orig: 459, 189
+  offset: 0, 0
+  index: -1
+completetitle
+  rotate: false
+  xy: 2, 709
+  size: 386, 122
+  orig: 386, 122
+  offset: 0, 0
+  index: -1
+icon_diamond
+  rotate: false
+  xy: 2, 31
+  size: 39, 41
+  orig: 39, 41
+  offset: 0, 0
+  index: 2
+icon_gold
+  rotate: false
+  xy: 688, 791
+  size: 41, 40
+  orig: 41, 40
+  offset: 0, 0
+  index: 3
+num
+  rotate: false
+  xy: 490, 157
+  size: 170, 23
+  orig: 170, 23
+  offset: 0, 0
+  index: 5
+num_04
+  rotate: false
+  xy: 164, 119
+  size: 12, 15
+  orig: 12, 15
+  offset: 0, 0
+  index: 2
+text_complete
+  rotate: false
+  xy: 390, 755
+  size: 296, 76
+  orig: 296, 76
+  offset: 0, 0
+  index: -1
+text_confirm
+  rotate: false
+  xy: 390, 721
+  size: 62, 32
+  orig: 62, 32
+  offset: 0, 0
+  index: -1
+text_share
+  rotate: false
+  xy: 2, 2
+  size: 50, 27
+  orig: 50, 27
+  offset: 0, 0
+  index: -1
+
+achievementTexture2.png
+size: 488,955
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ac_icon
+  rotate: false
+  xy: 2, 766
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 16
+ac_icon
+  rotate: false
+  xy: 2, 575
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 17
+ac_icon
+  rotate: false
+  xy: 246, 766
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 18
+ac_icon
+  rotate: false
+  xy: 2, 384
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 19
+ac_icon
+  rotate: false
+  xy: 246, 575
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 20
+ac_icon
+  rotate: false
+  xy: 2, 193
+  size: 242, 189
+  orig: 242, 189
+  offset: 0, 0
+  index: 21
+ac_icon
+  rotate: false
+  xy: 246, 384
+  size: 240, 189
+  orig: 240, 189
+  offset: 0, 0
+  index: 23
+ac_icon
+  rotate: false
+  xy: 2, 2
+  size: 240, 189
+  orig: 240, 189
+  offset: 0, 0
+  index: 24
+ac_icon
+  rotate: false
+  xy: 246, 193
+  size: 239, 189
+  orig: 239, 189
+  offset: 0, 0
+  index: 22
+dailyprize
+  rotate: false
+  xy: 244, 6
+  size: 225, 185
+  orig: 225, 185
+  offset: 0, 0
+  index: 2

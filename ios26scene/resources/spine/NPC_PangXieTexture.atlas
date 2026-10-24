@@ -1,0 +1,244 @@
+
+NPC_PangXieTexture.png
+size: 1022,254
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_PangXie/BigXieB06
+  rotate: false
+  xy: 531, 60
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+NPC_PangXie/BigXieB11
+  rotate: false
+  xy: 531, 60
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+NPC_PangXie/BigXieB07
+  rotate: false
+  xy: 701, 60
+  size: 164, 194
+  orig: 164, 194
+  offset: 0, 0
+  index: -1
+NPC_PangXie/BigXieB08
+  rotate: false
+  xy: 360, 60
+  size: 169, 194
+  orig: 169, 194
+  offset: 0, 0
+  index: -1
+NPC_PangXie/BigXieB09
+  rotate: false
+  xy: 2, 60
+  size: 180, 194
+  orig: 180, 194
+  offset: 0, 0
+  index: -1
+NPC_PangXie/BigXieB10
+  rotate: false
+  xy: 184, 60
+  size: 174, 194
+  orig: 174, 194
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_attack1
+  rotate: false
+  xy: 867, 183
+  size: 81, 71
+  orig: 81, 71
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_attack2
+  rotate: false
+  xy: 2, 2
+  size: 53, 56
+  orig: 53, 56
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_attack3
+  rotate: false
+  xy: 539, 20
+  size: 23, 38
+  orig: 23, 38
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_beike1
+  rotate: false
+  xy: 942, 118
+  size: 70, 60
+  orig: 70, 60
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_body1
+  rotate: false
+  xy: 219, 25
+  size: 49, 33
+  orig: 49, 33
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_eyeL1
+  rotate: false
+  xy: 450, 27
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_eyeL2
+  rotate: false
+  xy: 564, 27
+  size: 25, 31
+  orig: 25, 31
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_eyeL3
+  rotate: false
+  xy: 481, 26
+  size: 29, 32
+  orig: 29, 32
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_eyeR1
+  rotate: false
+  xy: 313, 19
+  size: 31, 39
+  orig: 31, 39
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_eyeR2
+  rotate: false
+  xy: 379, 18
+  size: 30, 40
+  orig: 30, 40
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_eyeR3
+  rotate: false
+  xy: 346, 18
+  size: 31, 40
+  orig: 31, 40
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_foot1
+  rotate: false
+  xy: 411, 2
+  size: 18, 25
+  orig: 18, 25
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_foot2
+  rotate: false
+  xy: 632, 41
+  size: 18, 17
+  orig: 18, 17
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_handL1
+  rotate: false
+  xy: 173, 9
+  size: 44, 49
+  orig: 44, 49
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_handR1
+  rotate: false
+  xy: 411, 29
+  size: 37, 29
+  orig: 37, 29
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_mouse1
+  rotate: false
+  xy: 219, 9
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_mouse2
+  rotate: false
+  xy: 591, 2
+  size: 23, 19
+  orig: 23, 19
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieA_mouse3
+  rotate: false
+  xy: 609, 34
+  size: 21, 24
+  orig: 21, 24
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieB_beike2
+  rotate: false
+  xy: 950, 180
+  size: 72, 74
+  orig: 72, 74
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieB_beike3
+  rotate: false
+  xy: 867, 108
+  size: 73, 73
+  orig: 73, 73
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieB_handL1
+  rotate: false
+  xy: 270, 20
+  size: 41, 38
+  orig: 41, 38
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieC_beike4
+  rotate: false
+  xy: 57, 15
+  size: 67, 43
+  orig: 67, 43
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieC_effect1
+  rotate: false
+  xy: 431, 10
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieC_effect2
+  rotate: false
+  xy: 564, 2
+  size: 25, 23
+  orig: 25, 23
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieC_effect3
+  rotate: false
+  xy: 512, 25
+  size: 25, 33
+  orig: 25, 33
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieC_handL1
+  rotate: false
+  xy: 126, 13
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXieC_handL2
+  rotate: false
+  xy: 591, 23
+  size: 16, 35
+  orig: 16, 35
+  offset: 0, 0
+  index: -1
+NPC_PangXie/NPC_PangXie_shadow
+  rotate: false
+  xy: 867, 72
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1

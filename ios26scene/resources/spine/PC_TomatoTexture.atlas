@@ -1,0 +1,748 @@
+
+PC_TomatoTexture.png
+size: 1022,510
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PC_Tomato/325
+  rotate: false
+  xy: 291, 387
+  size: 121, 123
+  orig: 121, 123
+  offset: 0, 0
+  index: -1
+PC_Tomato/326
+  rotate: false
+  xy: 637, 396
+  size: 105, 114
+  orig: 105, 114
+  offset: 0, 0
+  index: -1
+PC_Tomato/327
+  rotate: false
+  xy: 524, 398
+  size: 111, 112
+  orig: 111, 112
+  offset: 0, 0
+  index: -1
+PC_Tomato/328
+  rotate: false
+  xy: 414, 389
+  size: 108, 121
+  orig: 108, 121
+  offset: 0, 0
+  index: -1
+PC_Tomato/NPC_BL_change
+  rotate: false
+  xy: 312, 120
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_arm1
+  rotate: false
+  xy: 687, 316
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_arm2
+  rotate: false
+  xy: 669, 300
+  size: 14, 12
+  orig: 14, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_arm3
+  rotate: false
+  xy: 669, 314
+  size: 16, 14
+  orig: 16, 14
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_arm4
+  rotate: false
+  xy: 568, 237
+  size: 14, 12
+  orig: 14, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_arm5
+  rotate: false
+  xy: 568, 251
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eye1
+  rotate: false
+  xy: 887, 305
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eye2
+  rotate: false
+  xy: 136, 2
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eye3
+  rotate: false
+  xy: 1004, 488
+  size: 18, 22
+  orig: 18, 22
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eye4
+  rotate: false
+  xy: 1004, 464
+  size: 18, 22
+  orig: 18, 22
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eye5
+  rotate: false
+  xy: 715, 324
+  size: 20, 12
+  orig: 20, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eye6
+  rotate: false
+  xy: 565, 223
+  size: 14, 12
+  orig: 14, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eye7
+  rotate: false
+  xy: 161, 374
+  size: 20, 6
+  orig: 20, 6
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eye8
+  rotate: false
+  xy: 1004, 362
+  size: 14, 6
+  orig: 14, 6
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eyebrow1
+  rotate: false
+  xy: 826, 341
+  size: 10, 6
+  orig: 10, 6
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eyebrow2
+  rotate: false
+  xy: 136, 102
+  size: 6, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eyelid1
+  rotate: false
+  xy: 162, 5
+  size: 16, 8
+  orig: 16, 8
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_eyelid2
+  rotate: false
+  xy: 637, 292
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_hat1
+  rotate: false
+  xy: 916, 362
+  size: 60, 50
+  orig: 60, 50
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_hat2
+  rotate: false
+  xy: 230, 21
+  size: 60, 50
+  orig: 60, 50
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_leaf1
+  rotate: false
+  xy: 693, 360
+  size: 42, 34
+  orig: 42, 34
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_leaf2
+  rotate: false
+  xy: 737, 357
+  size: 55, 31
+  orig: 55, 31
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_leg1
+  rotate: false
+  xy: 579, 275
+  size: 14, 10
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_leg2
+  rotate: false
+  xy: 1003, 385
+  size: 16, 10
+  orig: 16, 10
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_mouth1
+  rotate: false
+  xy: 631, 354
+  size: 12, 4
+  orig: 12, 4
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_mouth2
+  rotate: false
+  xy: 595, 275
+  size: 12, 10
+  orig: 12, 10
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_mouth3
+  rotate: false
+  xy: 609, 294
+  size: 12, 24
+  orig: 12, 24
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_mouth4
+  rotate: false
+  xy: 794, 309
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_mouth5
+  rotate: false
+  xy: 651, 312
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_roll1
+  rotate: false
+  xy: 426, 291
+  size: 86, 96
+  orig: 86, 96
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_roll2
+  rotate: false
+  xy: 194, 186
+  size: 86, 96
+  orig: 86, 96
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_roll3
+  rotate: false
+  xy: 282, 186
+  size: 86, 96
+  orig: 86, 96
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoA_roll4
+  rotate: false
+  xy: 370, 191
+  size: 86, 96
+  orig: 86, 96
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm1
+  rotate: false
+  xy: 586, 320
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm10
+  rotate: false
+  xy: 794, 319
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm11
+  rotate: false
+  xy: 913, 299
+  size: 29, 27
+  orig: 29, 27
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm12
+  rotate: false
+  xy: 1004, 427
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm13
+  rotate: false
+  xy: 1004, 370
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm14
+  rotate: false
+  xy: 440, 94
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm15
+  rotate: false
+  xy: 988, 328
+  size: 30, 32
+  orig: 30, 32
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm2
+  rotate: false
+  xy: 651, 330
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm3
+  rotate: false
+  xy: 683, 330
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm4
+  rotate: false
+  xy: 826, 311
+  size: 29, 27
+  orig: 29, 27
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm5
+  rotate: false
+  xy: 586, 353
+  size: 43, 43
+  orig: 43, 43
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm6
+  rotate: false
+  xy: 576, 287
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm7
+  rotate: false
+  xy: 953, 328
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm8
+  rotate: false
+  xy: 914, 328
+  size: 37, 32
+  orig: 37, 32
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_arm9
+  rotate: false
+  xy: 737, 327
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_body1
+  rotate: false
+  xy: 378, 130
+  size: 73, 59
+  orig: 73, 59
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_body2
+  rotate: false
+  xy: 769, 335
+  size: 23, 20
+  orig: 23, 20
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_eye1
+  rotate: false
+  xy: 857, 312
+  size: 28, 26
+  orig: 28, 26
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_eye2
+  rotate: false
+  xy: 565, 208
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_eye3
+  rotate: false
+  xy: 1003, 397
+  size: 19, 28
+  orig: 19, 28
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_eye4
+  rotate: false
+  xy: 637, 302
+  size: 12, 18
+  orig: 12, 18
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_eye5
+  rotate: false
+  xy: 203, 13
+  size: 23, 12
+  orig: 23, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_eye6
+  rotate: false
+  xy: 651, 298
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_eyebrow1
+  rotate: false
+  xy: 1004, 444
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_eyebrow2
+  rotate: false
+  xy: 623, 296
+  size: 12, 24
+  orig: 12, 24
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_leaf1
+  rotate: false
+  xy: 620, 322
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_leaf2
+  rotate: false
+  xy: 838, 340
+  size: 47, 29
+  orig: 47, 29
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_leaf3
+  rotate: false
+  xy: 978, 385
+  size: 23, 40
+  orig: 23, 40
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_leaf4
+  rotate: false
+  xy: 378, 93
+  size: 60, 35
+  orig: 60, 35
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_leg1
+  rotate: false
+  xy: 565, 194
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_leg2
+  rotate: false
+  xy: 609, 280
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_leg3
+  rotate: false
+  xy: 568, 266
+  size: 9, 14
+  orig: 9, 14
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_mouth1
+  rotate: false
+  xy: 180, 5
+  size: 15, 8
+  orig: 15, 8
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_mouth2
+  rotate: false
+  xy: 997, 313
+  size: 21, 13
+  orig: 21, 13
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_mouth3
+  rotate: false
+  xy: 151, 186
+  size: 31, 39
+  orig: 31, 39
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_peijian1
+  rotate: false
+  xy: 234, 73
+  size: 71, 42
+  orig: 71, 42
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_peijian2
+  rotate: false
+  xy: 978, 362
+  size: 24, 21
+  orig: 24, 21
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_peijian3
+  rotate: false
+  xy: 524, 343
+  size: 60, 53
+  orig: 60, 53
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_peijian4
+  rotate: false
+  xy: 203, 27
+  size: 25, 72
+  orig: 25, 72
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_roll1
+  rotate: false
+  xy: 744, 414
+  size: 114, 96
+  orig: 114, 96
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_roll2
+  rotate: false
+  xy: 860, 414
+  size: 114, 96
+  orig: 114, 96
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_roll3
+  rotate: false
+  xy: 194, 284
+  size: 114, 96
+  orig: 114, 96
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoB_roll4
+  rotate: false
+  xy: 310, 289
+  size: 114, 96
+  orig: 114, 96
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_body
+  rotate: false
+  xy: 2, 2
+  size: 132, 106
+  orig: 132, 106
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_body2
+  rotate: false
+  xy: 2, 373
+  size: 157, 137
+  orig: 157, 137
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_body3
+  rotate: false
+  xy: 2, 224
+  size: 147, 147
+  orig: 147, 147
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_erzhao1
+  rotate: false
+  xy: 458, 193
+  size: 53, 96
+  orig: 53, 96
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_erzhao2
+  rotate: false
+  xy: 976, 427
+  size: 26, 83
+  orig: 26, 83
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_eye1
+  rotate: false
+  xy: 292, 26
+  size: 41, 45
+  orig: 41, 45
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_eye2
+  rotate: false
+  xy: 887, 331
+  size: 25, 38
+  orig: 25, 38
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_eye3
+  rotate: false
+  xy: 744, 390
+  size: 95, 22
+  orig: 95, 22
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_foot1
+  rotate: false
+  xy: 974, 307
+  size: 21, 19
+  orig: 21, 19
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_foot2
+  rotate: false
+  xy: 307, 73
+  size: 19, 18
+  orig: 19, 18
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_foot3
+  rotate: false
+  xy: 513, 237
+  size: 53, 43
+  orig: 53, 43
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_foot4
+  rotate: false
+  xy: 513, 193
+  size: 50, 42
+  orig: 50, 42
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_hair
+  rotate: false
+  xy: 146, 101
+  size: 86, 83
+  orig: 86, 83
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_hand1
+  rotate: false
+  xy: 944, 302
+  size: 28, 24
+  orig: 28, 24
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_hand2
+  rotate: false
+  xy: 769, 313
+  size: 23, 20
+  orig: 23, 20
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_hand3
+  rotate: false
+  xy: 234, 117
+  size: 76, 67
+  orig: 76, 67
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_hand4
+  rotate: false
+  xy: 514, 282
+  size: 60, 59
+  orig: 60, 59
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_hand5
+  rotate: false
+  xy: 136, 29
+  size: 65, 70
+  orig: 65, 70
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_meim1
+  rotate: false
+  xy: 841, 371
+  size: 73, 41
+  orig: 73, 41
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_mouse1
+  rotate: false
+  xy: 162, 15
+  size: 39, 12
+  orig: 39, 12
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_mouse2
+  rotate: false
+  xy: 794, 349
+  size: 42, 39
+  orig: 42, 39
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_TomatoF_yanzhao
+  rotate: false
+  xy: 2, 110
+  size: 142, 112
+  orig: 142, 112
+  offset: 0, 0
+  index: -1
+PC_Tomato/PC_Tomato_shadow
+  rotate: false
+  xy: 631, 360
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1
+PC_Tomato/SL_Smoke
+  rotate: false
+  xy: 161, 382
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+PC_Tomato/SL_Sword
+  rotate: false
+  xy: 151, 227
+  size: 41, 144
+  orig: 41, 144
+  offset: 0, 0
+  index: -1
+PC_Tomato/loading
+  rotate: false
+  xy: 715, 338
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1

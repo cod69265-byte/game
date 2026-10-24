@@ -1,0 +1,83 @@
+
+BT_Fish_01Texture.png
+size: 451,980
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BT_Fish_01/BTFish20001
+  rotate: false
+  xy: 2, 786
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BTFish20002
+  rotate: false
+  xy: 2, 590
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BTFish20003
+  rotate: false
+  xy: 2, 394
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BTFish20004
+  rotate: false
+  xy: 2, 198
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BTFish20005
+  rotate: false
+  xy: 2, 2
+  size: 267, 194
+  orig: 267, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BigXieB06
+  rotate: false
+  xy: 271, 198
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BigXieB11
+  rotate: false
+  xy: 271, 198
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BigXieB07
+  rotate: false
+  xy: 271, 2
+  size: 164, 194
+  orig: 164, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BigXieB08
+  rotate: false
+  xy: 271, 394
+  size: 169, 194
+  orig: 169, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BigXieB09
+  rotate: false
+  xy: 271, 786
+  size: 180, 194
+  orig: 180, 194
+  offset: 0, 0
+  index: -1
+BT_Fish_01/BigXieB10
+  rotate: false
+  xy: 271, 590
+  size: 174, 194
+  orig: 174, 194
+  offset: 0, 0
+  index: -1

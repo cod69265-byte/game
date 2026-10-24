@@ -1,0 +1,20 @@
+
+BT_BoneA_1_EFTexture.png
+size: 29,48
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BT_BoneA_1_EF/BT_BoneA_1_EF1
+  rotate: false
+  xy: 2, 3
+  size: 17, 45
+  orig: 17, 45
+  offset: 0, 0
+  index: -1
+BT_BoneA_1_EF/BT_BoneA_1_EF2
+  rotate: false
+  xy: 21, 2
+  size: 8, 46
+  orig: 8, 46
+  offset: 0, 0
+  index: -1

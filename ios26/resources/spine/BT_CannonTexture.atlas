@@ -1,0 +1,34 @@
+
+BT_CannonTexture.png
+size: 175,44
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BT_Cannon/Cannon1
+  rotate: false
+  xy: 2, 2
+  size: 43, 42
+  orig: 43, 42
+  offset: 0, 0
+  index: -1
+BT_Cannon/Cannon2
+  rotate: false
+  xy: 91, 2
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1
+BT_Cannon/Cannon3
+  rotate: false
+  xy: 47, 2
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+BT_Cannon/Cannon4
+  rotate: false
+  xy: 134, 2
+  size: 41, 42
+  orig: 41, 42
+  offset: 0, 0
+  index: -1

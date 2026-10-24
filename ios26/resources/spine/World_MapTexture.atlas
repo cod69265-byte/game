@@ -1,0 +1,124 @@
+
+World_MapTexture.png
+size: 1012,1019
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+World_Map/94
+  rotate: false
+  xy: 2, 234
+  size: 332, 330
+  orig: 332, 330
+  offset: 0, 0
+  index: -1
+World_Map/95
+  rotate: false
+  xy: 336, 234
+  size: 332, 330
+  orig: 332, 330
+  offset: 0, 0
+  index: -1
+World_Map/96
+  rotate: false
+  xy: 424, 689
+  size: 332, 330
+  orig: 332, 330
+  offset: 0, 0
+  index: -1
+World_Map/97
+  rotate: false
+  xy: 670, 357
+  size: 332, 330
+  orig: 332, 330
+  offset: 0, 0
+  index: -1
+World_Map/BG_Map01
+  rotate: false
+  xy: 744, 180
+  size: 240, 175
+  orig: 240, 175
+  offset: 0, 0
+  index: -1
+World_Map/BG_Map02
+  rotate: false
+  xy: 758, 690
+  size: 128, 135
+  orig: 128, 135
+  offset: 0, 0
+  index: -1
+World_Map/BG_Map03
+  rotate: false
+  xy: 744, 2
+  size: 192, 176
+  orig: 192, 176
+  offset: 0, 0
+  index: -1
+World_Map/BG_Map04
+  rotate: false
+  xy: 758, 827
+  size: 254, 192
+  orig: 254, 192
+  offset: 0, 0
+  index: -1
+World_Map/UI_gift3
+  rotate: false
+  xy: 424, 662
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+World_Map/mapselect_bg
+  rotate: false
+  xy: 2, 566
+  size: 420, 453
+  orig: 420, 453
+  offset: 0, 0
+  index: -1
+World_Map/minimap01
+  rotate: false
+  xy: 2, 6
+  size: 369, 226
+  orig: 369, 226
+  offset: 0, 0
+  index: -1
+World_Map/minimap02
+  rotate: false
+  xy: 373, 6
+  size: 369, 226
+  orig: 369, 226
+  offset: 0, 0
+  index: -1
+
+World_MapTexture2.png
+size: 371,1014
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+World_Map/626
+  rotate: false
+  xy: 2, 686
+  size: 331, 328
+  orig: 331, 328
+  offset: 0, 0
+  index: -1
+World_Map/minimap03
+  rotate: false
+  xy: 2, 458
+  size: 369, 226
+  orig: 369, 226
+  offset: 0, 0
+  index: -1
+World_Map/minimap04
+  rotate: false
+  xy: 2, 230
+  size: 369, 226
+  orig: 369, 226
+  offset: 0, 0
+  index: -1
+World_Map/minimap05
+  rotate: false
+  xy: 2, 2
+  size: 369, 226
+  orig: 369, 226
+  offset: 0, 0
+  index: -1

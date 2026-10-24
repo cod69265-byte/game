@@ -1,0 +1,13 @@
+
+farm_treeTexture.png
+size: 431,381
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+farm_tree/farm_tree01
+  rotate: false
+  xy: 2, 2
+  size: 429, 379
+  orig: 429, 379
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,13 @@
+
+SL_JY_00Texture.png
+size: 82,79
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SL_JY_00/SL_JY
+  rotate: false
+  xy: 2, 2
+  size: 80, 77
+  orig: 80, 77
+  offset: 0, 0
+  index: -1

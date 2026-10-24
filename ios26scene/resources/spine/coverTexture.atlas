@@ -1,0 +1,159 @@
+
+coverTexture.png
+size: 1005,1020
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cover/cover_BG1
+  rotate: false
+  xy: 2, 166
+  size: 533, 854
+  orig: 533, 854
+  offset: 0, 0
+  index: -1
+cover/cover_Dragon1
+  rotate: false
+  xy: 537, 532
+  size: 419, 488
+  orig: 419, 488
+  offset: 0, 0
+  index: -1
+cover/cover_Dragon3
+  rotate: false
+  xy: 799, 23
+  size: 150, 222
+  orig: 150, 222
+  offset: 0, 0
+  index: -1
+cover/cover_Dragon4
+  rotate: false
+  xy: 958, 887
+  size: 47, 133
+  orig: 47, 133
+  offset: 0, 0
+  index: -1
+cover/cover_Onion2
+  rotate: false
+  xy: 951, 217
+  size: 11, 28
+  orig: 11, 28
+  offset: 0, 0
+  index: -1
+cover/cover_Onion3
+  rotate: false
+  xy: 239, 81
+  size: 198, 83
+  orig: 198, 83
+  offset: 0, 0
+  index: -1
+cover/cover_Radish2
+  rotate: false
+  xy: 381, 30
+  size: 107, 49
+  orig: 107, 49
+  offset: 0, 0
+  index: -1
+cover/cover_Title
+  rotate: false
+  xy: 537, 247
+  size: 466, 283
+  orig: 466, 283
+  offset: 0, 0
+  index: -1
+cover/cover_Tomato1
+  rotate: false
+  xy: 537, 23
+  size: 260, 222
+  orig: 260, 222
+  offset: 0, 0
+  index: -1
+cover/cover_Tomato3
+  rotate: false
+  xy: 2, 49
+  size: 235, 115
+  orig: 235, 115
+  offset: 0, 0
+  index: -1
+cover/cover_Tree1
+  rotate: false
+  xy: 439, 124
+  size: 96, 40
+  orig: 96, 40
+  offset: 0, 0
+  index: -1
+cover/cover_Tree2
+  rotate: false
+  xy: 439, 98
+  size: 93, 24
+  orig: 93, 24
+  offset: 0, 0
+  index: -1
+cover/cover_Tree3
+  rotate: false
+  xy: 239, 47
+  size: 140, 32
+  orig: 140, 32
+  offset: 0, 0
+  index: -1
+cover/cover_Tree4
+  rotate: false
+  xy: 204, 9
+  size: 133, 36
+  orig: 133, 36
+  offset: 0, 0
+  index: -1
+cover/cover_button
+  rotate: false
+  xy: 2, 2
+  size: 200, 45
+  orig: 200, 45
+  offset: 0, 0
+  index: -1
+
+coverTexture2.png
+size: 673,1005
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cover/cover_BG2
+  rotate: false
+  xy: 2, 446
+  size: 533, 559
+  orig: 533, 559
+  offset: 0, 0
+  index: -1
+cover/cover_Dragon2
+  rotate: false
+  xy: 2, 138
+  size: 220, 306
+  orig: 220, 306
+  offset: 0, 0
+  index: -1
+cover/cover_Dragon5
+  rotate: false
+  xy: 537, 634
+  size: 118, 93
+  orig: 118, 93
+  offset: 0, 0
+  index: -1
+cover/cover_Onion1
+  rotate: false
+  xy: 224, 268
+  size: 226, 176
+  orig: 226, 176
+  offset: 0, 0
+  index: -1
+cover/cover_Radish1
+  rotate: false
+  xy: 2, 2
+  size: 152, 134
+  orig: 152, 134
+  offset: 0, 0
+  index: -1
+cover/cover_Tomato2
+  rotate: false
+  xy: 537, 729
+  size: 136, 276
+  orig: 136, 276
+  offset: 0, 0
+  index: -1

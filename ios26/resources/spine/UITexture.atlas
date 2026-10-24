@@ -1,0 +1,139 @@
+
+UITexture.png
+size: 1022,503
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+UI/UI_Boneteeth1
+  rotate: false
+  xy: 400, 128
+  size: 125, 167
+  orig: 125, 167
+  offset: 0, 0
+  index: -1
+UI/UI_Boneteeth2
+  rotate: false
+  xy: 527, 128
+  size: 92, 167
+  orig: 92, 167
+  offset: 0, 0
+  index: -1
+UI/UI_LVUP
+  rotate: false
+  xy: 965, 444
+  size: 49, 59
+  orig: 49, 59
+  offset: 0, 0
+  index: -1
+UI/UI_New
+  rotate: false
+  xy: 295, 48
+  size: 60, 26
+  orig: 60, 26
+  offset: 0, 0
+  index: -1
+UI/UI_dzhd1
+  rotate: false
+  xy: 400, 297
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+UI/UI_dzhd2
+  rotate: false
+  xy: 2, 36
+  size: 211, 69
+  orig: 211, 69
+  offset: 0, 0
+  index: -1
+UI/UI_gift1
+  rotate: false
+  xy: 608, 389
+  size: 150, 114
+  orig: 150, 114
+  offset: 0, 0
+  index: -1
+UI/UI_gift2
+  rotate: false
+  xy: 2, 2
+  size: 152, 32
+  orig: 152, 32
+  offset: 0, 0
+  index: -1
+UI/UI_gift3
+  rotate: false
+  xy: 997, 417
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+UI/UI_gift4
+  rotate: false
+  xy: 760, 380
+  size: 124, 123
+  orig: 124, 123
+  offset: 0, 0
+  index: -1
+UI/UI_icon
+  rotate: false
+  xy: 608, 304
+  size: 83, 83
+  orig: 83, 83
+  offset: 0, 0
+  index: -1
+UI/UI_lb01
+  rotate: false
+  xy: 886, 405
+  size: 77, 98
+  orig: 77, 98
+  offset: 0, 0
+  index: -1
+UI/UI_striking
+  rotate: false
+  xy: 693, 325
+  size: 40, 62
+  orig: 40, 62
+  offset: 0, 0
+  index: -1
+UI/UI_tv1
+  rotate: false
+  xy: 215, 35
+  size: 78, 70
+  orig: 78, 70
+  offset: 0, 0
+  index: -1
+UI/UI_tv2
+  rotate: false
+  xy: 295, 76
+  size: 85, 29
+  orig: 85, 29
+  offset: 0, 0
+  index: -1
+UI/UI_zp1
+  rotate: false
+  xy: 2, 107
+  size: 396, 396
+  orig: 396, 396
+  offset: 0, 0
+  index: -1
+UI/UI_zp2
+  rotate: false
+  xy: 156, 4
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+UI/UI_zp3
+  rotate: false
+  xy: 965, 412
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+UI/UI_zp4
+  rotate: false
+  xy: 886, 373
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1

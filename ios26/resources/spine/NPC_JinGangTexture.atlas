@@ -1,0 +1,216 @@
+
+NPC_JinGangTexture.png
+size: 1019,483
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_JinGang/NPC_JinGang
+  rotate: false
+  xy: 2, 247
+  size: 246, 236
+  orig: 246, 236
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_arm1
+  rotate: false
+  xy: 764, 241
+  size: 97, 90
+  orig: 97, 90
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_arm2
+  rotate: false
+  xy: 186, 121
+  size: 82, 124
+  orig: 82, 124
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_arm3
+  rotate: false
+  xy: 270, 148
+  size: 92, 99
+  orig: 92, 99
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_armslash1
+  rotate: false
+  xy: 645, 266
+  size: 117, 217
+  orig: 117, 217
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_armslash2
+  rotate: false
+  xy: 892, 355
+  size: 99, 128
+  orig: 99, 128
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_body
+  rotate: false
+  xy: 508, 312
+  size: 135, 171
+  orig: 135, 171
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_boost1
+  rotate: false
+  xy: 250, 308
+  size: 256, 175
+  orig: 256, 175
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_eye1
+  rotate: false
+  xy: 352, 255
+  size: 83, 51
+  orig: 83, 51
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_eye2
+  rotate: false
+  xy: 437, 255
+  size: 83, 51
+  orig: 83, 51
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_finger1
+  rotate: false
+  xy: 993, 454
+  size: 26, 29
+  orig: 26, 29
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_finger2
+  rotate: false
+  xy: 518, 210
+  size: 50, 37
+  orig: 50, 37
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_finger3
+  rotate: false
+  xy: 863, 281
+  size: 33, 50
+  orig: 33, 50
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_hand1
+  rotate: false
+  xy: 186, 3
+  size: 68, 39
+  orig: 68, 39
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_hand2
+  rotate: false
+  xy: 186, 44
+  size: 96, 75
+  orig: 96, 75
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_hand3
+  rotate: false
+  xy: 284, 62
+  size: 78, 84
+  orig: 78, 84
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_hat1
+  rotate: false
+  xy: 2, 2
+  size: 117, 55
+  orig: 117, 55
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_head
+  rotate: false
+  xy: 764, 333
+  size: 126, 150
+  orig: 126, 150
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_leg1
+  rotate: false
+  xy: 450, 126
+  size: 46, 61
+  orig: 46, 61
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_leg2
+  rotate: false
+  xy: 121, 4
+  size: 63, 53
+  orig: 63, 53
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_mouth1
+  rotate: false
+  xy: 364, 192
+  size: 84, 61
+  orig: 84, 61
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_mouth2
+  rotate: false
+  xy: 364, 129
+  size: 84, 61
+  orig: 84, 61
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_mouth3
+  rotate: false
+  xy: 364, 66
+  size: 84, 61
+  orig: 84, 61
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_mouth4
+  rotate: false
+  xy: 522, 249
+  size: 84, 61
+  orig: 84, 61
+  offset: 0, 0
+  index: -1
+NPC_JinGang/NPC_JinGang_nose
+  rotate: false
+  xy: 498, 152
+  size: 12, 35
+  orig: 12, 35
+  offset: 0, 0
+  index: -1
+NPC_JinGang/bullet_shadow
+  rotate: false
+  xy: 250, 249
+  size: 100, 57
+  orig: 100, 57
+  offset: 0, 0
+  index: -1
+NPC_JinGang/bullet_stone
+  rotate: false
+  xy: 2, 59
+  size: 182, 186
+  orig: 182, 186
+  offset: 0, 0
+  index: -1
+NPC_JinGang/bullet_stone1
+  rotate: false
+  xy: 450, 189
+  size: 66, 64
+  orig: 66, 64
+  offset: 0, 0
+  index: -1
+NPC_JinGang/bullet_stone2
+  rotate: false
+  xy: 450, 78
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+NPC_JinGang/bullet_stone3
+  rotate: false
+  xy: 608, 276
+  size: 35, 34
+  orig: 35, 34
+  offset: 0, 0
+  index: -1

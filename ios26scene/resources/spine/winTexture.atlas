@@ -1,0 +1,13 @@
+
+winTexture.png
+size: 97,347
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+win/win
+  rotate: false
+  xy: 2, 2
+  size: 95, 345
+  orig: 95, 345
+  offset: 0, 0
+  index: -1

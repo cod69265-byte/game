@@ -1,0 +1,244 @@
+
+NPC_ChiLongTexture.png
+size: 1013,509
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_ChiLong/BigXieB06
+  rotate: false
+  xy: 178, 119
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/BigXieB11
+  rotate: false
+  xy: 178, 119
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/BigXieB07
+  rotate: false
+  xy: 355, 315
+  size: 164, 194
+  orig: 164, 194
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/BigXieB08
+  rotate: false
+  xy: 184, 315
+  size: 169, 194
+  orig: 169, 194
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/BigXieB09
+  rotate: false
+  xy: 2, 315
+  size: 180, 194
+  orig: 180, 194
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/BigXieB10
+  rotate: false
+  xy: 2, 119
+  size: 174, 194
+  orig: 174, 194
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongB_ear1
+  rotate: false
+  xy: 427, 247
+  size: 51, 66
+  orig: 51, 66
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongB_hair1
+  rotate: false
+  xy: 983, 470
+  size: 30, 39
+  orig: 30, 39
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongB_hair2
+  rotate: false
+  xy: 943, 469
+  size: 38, 40
+  orig: 38, 40
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongC_ear1
+  rotate: false
+  xy: 521, 360
+  size: 53, 64
+  orig: 53, 64
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongC_hair1
+  rotate: false
+  xy: 604, 463
+  size: 66, 46
+  orig: 66, 46
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongD_ear1
+  rotate: false
+  xy: 348, 145
+  size: 55, 78
+  orig: 55, 78
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongD_hair1
+  rotate: false
+  xy: 348, 126
+  size: 20, 17
+  orig: 20, 17
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongD_hairfire
+  rotate: false
+  xy: 310, 64
+  size: 50, 53
+  orig: 50, 53
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongD_hairfire2
+  rotate: false
+  xy: 202, 62
+  size: 53, 55
+  orig: 53, 55
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongD_hairfire3
+  rotate: false
+  xy: 147, 61
+  size: 53, 56
+  orig: 53, 56
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongD_hairfire4
+  rotate: false
+  xy: 257, 60
+  size: 51, 57
+  orig: 51, 57
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongD_hairfire5
+  rotate: false
+  xy: 480, 257
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLongD_hairfire6
+  rotate: false
+  xy: 802, 458
+  size: 52, 51
+  orig: 52, 51
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_body1
+  rotate: false
+  xy: 521, 320
+  size: 47, 38
+  orig: 47, 38
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_chibang1
+  rotate: false
+  xy: 147, 28
+  size: 42, 31
+  orig: 42, 31
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_ear1
+  rotate: false
+  xy: 89, 38
+  size: 56, 79
+  orig: 56, 79
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_ear2
+  rotate: false
+  xy: 348, 225
+  size: 77, 88
+  orig: 77, 88
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_foot1
+  rotate: false
+  xy: 61, 5
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_foot2
+  rotate: false
+  xy: 405, 195
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_hair1
+  rotate: false
+  xy: 903, 467
+  size: 38, 42
+  orig: 38, 42
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_hair2
+  rotate: false
+  xy: 856, 462
+  size: 45, 47
+  orig: 45, 47
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_hand1
+  rotate: false
+  xy: 576, 388
+  size: 24, 36
+  orig: 24, 36
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_hand2
+  rotate: false
+  xy: 672, 470
+  size: 69, 39
+  orig: 69, 39
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_head1
+  rotate: false
+  xy: 521, 426
+  size: 81, 83
+  orig: 81, 83
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_head2
+  rotate: false
+  xy: 2, 36
+  size: 85, 81
+  orig: 85, 81
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_mouse1
+  rotate: false
+  xy: 2, 2
+  size: 57, 32
+  orig: 57, 32
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_mouse2
+  rotate: false
+  xy: 743, 473
+  size: 57, 36
+  orig: 57, 36
+  offset: 0, 0
+  index: -1
+NPC_ChiLong/NPC_ChiLong_shadow
+  rotate: false
+  xy: 604, 427
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1

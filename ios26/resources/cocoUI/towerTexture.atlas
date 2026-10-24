@@ -1,0 +1,342 @@
+
+towerTexture.png
+size: 1022,1021
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_Towers_BT_BoneA0
+  rotate: false
+  xy: 837, 901
+  size: 180, 120
+  orig: 180, 120
+  offset: 0, 0
+  index: -1
+NPC_Towers_BT_BoneB1
+  rotate: false
+  xy: 2, 236
+  size: 180, 107
+  orig: 180, 107
+  offset: 0, 0
+  index: -1
+NPC_Towers_NPC_TowersC_atk0
+  rotate: false
+  xy: 302, 676
+  size: 180, 115
+  orig: 180, 115
+  offset: 0, 0
+  index: -1
+bingtan_text01
+  rotate: false
+  xy: 484, 681
+  size: 229, 28
+  orig: 229, 28
+  offset: 0, 0
+  index: -1
+bingtan_text02
+  rotate: false
+  xy: 537, 835
+  size: 304, 29
+  orig: 304, 29
+  offset: 0, 0
+  index: -1
+bingtan_text03
+  rotate: false
+  xy: 537, 804
+  size: 338, 29
+  orig: 338, 29
+  offset: 0, 0
+  index: -1
+bomb_text01
+  rotate: false
+  xy: 464, 644
+  size: 210, 29
+  orig: 210, 29
+  offset: 0, 0
+  index: -1
+bomb_text02
+  rotate: false
+  xy: 537, 773
+  size: 325, 29
+  orig: 325, 29
+  offset: 0, 0
+  index: -1
+mappear01
+  rotate: false
+  xy: 2, 701
+  size: 298, 90
+  orig: 298, 90
+  offset: 0, 0
+  index: -1
+mappear02
+  rotate: false
+  xy: 537, 931
+  size: 298, 90
+  orig: 298, 90
+  offset: 0, 0
+  index: -1
+mappear03
+  rotate: false
+  xy: 2, 609
+  size: 298, 90
+  orig: 298, 90
+  offset: 0, 0
+  index: -1
+mappear04
+  rotate: false
+  xy: 2, 513
+  size: 238, 94
+  orig: 238, 94
+  offset: 0, 0
+  index: -1
+mappear05
+  rotate: false
+  xy: 2, 417
+  size: 238, 94
+  orig: 238, 94
+  offset: 0, 0
+  index: -1
+mappear06
+  rotate: false
+  xy: 537, 866
+  size: 298, 63
+  orig: 298, 63
+  offset: 0, 0
+  index: -1
+material_branch
+  rotate: false
+  xy: 486, 336
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+material_chips
+  rotate: false
+  xy: 184, 283
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+material_hemp
+  rotate: false
+  xy: 246, 288
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+material_iron
+  rotate: false
+  xy: 626, 582
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+material_spar
+  rotate: false
+  xy: 608, 520
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+material_stones
+  rotate: false
+  xy: 608, 458
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+skill02lock
+  rotate: false
+  xy: 484, 742
+  size: 251, 29
+  orig: 251, 29
+  offset: 0, 0
+  index: -1
+skill03lock
+  rotate: false
+  xy: 484, 711
+  size: 251, 29
+  orig: 251, 29
+  offset: 0, 0
+  index: -1
+skills_bingtan00
+  rotate: false
+  xy: 2, 42
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+skills_bingtan01
+  rotate: false
+  xy: 124, 42
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+skills_bingtan02
+  rotate: false
+  xy: 242, 472
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+skills_bingtan03
+  rotate: false
+  xy: 242, 350
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+skills_bomb00
+  rotate: false
+  xy: 902, 725
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+skills_bomb01
+  rotate: false
+  xy: 364, 460
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+skills_bomb02
+  rotate: false
+  xy: 486, 460
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+tips_missing02
+  rotate: false
+  xy: 737, 744
+  size: 163, 27
+  orig: 163, 27
+  offset: 0, 0
+  index: -1
+tips_missing03
+  rotate: false
+  xy: 2, 13
+  size: 164, 27
+  orig: 164, 27
+  offset: 0, 0
+  index: -1
+tips_missing04
+  rotate: false
+  xy: 2, 164
+  size: 210, 70
+  orig: 210, 70
+  offset: 0, 0
+  index: -1
+tips_missing05
+  rotate: false
+  xy: 2, 345
+  size: 238, 70
+  orig: 238, 70
+  offset: 0, 0
+  index: -1
+tower01
+  rotate: false
+  xy: 843, 847
+  size: 179, 52
+  orig: 179, 52
+  offset: 0, 0
+  index: -1
+tower02
+  rotate: false
+  xy: 2, 2
+  size: 123, 9
+  orig: 123, 9
+  offset: 0, 0
+  index: -1
+tower_button01
+  rotate: false
+  xy: 302, 594
+  size: 160, 80
+  orig: 160, 80
+  offset: 0, 0
+  index: -1
+tower_button02
+  rotate: false
+  xy: 464, 582
+  size: 160, 60
+  orig: 160, 60
+  offset: 0, 0
+  index: -1
+tower_lv
+  rotate: false
+  xy: 844, 720
+  size: 28, 22
+  orig: 28, 22
+  offset: 0, 0
+  index: -1
+towerbg01
+  rotate: false
+  xy: 2, 793
+  size: 533, 228
+  orig: 533, 228
+  offset: 0, 0
+  index: -1
+towerbg02
+  rotate: false
+  xy: 484, 675
+  size: 262, 4
+  orig: 262, 4
+  offset: 0, 0
+  index: -1
+towerset
+  rotate: false
+  xy: 364, 338
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+tskill04
+  rotate: false
+  xy: 676, 644
+  size: 83, 29
+  orig: 83, 29
+  offset: 0, 0
+  index: -1
+tskill05
+  rotate: false
+  xy: 486, 429
+  size: 104, 29
+  orig: 104, 29
+  offset: 0, 0
+  index: -1
+tskill06
+  rotate: false
+  xy: 737, 713
+  size: 105, 29
+  orig: 105, 29
+  offset: 0, 0
+  index: -1
+tskill07
+  rotate: false
+  xy: 168, 11
+  size: 83, 29
+  orig: 83, 29
+  offset: 0, 0
+  index: -1
+tskill08
+  rotate: false
+  xy: 486, 398
+  size: 104, 29
+  orig: 104, 29
+  offset: 0, 0
+  index: -1
+tstar
+  rotate: false
+  xy: 548, 364
+  size: 35, 32
+  orig: 35, 32
+  offset: 0, 0
+  index: 2
+tstar
+  rotate: false
+  xy: 184, 250
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: 1

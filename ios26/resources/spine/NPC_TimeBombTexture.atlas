@@ -1,0 +1,104 @@
+
+NPC_TimeBombTexture.png
+size: 122,487
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_TimeBomb/Bomber12
+  rotate: false
+  xy: 2, 259
+  size: 78, 94
+  orig: 78, 94
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/Bomber13
+  rotate: false
+  xy: 2, 355
+  size: 96, 132
+  orig: 96, 132
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/Bomber22
+  rotate: false
+  xy: 82, 290
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/Bomber26
+  rotate: false
+  xy: 82, 262
+  size: 32, 26
+  orig: 32, 26
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num0
+  rotate: false
+  xy: 2, 183
+  size: 35, 36
+  orig: 35, 36
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num1
+  rotate: false
+  xy: 100, 453
+  size: 22, 34
+  orig: 22, 34
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num2
+  rotate: false
+  xy: 2, 111
+  size: 33, 34
+  orig: 33, 34
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num3
+  rotate: false
+  xy: 2, 38
+  size: 32, 34
+  orig: 32, 34
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num4
+  rotate: false
+  xy: 2, 221
+  size: 37, 36
+  orig: 37, 36
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num5
+  rotate: false
+  xy: 2, 147
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num6
+  rotate: false
+  xy: 2, 2
+  size: 32, 34
+  orig: 32, 34
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num7
+  rotate: false
+  xy: 82, 318
+  size: 30, 35
+  orig: 30, 35
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num8
+  rotate: false
+  xy: 41, 222
+  size: 38, 35
+  orig: 38, 35
+  offset: 0, 0
+  index: -1
+NPC_TimeBomb/num9
+  rotate: false
+  xy: 2, 74
+  size: 32, 35
+  orig: 32, 35
+  offset: 0, 0
+  index: -1
