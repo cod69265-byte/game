@@ -163,3 +163,56 @@ git 存不了链接，克隆后跑一次 `./setupLinks.sh` 重建。
 1. `actions/cache`（本轮已加）对 soot 无效——缓存写发生在 soot 之后，首跑取消则永远存不进。
 2. 真正杠杆：升级 RoboVM 3.0.0（soot 新版 + 改进的分析管线）或削减类闭包。
 3. force-link 的 7 个包（com.soco/com.badlogic.gdx/com.esotericsoftware/com.main/com.net/com.protocol/javazoom）经字节码引用检查全部为真实引用，无法删除。
+---
+
+## ✅ 构建成功：run #9 产出可安装 IPA（12 分 11 秒）
+
+修掉 `javazoom.jl.decoder.huffcodetab` 之后，整条管线从「永远跑不完」变成 12 分钟：
+
+```
+Compiled 4740 classes in 605.15 seconds     ← 4740 个类，10 分钟
+Linked 4740 classes in 7.68 seconds         ← 链接只要 7.7 秒
+Packaging IPA Veggies3HD.ipa from Veggies3HD.app
+BUILD SUCCESSFUL in 11m 21s
+```
+
+| 指标 | run #8（含 javazoom） | run #9（剔除后） |
+|---|---|---|
+| 总耗时 | 150 min 超时取消 | **12 min 11 s** |
+| 编译阶段 | 1,943 类后卡死 140 min | 4,740 类 605 s |
+| 链接阶段 | 从未到达 | 7.68 s |
+| IPA | 无 | **76,078,396 B** |
+
+### 产物核验（`Veggies3HD.ipa`）
+
+| 项目 | 值 |
+|---|---|
+| Mach-O 主二进制 | 31,696,544 B，`0xfeedfacf` / cputype **16777228 = arm64** |
+| CFBundleIdentifier | `com.soco.veggies3_4399` |
+| CFBundleVersion / ShortVersion | 1.5.2 / 1.5.2 |
+| MinimumOSVersion | 12.0 |
+| UIRequiredDeviceCapabilities | `['arm64', 'metal']` |
+| UIApplicationSceneManifest | ✅ 含 `j_com_soco_veggies3_4399_ios26_scene_IOSLauncher26Scene$VegSceneDelegate` |
+| UILaunchScreen | ✅ `UIImageName=Default` |
+| NSAppTransportSecurity | ✅ `NSAllowsArbitraryLoads=true` |
+| 嵌入 framework | 7 个（MetalANGLEKit / libGLESv2 / libEGL / libfeature_support / gdx / ObjectAL / gdx-freetype） |
+| 游戏资源 | 1,781 个（spine 548 / particle 391 / texture 203 / sceneData 173 / uijson 118 / cocoUI 89 / otherImage 60 / lang 13 / font 8） |
+| 音频 | **102 个 .wav**（11 Music + 93 Sound） |
+
+### 安装到 iOS 26.3 手机
+
+未签名，需自行签名侧载：
+
+1. **Windows**：装 [Sideloadly](https://sideloadly.io/)，iPhone 用数据线连电脑，把 `Veggies3HD-ios26.3-arm64.ipa` 拖进去，填 Apple ID，Start。
+   - **前提**：iTunes 和 iCloud 必须从 [apple.com](https://www.apple.com/itunes/) 官网下载安装，**不能装 Microsoft Store 版**（UWP 沙盒没有 usbmuxd 通道，Sideloadly 认不到设备）。
+2. **macOS**：`brew install --cask sideloadly` 后同样操作；或用 Xcode 的 Devices and Simulators 手动装。
+3. 首次运行要在 **设置 → 通用 → VPN与设备管理** 里信任开发者证书。
+4. 免费 Apple ID 限制：**7 天过期**、同时最多 3 个自签 App、一周最多签 10 次。
+
+### 内购
+
+原破解版的「无条件支付成功」被完整保留：`IOSPlatForm.pay()` 的 4 个重载全部直接 `payNotify(true, orderId)`，23 个 iOS 商品 ID（19–34、42–48）都走这条路径。所以点内购直接到账，不会弹 App Store 付款框。
+
+### 存档
+
+存在 App 沙盒的 `Library/local/FireVeg201406`，格式是 4 字节大端 CRC32 + Java 原生序列化。`loadGame/saveGame` 返回 false 让它走 libGDX 的通用 `Gdx.files.local` 路径，**安卓存档理论上可以直接拷过来**。
