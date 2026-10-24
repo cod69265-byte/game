@@ -444,6 +444,72 @@ classes=4478 custom=0 checked=1 mismatches=0
 
 必须把 RoboVM 绑定 jar 一起传进去，否则继承链一出被测 jar 就断，`isNSObject()` 判定失败（首版 `classes=0` 就是这个原因）。
 
+### 5.5d 启动顺序：`Gdx.app not available`
+
+真机第一次跑起来的现象是：点开图标，屏幕闪一下，进程消失，**没有任何崩溃报告**，`crash ls` 里空无一物，`runningboardd` 只留下
+
+```
+[app<com.soco.veggies3_4399.HMT45URQAG>:627] termination reported by launchd (0, 0, 256)
+```
+
+`(0, 0, 256)` 是 **exit code 0** —— 干净退出，不是崩溃。RoboVM 的未捕获异常处理器把 Java 异常打到 `NSLog` 之后调 `exit(0)`，所以系统不生成 crash report，syslog 里那几行还被打成 `<private>`。
+
+抓真实异常的唯一办法是走 DVT 把 stdout/stderr 接出来：
+
+```
+$ pymobiledevice3 developer dvt launch --stream --kill-existing com.soco.veggies3_4399.HMT45URQAG
+PID:734 INFO 2026-10-25 00:27:40.679 Veggies3HD[734:19627]
+java.lang.IllegalStateException: Gdx.app not available.
+	at com.badlogic.gdx.utils.Timer$Task.<init>(Timer.java:212)
+	at com.badlogic.gdx.input.GestureDetector$1.<init>(GestureDetector.java:55)
+	at com.badlogic.gdx.input.GestureDetector.<init>(GestureDetector.java:65)
+	at com.soco.SocoMain.<init>(Unknown Source)
+	at com.soco.V3Main.<init>(Unknown Source)
+	at ...IOSLauncher26Scene.createApplication(IOSLauncher26Scene.java:103)
+	at com.badlogic.gdx.backends.iosrobovm.IOSApplication$Delegate.didFinishLaunching(IOSApplication.java:50)
+```
+
+**根因是 libGDX 1.14.2 的调用顺序**（源码 `IOSApplication.java`）：
+
+```java
+// L59-64  Delegate
+public boolean didFinishLaunching (UIApplication application, UIApplicationLaunchOptions launchOptions) {
+    application.addStrongRef(this);
+    this.app = createApplication();          // ← 先造 listener
+    return app.didFinishLaunching(application, launchOptions);
+}
+
+// L116-167  IOSApplication
+final boolean didFinishLaunching (...) {
+    setApplicationLogger(new IOSApplicationLogger());
+    Gdx.app = this;                          // ← 才赋值 Gdx.app
+    ...
+    this.graphics.view.display();
+    listener.create();                       // ← L160 第一次碰 listener
+```
+
+`createApplication()` 跑在 `Gdx.app = this` **之前**。`V3Main extends SocoMain`，`SocoMain` 构造函数里 `new GestureDetector(...)`，其内部 `Timer.Task` 构造器断言 `Gdx.app != null`，于是抛异常。libGDX 1.1.0 时代这个顺序恰好无害，所以游戏自己的代码从不需要关心。
+
+**修法**：`LazyGameListener` 把 `new V3Main(platform)` 推迟到第一次 `create()`。`IOSApplication` 在 L160 调 `listener.create()`，此时 `Gdx.gl`/`Gdx.files`/`Gdx.graphics`/`Gdx.audio`/`Gdx.input`/`Gdx.net` 全部就绪，正好是安卓启动器 `initialize()` 之后的状态。`IOSGraphics.draw()` 在 dummy 第一帧就 `return`，不会在 `create()` 之前碰到 `app.listener.render()`，所以延迟构造安全。
+
+两个启动器（legacy 与 UIScene）都改成传 `LazyGameListener`。
+
+`OrderCheck` 把这件事变成可回归的断言（`verify-all.ps1` 第 14 项）：
+
+```
+$ java -cp ... OrderCheck build/classes-ios26 build/classes-core26
+ok   .../IOSLauncher26.createApplication does not construct V3Main/SocoMain
+ok   .../IOSLauncher26.createApplication passes LazyGameListener
+ok   .../IOSLauncher26Scene.createApplication does not construct V3Main/SocoMain
+ok   .../IOSLauncher26Scene.createApplication passes LazyGameListener
+ok   .../LazyGameListener.<init> is Gdx-free
+ok   .../LazyGameListener constructs V3Main lazily outside its constructor
+ok   .../IOSPlatForm.<init> is Gdx-free
+ORDER CHECK PASSED
+```
+
+它同时守住反向错误：如果哪天有人把 `LazyGameListener` 改成不构造 `V3Main`，第 6 条会失败（游戏永远不会启动）；如果有人在 `createApplication()` 里重新 `new V3Main(...)`，第 1/3 条会失败。
+
 ### 5.6 资源与音频对账
 
 ```
@@ -481,7 +547,7 @@ APK 保留资源 1586 个 → iOS bundle 0 缺失
 ## 7. 已知限制
 
 1. **必须 macOS + JDK 8 + Xcode 15+ 才能出 IPA。** Windows 上无法执行 RoboVM 的 AOT 编译，这是工具链限制，不是工程缺陷。
-2. **未在真机上验证。** 所有验证都是字节码级 + 桌面 JVM 级。真机上可能出现的问题：MetalANGLE 对某些 GLES2 扩展的实现差异、Spine 二进制 `.skel` 版本兼容、中文字体的 FreeType 路径（`FontUtil.useHiero=true` 时该路径被跳过，所以风险低）。
+2. **真机只验证到"能启动"这一步。** 首个 IPA 在 iOS 26.3 上因 `Gdx.app not available` 秒退（见 §5.5d），已修复并重新构建，但修复后的包尚未在真机跑完整流程。可能还会撞上的：MetalANGLE 对某些 GLES2 扩展的实现差异、Spine 二进制 `.skel` 版本兼容、中文字体走 Hiero 位图路径（`FontUtil.useHiero=true` 时 FreeType 分支被跳过，风险低）。
 3. **`MinimumOSVersion` 设为 12.0。** libGDX 1.14.2 的 Metal 后端最低支持 iOS 12；如果你的设备是 iOS 26.3，这个值可以按需上调。
 4. **网络相关功能在 iOS 上会失败**：原游戏的 `socogame.com` 服务器多数已下线，`SynTime.refresh()` 会超时（已把 `DEBUG_MODE` 从 `true` 改 `false`，避免连内网测试地址 `192.168.2.87`）。游戏本身是单机，不影响游玩。
 5. **`libGDX 1.14.2` 的 `Preferences.putXxx` 返回类型从 `void` 变成 `Preferences`**，所以 `core` 源码要按 1.14.2 重编一次（`core26` 工程就是干这个的）。
