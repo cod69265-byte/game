@@ -1,6 +1,0 @@
-framework module ObjectAL {
-  umbrella header "ObjectAL.h"
-  export *
-
-  module * { export * }
-}

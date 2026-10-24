@@ -1,1 +1,0 @@
-{"bones":[{"name":"root"},{"name":"New","parent":"root"}],"slots":[{"name":"New","bone":"New","attachment":"UI/UI_New"}],"skins":{"default":{"New":{"UI/UI_New":{"width":60,"height":26}}}},"animations":{"std":{"bones":{"New":{"scale":[{"time":0,"x":1,"y":1},{"time":0.3333,"x":1.3,"y":1.3},{"time":0.6666,"x":1,"y":1}]}}}}}

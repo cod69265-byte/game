@@ -28,3 +28,21 @@ xcuserdata/
 *.dSYM/
 maven-robovm/
 tools/asm/
+
+# ---- Junction targets (never commit their contents) ------------------------
+# ios26/resources, ios26/libs, ios26scene/{src,libs,resources} are junctions
+# (mklink /J) pointing at the real ios/ and ios26/ trees, so the 63 MB of
+# resources and 8 MB of frameworks exist once on disk. Git sees a junction as a
+# plain directory and would happily commit a second and third copy, so the
+# build reconstructs them instead: tools/setupLinks.sh (POSIX) and
+# tools/setupLinks.ps1 (Windows) recreate every link idempotently, and CI runs
+# setupLinks.sh before invoking Gradle.
+#
+# The trailing /* is what makes this work: ignoring "ios26/resources/" alone
+# would also hide the directory itself from the index and break the "keep the
+# parent" pattern, while "ios26/resources/*" ignores only the contents.
+/ios26/resources/*
+/ios26/libs/*
+/ios26scene/src/*
+/ios26scene/libs/*
+/ios26scene/resources/*
