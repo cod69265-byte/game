@@ -1,0 +1,89 @@
+
+NPC_Wall_WTexture.png
+size: 774,844
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_Wall_W/NPC_Wall_F1
+  rotate: false
+  xy: 2, 588
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NPC_Wall_W/NPC_Wall_F2
+  rotate: false
+  xy: 2, 330
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NPC_Wall_W/NPC_Wall_F3
+  rotate: false
+  xy: 260, 588
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NPC_Wall_W/NPC_Wall_F4
+  rotate: false
+  xy: 2, 72
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NPC_Wall_W/NPC_Wall_F5
+  rotate: false
+  xy: 260, 330
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NPC_Wall_W/NPC_Wall_W1
+  rotate: false
+  xy: 518, 588
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NPC_Wall_W/NPC_Wall_W2
+  rotate: false
+  xy: 260, 72
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NPC_Wall_W/NPC_Wall_W3
+  rotate: false
+  xy: 518, 330
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NPC_Wall_W/NPC_Wall_W4
+  rotate: false
+  xy: 518, 72
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NPC_Wall_W/NPC_gantanhao1
+  rotate: false
+  xy: 2, 2
+  size: 78, 68
+  orig: 78, 68
+  offset: 0, 0
+  index: -1
+
+NPC_Wall_WTexture2.png
+size: 258,258
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_Wall_W/NPC_Wall_W5
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1

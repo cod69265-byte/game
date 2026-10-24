@@ -1,2 +1,39 @@
-# Auto detect text files and perform LF normalization
+# Normalise line endings on commit; detect binaries automatically.
 * text=auto
+
+# ---------------------------------------------------------------------------
+# Shell scripts MUST stay LF.
+#
+# The CI workflow runs `chmod +x setupLinks.sh gradlew && ./setupLinks.sh` on
+# macOS. If either file is checked out with CRLF, the shebang line becomes
+# "#!/bin/sh\r" and bash fails with:
+#     ./setupLinks.sh: /bin/sh^M: bad interpreter: No such file or directory
+#
+# git's `core.autocrlf=true` (set globally on the Windows box this repo was
+# created on) would otherwise convert them on checkout.
+# ---------------------------------------------------------------------------
+*.sh     text eol=lf
+gradlew  text eol=lf
+
+# Windows batch files need CRLF to run under cmd.exe.
+*.bat    text eol=crlf
+
+# ---------------------------------------------------------------------------
+# Binaries — never touch these.
+# ---------------------------------------------------------------------------
+*.jar        binary
+*.a          binary
+*.png        binary
+*.jpg        binary
+*.gif        binary
+*.wav        binary
+*.ogg        binary
+*.skel       binary
+*.bytes      binary
+*.p          binary
+*.zip        binary
+*.ipa        binary
+*.dylib      binary
+
+# Native frameworks (Mach-O binaries plus their headers).
+ios/libs/** binary

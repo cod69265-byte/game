@@ -1,0 +1,349 @@
+
+PC_GreensTexture.png
+size: 1022,126
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PC_Greens/arm1
+  rotate: false
+  xy: 62, 5
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+PC_Greens/arm2
+  rotate: false
+  xy: 264, 26
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+PC_Greens/arm3
+  rotate: false
+  xy: 16, 2
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+PC_Greens/band-aid1
+  rotate: false
+  xy: 2, 2
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+PC_Greens/body1
+  rotate: false
+  xy: 637, 56
+  size: 51, 70
+  orig: 51, 70
+  offset: 0, 0
+  index: -1
+PC_Greens/body2
+  rotate: false
+  xy: 183, 26
+  size: 79, 100
+  orig: 79, 100
+  offset: 0, 0
+  index: -1
+PC_Greens/cheek1
+  rotate: false
+  xy: 866, 72
+  size: 10, 5
+  orig: 10, 5
+  offset: 0, 0
+  index: -1
+PC_Greens/cheek2
+  rotate: false
+  xy: 533, 41
+  size: 5, 7
+  orig: 5, 7
+  offset: 0, 0
+  index: -1
+PC_Greens/cloth1
+  rotate: false
+  xy: 752, 97
+  size: 62, 29
+  orig: 62, 29
+  offset: 0, 0
+  index: -1
+PC_Greens/cloth2
+  rotate: false
+  xy: 183, 2
+  size: 76, 22
+  orig: 76, 22
+  offset: 0, 0
+  index: -1
+PC_Greens/eye1
+  rotate: false
+  xy: 286, 26
+  size: 5, 12
+  orig: 5, 12
+  offset: 0, 0
+  index: -1
+PC_Greens/eyeL1
+  rotate: false
+  xy: 866, 79
+  size: 12, 14
+  orig: 12, 14
+  offset: 0, 0
+  index: -1
+PC_Greens/eyeR1
+  rotate: false
+  xy: 813, 65
+  size: 17, 20
+  orig: 17, 20
+  offset: 0, 0
+  index: -1
+PC_Greens/eyeballL1
+  rotate: false
+  xy: 523, 40
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+PC_Greens/eyeballR1
+  rotate: false
+  xy: 276, 26
+  size: 8, 12
+  orig: 8, 12
+  offset: 0, 0
+  index: -1
+PC_Greens/eyebrowL1
+  rotate: false
+  xy: 315, 32
+  size: 6, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+PC_Greens/eyebrowL2
+  rotate: false
+  xy: 305, 30
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+PC_Greens/eyebrowR1
+  rotate: false
+  xy: 72, 9
+  size: 8, 5
+  orig: 8, 5
+  offset: 0, 0
+  index: -1
+PC_Greens/eyebrowR2
+  rotate: false
+  xy: 293, 29
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+PC_Greens/eyelid1
+  rotate: false
+  xy: 1009, 116
+  size: 13, 10
+  orig: 13, 10
+  offset: 0, 0
+  index: -1
+PC_Greens/foot1
+  rotate: false
+  xy: 893, 85
+  size: 11, 8
+  orig: 11, 8
+  offset: 0, 0
+  index: -1
+PC_Greens/foot2
+  rotate: false
+  xy: 509, 40
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+PC_Greens/foot3
+  rotate: false
+  xy: 1009, 105
+  size: 12, 9
+  orig: 12, 9
+  offset: 0, 0
+  index: -1
+PC_Greens/foot4
+  rotate: false
+  xy: 718, 58
+  size: 12, 9
+  orig: 12, 9
+  offset: 0, 0
+  index: -1
+PC_Greens/hair1
+  rotate: false
+  xy: 910, 99
+  size: 38, 27
+  orig: 38, 27
+  offset: 0, 0
+  index: -1
+PC_Greens/hair2
+  rotate: false
+  xy: 752, 70
+  size: 30, 25
+  orig: 30, 25
+  offset: 0, 0
+  index: -1
+PC_Greens/hair3
+  rotate: false
+  xy: 979, 105
+  size: 28, 21
+  orig: 28, 21
+  offset: 0, 0
+  index: -1
+PC_Greens/hair4
+  rotate: false
+  xy: 950, 101
+  size: 27, 25
+  orig: 27, 25
+  offset: 0, 0
+  index: -1
+PC_Greens/hair5
+  rotate: false
+  xy: 784, 71
+  size: 27, 24
+  orig: 27, 24
+  offset: 0, 0
+  index: -1
+PC_Greens/hair6
+  rotate: false
+  xy: 816, 87
+  size: 48, 39
+  orig: 48, 39
+  offset: 0, 0
+  index: -1
+PC_Greens/headband1
+  rotate: false
+  xy: 261, 2
+  size: 55, 22
+  orig: 55, 22
+  offset: 0, 0
+  index: -1
+PC_Greens/headband2
+  rotate: false
+  xy: 866, 95
+  size: 42, 31
+  orig: 42, 31
+  offset: 0, 0
+  index: -1
+PC_Greens/leaf1
+  rotate: false
+  xy: 690, 58
+  size: 26, 9
+  orig: 26, 9
+  offset: 0, 0
+  index: -1
+PC_Greens/mouth1
+  rotate: false
+  xy: 575, 50
+  size: 10, 6
+  orig: 10, 6
+  offset: 0, 0
+  index: -1
+PC_Greens/mouth2
+  rotate: false
+  xy: 743, 60
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+PC_Greens/mouth3
+  rotate: false
+  xy: 732, 59
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1
+PC_Greens/mouth4
+  rotate: false
+  xy: 28, 3
+  size: 19, 11
+  orig: 19, 11
+  offset: 0, 0
+  index: -1
+PC_Greens/mouth5
+  rotate: false
+  xy: 832, 68
+  size: 16, 17
+  orig: 16, 17
+  offset: 0, 0
+  index: -1
+PC_Greens/mouth6
+  rotate: false
+  xy: 850, 72
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+PC_Greens/ring1
+  rotate: false
+  xy: 880, 80
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+PC_Greens/ring2
+  rotate: false
+  xy: 49, 3
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+PC_Greens/roll1
+  rotate: false
+  xy: 509, 50
+  size: 64, 76
+  orig: 64, 76
+  offset: 0, 0
+  index: -1
+PC_Greens/roll2
+  rotate: false
+  xy: 690, 69
+  size: 60, 57
+  orig: 60, 57
+  offset: 0, 0
+  index: -1
+PC_Greens/roll3
+  rotate: false
+  xy: 443, 40
+  size: 64, 86
+  orig: 64, 86
+  offset: 0, 0
+  index: -1
+PC_Greens/roll4
+  rotate: false
+  xy: 575, 58
+  size: 60, 68
+  orig: 60, 68
+  offset: 0, 0
+  index: -1
+PC_Greens/roll5
+  rotate: false
+  xy: 93, 22
+  size: 88, 104
+  orig: 88, 104
+  offset: 0, 0
+  index: -1
+PC_Greens/roll6
+  rotate: false
+  xy: 264, 40
+  size: 91, 86
+  orig: 91, 86
+  offset: 0, 0
+  index: -1
+PC_Greens/roll7
+  rotate: false
+  xy: 2, 16
+  size: 89, 110
+  orig: 89, 110
+  offset: 0, 0
+  index: -1
+PC_Greens/roll8
+  rotate: false
+  xy: 357, 39
+  size: 84, 87
+  orig: 84, 87
+  offset: 0, 0
+  index: -1

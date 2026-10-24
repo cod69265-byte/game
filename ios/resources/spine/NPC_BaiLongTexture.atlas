@@ -1,0 +1,167 @@
+
+NPC_BaiLongTexture.png
+size: 510,241
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_BaiLong/NPC_BaiLong_body
+  rotate: false
+  xy: 232, 81
+  size: 34, 30
+  orig: 34, 30
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_bone
+  rotate: false
+  xy: 319, 134
+  size: 41, 32
+  orig: 41, 32
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_eyeL1
+  rotate: false
+  xy: 375, 181
+  size: 37, 35
+  orig: 37, 35
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_eyeL2
+  rotate: false
+  xy: 268, 94
+  size: 37, 36
+  orig: 37, 36
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_eyeR1
+  rotate: false
+  xy: 432, 202
+  size: 38, 39
+  orig: 38, 39
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_eyeR2
+  rotate: false
+  xy: 472, 202
+  size: 38, 39
+  orig: 38, 39
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_handL
+  rotate: false
+  xy: 213, 61
+  size: 13, 22
+  orig: 13, 22
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_handR
+  rotate: false
+  xy: 414, 191
+  size: 15, 25
+  orig: 15, 25
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_head
+  rotate: false
+  xy: 90, 48
+  size: 75, 63
+  orig: 75, 63
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_leaf
+  rotate: false
+  xy: 375, 218
+  size: 55, 23
+  orig: 55, 23
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_leg1
+  rotate: false
+  xy: 152, 22
+  size: 13, 24
+  orig: 13, 24
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_leg2
+  rotate: false
+  xy: 307, 112
+  size: 12, 18
+  orig: 12, 18
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_leg3
+  rotate: false
+  xy: 362, 144
+  size: 13, 22
+  orig: 13, 22
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_mouth1
+  rotate: false
+  xy: 167, 85
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_mouth2
+  rotate: false
+  xy: 319, 196
+  size: 54, 45
+  orig: 54, 45
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_mouth3
+  rotate: false
+  xy: 167, 52
+  size: 44, 31
+  orig: 44, 31
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_mouth4
+  rotate: false
+  xy: 319, 168
+  size: 53, 26
+  orig: 53, 26
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_shadow
+  rotate: false
+  xy: 90, 12
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_spear1
+  rotate: false
+  xy: 262, 132
+  size: 55, 109
+  orig: 55, 109
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_spear2
+  rotate: false
+  xy: 2, 2
+  size: 86, 109
+  orig: 86, 109
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_BaiLong_tales
+  rotate: false
+  xy: 167, 35
+  size: 25, 15
+  orig: 25, 15
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_DuYe_skill1
+  rotate: false
+  xy: 2, 113
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+NPC_BaiLong/NPC_DuYe_skill2
+  rotate: false
+  xy: 132, 113
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,118 @@
+
+w1infoTexture.png
+size: 1004,122
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+w1ite0
+  rotate: false
+  xy: 2, 2
+  size: 173, 59
+  orig: 173, 59
+  offset: 0, 0
+  index: 1
+w1ite0
+  rotate: false
+  xy: 526, 89
+  size: 118, 33
+  orig: 118, 33
+  offset: 0, 0
+  index: -1
+w1ite14
+  rotate: false
+  xy: 226, 63
+  size: 148, 59
+  orig: 148, 59
+  offset: 0, 0
+  index: 1
+w1ite14
+  rotate: false
+  xy: 846, 54
+  size: 118, 33
+  orig: 118, 33
+  offset: 0, 0
+  index: -1
+w1ite21
+  rotate: false
+  xy: 352, 2
+  size: 148, 59
+  orig: 148, 59
+  offset: 0, 0
+  index: 1
+w1ite21
+  rotate: false
+  xy: 886, 89
+  size: 118, 33
+  orig: 118, 33
+  offset: 0, 0
+  index: -1
+w1ite26
+  rotate: false
+  xy: 2, 63
+  size: 222, 59
+  orig: 222, 59
+  offset: 0, 0
+  index: 1
+w1ite26
+  rotate: false
+  xy: 726, 19
+  size: 118, 33
+  orig: 118, 33
+  offset: 0, 0
+  index: -1
+w1ite34
+  rotate: false
+  xy: 502, 35
+  size: 222, 26
+  orig: 222, 26
+  offset: 0, 0
+  index: 1
+w1ite34
+  rotate: false
+  xy: 846, 19
+  size: 118, 33
+  orig: 118, 33
+  offset: 0, 0
+  index: -1
+w1ite4
+  rotate: false
+  xy: 502, 7
+  size: 222, 26
+  orig: 222, 26
+  offset: 0, 0
+  index: 1
+w1ite4
+  rotate: false
+  xy: 646, 89
+  size: 118, 33
+  orig: 118, 33
+  offset: 0, 0
+  index: -1
+w1ite7
+  rotate: false
+  xy: 376, 63
+  size: 148, 59
+  orig: 148, 59
+  offset: 0, 0
+  index: 1
+w1ite7
+  rotate: false
+  xy: 726, 54
+  size: 118, 33
+  orig: 118, 33
+  offset: 0, 0
+  index: -1
+w1ite9
+  rotate: false
+  xy: 177, 2
+  size: 173, 59
+  orig: 173, 59
+  offset: 0, 0
+  index: 1
+w1ite9
+  rotate: false
+  xy: 766, 89
+  size: 118, 33
+  orig: 118, 33
+  offset: 0, 0
+  index: -1

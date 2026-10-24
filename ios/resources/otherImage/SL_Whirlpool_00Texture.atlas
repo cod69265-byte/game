@@ -1,0 +1,48 @@
+
+SL_Whirlpool_00Texture.png
+size: 780,130
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SL_Whirlpool_00
+  rotate: false
+  xy: 2, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: 0
+SL_Whirlpool_00
+  rotate: false
+  xy: 132, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: 1
+SL_Whirlpool_00
+  rotate: false
+  xy: 262, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: 2
+SL_Whirlpool_00
+  rotate: false
+  xy: 392, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: 3
+SL_Whirlpool_00
+  rotate: false
+  xy: 522, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: 4
+SL_Whirlpool_00
+  rotate: false
+  xy: 652, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: 5

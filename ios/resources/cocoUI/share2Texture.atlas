@@ -1,0 +1,111 @@
+
+share2Texture.png
+size: 1014,494
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+icon_d02
+  rotate: false
+  xy: 744, 376
+  size: 39, 41
+  orig: 39, 41
+  offset: 0, 0
+  index: -1
+praise1info
+  rotate: false
+  xy: 463, 419
+  size: 324, 75
+  orig: 324, 75
+  offset: 0, 0
+  index: 1
+praise_text01
+  rotate: false
+  xy: 241, 163
+  size: 115, 29
+  orig: 115, 29
+  offset: 0, 0
+  index: -1
+praise_text02
+  rotate: false
+  xy: 2, 2
+  size: 115, 30
+  orig: 115, 30
+  offset: 0, 0
+  index: -1
+praise_text03
+  rotate: false
+  xy: 119, 3
+  size: 114, 29
+  orig: 114, 29
+  offset: 0, 0
+  index: -1
+share2_button01
+  rotate: false
+  xy: 789, 434
+  size: 160, 60
+  orig: 160, 60
+  offset: 0, 0
+  index: -1
+share2_button02
+  rotate: false
+  xy: 241, 243
+  size: 160, 60
+  orig: 160, 60
+  offset: 0, 0
+  index: -1
+share2bg01
+  rotate: false
+  xy: 2, 99
+  size: 237, 204
+  orig: 237, 204
+  offset: 0, 0
+  index: -1
+share2info
+  rotate: false
+  xy: 463, 349
+  size: 279, 68
+  orig: 279, 68
+  offset: 0, 0
+  index: 3
+share2info
+  rotate: false
+  xy: 463, 277
+  size: 268, 70
+  orig: 268, 70
+  offset: 0, 0
+  index: 1
+share2info
+  rotate: false
+  xy: 2, 34
+  size: 264, 63
+  orig: 264, 63
+  offset: 0, 0
+  index: 4
+share_text001
+  rotate: false
+  xy: 951, 461
+  size: 63, 33
+  orig: 63, 33
+  offset: 0, 0
+  index: -1
+share_text002
+  rotate: false
+  xy: 241, 194
+  size: 143, 47
+  orig: 143, 47
+  offset: 0, 0
+  index: -1
+sharebg02
+  rotate: false
+  xy: 2, 305
+  size: 459, 189
+  orig: 459, 189
+  offset: 0, 0
+  index: -1
+text_cancel001
+  rotate: false
+  xy: 241, 129
+  size: 63, 32
+  orig: 63, 32
+  offset: 0, 0
+  index: -1

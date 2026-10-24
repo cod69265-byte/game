@@ -1,0 +1,13 @@
+
+newTexture.png
+size: 468,505
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+newinfo01
+  rotate: false
+  xy: 2, 2
+  size: 466, 503
+  orig: 466, 503
+  offset: 0, 0
+  index: -1

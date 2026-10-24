@@ -1,0 +1,94 @@
+
+worldMap1Texture.png
+size: 600,858
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+world1
+  rotate: false
+  xy: 2, 346
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+world1
+  rotate: false
+  xy: 2, 2
+  size: 512, 342
+  orig: 512, 342
+  offset: 0, 0
+  index: 6
+world1
+  rotate: false
+  xy: 516, 346
+  size: 84, 512
+  orig: 84, 512
+  offset: 0, 0
+  index: 5
+world1
+  rotate: false
+  xy: 516, 2
+  size: 84, 342
+  orig: 84, 342
+  offset: 0, 0
+  index: 10
+
+worldMap1Texture2.png
+size: 514,858
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+world1
+  rotate: false
+  xy: 2, 346
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+world1
+  rotate: false
+  xy: 2, 2
+  size: 512, 342
+  orig: 512, 342
+  offset: 0, 0
+  index: 7
+
+worldMap1Texture3.png
+size: 514,858
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+world1
+  rotate: false
+  xy: 2, 346
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+world1
+  rotate: false
+  xy: 2, 2
+  size: 512, 342
+  orig: 512, 342
+  offset: 0, 0
+  index: 8
+
+worldMap1Texture4.png
+size: 514,858
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+world1
+  rotate: false
+  xy: 2, 346
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+world1
+  rotate: false
+  xy: 2, 2
+  size: 512, 342
+  orig: 512, 342
+  offset: 0, 0
+  index: 9

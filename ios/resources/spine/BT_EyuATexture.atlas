@@ -1,0 +1,69 @@
+
+BT_EyuATexture.png
+size: 109,58
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BT_EyuA/BT02
+  rotate: false
+  xy: 49, 39
+  size: 14, 19
+  orig: 14, 19
+  offset: 0, 0
+  index: -1
+BT_EyuA/BT04
+  rotate: false
+  xy: 49, 18
+  size: 14, 19
+  orig: 14, 19
+  offset: 0, 0
+  index: -1
+BT_EyuA/BT06
+  rotate: false
+  xy: 65, 41
+  size: 15, 17
+  orig: 15, 17
+  offset: 0, 0
+  index: -1
+BT_EyuA/BT09
+  rotate: false
+  xy: 65, 23
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+BT_EyuA/BT12
+  rotate: false
+  xy: 82, 41
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: -1
+BT_EyuA/BT20
+  rotate: false
+  xy: 2, 14
+  size: 45, 44
+  orig: 45, 44
+  offset: 0, 0
+  index: -1
+BT_EyuA/BT22
+  rotate: false
+  xy: 96, 48
+  size: 13, 10
+  orig: 13, 10
+  offset: 0, 0
+  index: -1
+BT_EyuA/BT25
+  rotate: false
+  xy: 82, 29
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+BT_EyuA/BT27
+  rotate: false
+  xy: 2, 2
+  size: 14, 10
+  orig: 14, 10
+  offset: 0, 0
+  index: -1

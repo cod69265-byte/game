@@ -1,0 +1,15 @@
+// 真机签名配置 — 把这段覆盖到 ios-port/build.gradle 的 robovm { } 块里
+//
+// 先把 .p12 和 .mobileprovision 放进 ios/ 目录，然后：
+//   security find-identity -v -p codesigning     # 拿到身份字符串
+//   security cms -D -i ios/YourProfile.mobileprovision | plutil -extract Name raw -
+//
+// 免费 Apple ID 签出来 7 天有效、最多 3 个 App；
+// 付费账号签出来 1 年有效。
+
+robovm {
+    archs 'thumbv7'
+    iosSkipSigning = false
+    iosSignIdentity = 'iPhone Developer: YOUR NAME (XXXXXXXXXX)'
+    iosProvisioningProfile = file('YourProfile.mobileprovision').absolutePath
+}

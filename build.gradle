@@ -1,0 +1,247 @@
+// 燃烧的蔬菜3HD — iOS 26 (RoboVM / MobiVM 2.3.19 + libGDX 1.14.2 + MetalANGLE)
+//
+// Two build flavours live in this project:
+//
+//   :ios     armv7 + libGDX 1.1.0 + OpenGL ES   -> iOS 5.1 … 10.3.3 only
+//   :ios26   arm64 + libGDX 1.14.2 + MetalANGLE -> iOS 12 … 26.x
+//
+// iOS 11 dropped 32-bit executables and Xcode 14 dropped the ability to build
+// them at all, so :ios26 is the only flavour that runs on a current device.
+// The game bytecode is identical in both: libs/game-ios.jar is the original
+// classes.dex with a single patch (UI_chongzhi.isIOS -> true). Everything the
+// game expects from libGDX 1.1.0 is restored by libs/gdx-1.14.2-ios.jar, which
+// tools/src/InjectShim.java produces from the stock 1.14.2 jars.
+
+buildscript {
+    repositories {
+        // The plugin itself is not vendored: its POM drags in a 2013-era
+        // aether/maven-wagon/plexus tree that would add ~190 MB to this repo for
+        // no benefit. Build machines have network; see INSTALL.md.
+        mavenCentral()
+    }
+    dependencies {
+        // MobiVM is the maintained RoboVM fork. The legacy org.robovm
+        // coordinates 404 on Maven Central; com.mobidevelop.robovm is live.
+        classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.19'
+    }
+}
+
+allprojects {
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        // The libGDX + RoboVM runtime jars are vendored under offline-repo/ in
+        // exact Maven layout, so the *compile and package* steps need no network.
+        // The RoboVM Gradle plugin itself still resolves from mavenCentral (see
+        // buildscript above); that is a one-time ~62 MB download.
+        maven { url "${rootDir}/offline-repo" }
+        mavenCentral()
+        flatDir { dirs new File(rootProject.projectDir, 'libs') }
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+        options.compilerArgs << '-nowarn'
+    }
+}
+
+ext {
+    gdxLegacyVersion = '1.1.0'   // iOS <= 10 flavour, armv7, GLES
+    gdxVersion = '1.14.2'        // iOS 12+ flavour, arm64, Metal via ANGLE
+    robovmVersion = '2.3.19'
+    libsDir = new File(rootDir, 'libs')
+}
+
+// ---------------------------------------------------------------------------
+// :core — the portable platform layer (IOSPlatForm, SynTime, server time HTTP).
+// Compiled twice, once per libGDX flavour, because libGDX 1.14.2 changed
+// Preferences.putXxx to return Preferences instead of void.
+// ---------------------------------------------------------------------------
+project(':core') {
+    dependencies {
+        implementation files(new File(rootProject.ext.libsDir, 'game-core2.jar'))
+        implementation "com.badlogicgames.gdx:gdx:${rootProject.ext.gdxLegacyVersion}"
+        implementation "com.badlogicgames.gdx:gdx-freetype:${rootProject.ext.gdxLegacyVersion}"
+    }
+}
+
+project(':core26') {
+    // Reuses the exact same sources as :core, recompiled against libGDX 1.14.2.
+    // libGDX 1.14.2 changed Preferences.putXxx to return Preferences instead of
+    // void, so the same source cannot satisfy both flavours; a second compile is
+    // cheaper and safer than maintaining a copy of the files.
+    sourceSets {
+        main {
+            java {
+                setSrcDirs([file('../core/src/main/java')])
+            }
+        }
+    }
+
+    dependencies {
+        implementation files(new File(rootProject.ext.libsDir, 'gdx-1.14.2-ios.jar'))
+        implementation files(new File(rootProject.ext.libsDir, 'game-core2.jar'))
+    }
+}
+
+// ---------------------------------------------------------------------------
+// :ios — legacy armv7 / OpenGL ES. Only for iOS <= 10.3.3 hardware.
+// ---------------------------------------------------------------------------
+project(':ios') {
+    apply plugin: 'robovm'
+
+    dependencies {
+        implementation project(':core')
+        implementation files(new File(rootProject.ext.libsDir, 'game-ios.jar'))
+        implementation "com.badlogicgames.gdx:gdx:${rootProject.ext.gdxLegacyVersion}"
+        implementation "com.badlogicgames.gdx:gdx-freetype:${rootProject.ext.gdxLegacyVersion}"
+        implementation "com.badlogicgames.gdx:gdx-backend-robovm:${rootProject.ext.gdxLegacyVersion}"
+        implementation "com.mobidevelop.robovm:robovm-rt:${rootProject.ext.robovmVersion}"
+        implementation "com.mobidevelop.robovm:robovm-objc:${rootProject.ext.robovmVersion}"
+        implementation "com.mobidevelop.robovm:robovm-cocoatouch:${rootProject.ext.robovmVersion}"
+    }
+
+    robovm {
+        archs 'thumbv7'
+        iosSkipSigning = true
+        configFile new File(projectDir, 'robovm.xml').absolutePath
+    }
+
+    // AbstractRoboVMTask.configure() reads project.property("mainClassName"), and a
+    // plain java project has no such property -- only the application plugin
+    // registers one. Putting it on ext makes hasProperty() true.
+    ext.mainClassName = 'com.soco.veggies3_4399.ios.IOSLauncher'
+}
+
+// ---------------------------------------------------------------------------
+// :ios26 — arm64 / Metal. This is the flavour that runs on iOS 26.
+//
+// The four MetalANGLE frameworks and the three libGDX frameworks are shipped
+// as arm64 xcframeworks inside the 1.14.2 natives jars; tools/extract_frameworks.py
+// copies the device slices into ios26/libs/ios26/. RoboVM resolves a
+// <framework> entry to <frameworkPath>/<name>.framework/<name>, which is exactly
+// the layout the jars use.
+// ---------------------------------------------------------------------------
+project(':ios26') {
+    apply plugin: 'robovm'
+
+    dependencies {
+        implementation project(':core26')
+        implementation files(new File(rootProject.ext.libsDir, 'game-core2.jar'))
+        implementation files(new File(rootProject.ext.libsDir, 'gdx-1.14.2-ios.jar'))
+        implementation "com.badlogicgames.gdx:gdx-backend-robovm-metalangle:${rootProject.ext.gdxVersion}"
+        implementation "com.mobidevelop.robovm:robovm-rt:${rootProject.ext.robovmVersion}"
+        implementation "com.mobidevelop.robovm:robovm-objc:${rootProject.ext.robovmVersion}"
+        implementation "com.mobidevelop.robovm:robovm-cocoatouch:${rootProject.ext.robovmVersion}"
+    }
+
+    robovm {
+        archs 'arm64'
+        iosSkipSigning = true
+        configFile new File(projectDir, 'robovm-ios26.xml').absolutePath
+    }
+
+    // The AOT entry point. robovm-ios26.xml also declares it, but the Gradle
+    // plugin resolves mainClassName independently when it builds the task graph,
+    // and an empty one fails with "no main class specified" before the XML is
+    // ever read.
+    ext.mainClassName = 'com.soco.veggies3_4399.ios26.IOSLauncher26'
+}
+
+// ---------------------------------------------------------------------------
+// :ios26scene — same as :ios26 but on the UIScene lifecycle.
+//
+// Apple's TN3187 has two stages: on iOS 26 a legacy UIApplicationDelegate app
+// still launches and only logs a warning, and the SDK after iOS 26 refuses to
+// launch it. :ios26 is the stage-1 build; this one is the stage-2 build.
+//
+// The only differences are the launcher class, the config file and the plist.
+// resources and libs are shared through the junctions created by setupLinks.sh,
+// so this flavour costs no extra disk.
+//
+//   gradle :ios26scene:createIPA
+// ---------------------------------------------------------------------------
+project(':ios26scene') {
+    apply plugin: 'robovm'
+
+    dependencies {
+        implementation project(':core26')
+        implementation files(new File(rootProject.ext.libsDir, 'game-core2.jar'))
+        implementation files(new File(rootProject.ext.libsDir, 'gdx-1.14.2-ios.jar'))
+        implementation "com.badlogicgames.gdx:gdx-backend-robovm-metalangle:${rootProject.ext.gdxVersion}"
+        implementation "com.mobidevelop.robovm:robovm-rt:${rootProject.ext.robovmVersion}"
+        implementation "com.mobidevelop.robovm:robovm-objc:${rootProject.ext.robovmVersion}"
+        implementation "com.mobidevelop.robovm:robovm-cocoatouch:${rootProject.ext.robovmVersion}"
+    }
+
+    robovm {
+        archs 'arm64'
+        iosSkipSigning = true
+        configFile new File(projectDir, 'robovm-ios26scene.xml').absolutePath
+    }
+
+    ext.mainClassName = 'com.soco.veggies3_4399.ios26.scene.IOSLauncher26Scene'
+}
+
+// ---------------------------------------------------------------------------
+// Offline helpers (no iOS toolchain needed).
+//
+//   gradle convertAudio     regenerate the WAV set from the APK's OGG files
+//   gradle makeIcons        regenerate the icon / launch-image set
+//   gradle buildShim        rebuild libs/gdx-1.14.2-ios.jar (ASM injection)
+//   gradle extractFrameworks  re-extract the arm64 xcframeworks
+// ---------------------------------------------------------------------------
+task buildTools(type: JavaCompile) {
+    description = 'Compile the standalone porting tools.'
+    source = fileTree('tools/src') { include 'OggToWav.java' }
+    classpath = files(new File(rootProject.ext.libsDir, 'jorbis.jar'))
+    destinationDirectory = file('build/classes-tools')
+    options.encoding = 'UTF-8'
+}
+
+task convertAudio(type: JavaExec, dependsOn: 'buildTools') {
+    description = 'Decode every assets/Audio/**/*.ogg into 16-bit PCM WAV.'
+    group = 'build'
+    main = 'OggToWav'
+    classpath = files(new File(rootDir, 'build/classes-tools'),
+            new File(rootProject.ext.libsDir, 'jorbis.jar'))
+    args = [
+            new File(rootDir, '../extract/assets/Audio').absolutePath,
+            new File(rootDir, 'ios/resources/Audio').absolutePath
+    ]
+}
+
+task makeIcons(type: Exec) {
+    description = 'Regenerate iOS icon and launch-image set.'
+    group = 'build'
+    commandLine 'python', new File(rootDir, 'tools/make_icons.py').absolutePath,
+            new File(rootDir, '../extract/res/drawable-hdpi-v4/ic_launcher.png').absolutePath,
+            new File(rootDir, '../extract/assets/logo1.png').absolutePath,
+            new File(rootDir, 'ios/resources').absolutePath
+}
+
+task extractFrameworks(type: Exec) {
+    description = 'Extract the arm64 xcframework slices for the iOS 26 target.'
+    group = 'build'
+    commandLine 'python', new File(rootDir, 'tools/extract_frameworks.py').absolutePath,
+            new File(rootDir, 'ios/libs/ios26').absolutePath,
+            new File(rootDir, '../maven/ios26/gdx-platform-1.14.2-natives-ios.jar').absolutePath,
+            new File(rootDir, '../maven/ios26/gdx-freetype-platform-1.14.2-natives-ios.jar').absolutePath,
+            new File(rootDir, '../maven/ios26/gdx-backend-robovm-metalangle-1.14.2.jar').absolutePath
+}
+
+// Runs the whole offline verification suite: 13 checks over the shimmed libGDX
+// jar, the recompiled platform layer, both launchers and the two Info.plists.
+// This is the last gate that can run without macOS -- it catches missing
+// members, illegal access, broken stack maps, wrong launcher shapes and a
+// mismatched RoboVM ObjC class name. It does NOT prove the app runs.
+task verifyAll(type: Exec) {
+    description = 'Run every offline check (13 checks). No iOS toolchain needed.'
+    group = 'verification'
+    workingDir rootDir
+    commandLine 'powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass',
+            '-File', new File(rootDir, 'tools/verify-all.ps1').absolutePath
+}

@@ -1,0 +1,445 @@
+
+characterTexture.png
+size: 1014,1012
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1stars
+  rotate: false
+  xy: 982, 981
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1
+2stars
+  rotate: false
+  xy: 91, 6
+  size: 64, 27
+  orig: 64, 27
+  offset: 0, 0
+  index: -1
+3stars
+  rotate: false
+  xy: 866, 896
+  size: 95, 27
+  orig: 95, 27
+  offset: 0, 0
+  index: -1
+4stars
+  rotate: false
+  xy: 91, 62
+  size: 115, 27
+  orig: 115, 27
+  offset: 0, 0
+  index: -1
+Eggplant
+  rotate: false
+  xy: 2, 273
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+Eggplant
+  rotate: false
+  xy: 218, 464
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+Eggplant
+  rotate: false
+  xy: 434, 649
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+Eggplant
+  rotate: false
+  xy: 650, 832
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+NPC_QingCai
+  rotate: false
+  xy: 2, 91
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+NPC_QingCai
+  rotate: false
+  xy: 218, 282
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+NPC_QingCai
+  rotate: false
+  xy: 434, 467
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+NPC_QingCai
+  rotate: false
+  xy: 650, 650
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+Onions
+  rotate: false
+  xy: 218, 100
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+Onions
+  rotate: false
+  xy: 434, 285
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+Onions
+  rotate: false
+  xy: 650, 468
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+Onions
+  rotate: false
+  xy: 434, 103
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+cauliflower
+  rotate: false
+  xy: 2, 825
+  size: 214, 187
+  orig: 214, 187
+  offset: 0, 0
+  index: 4
+cauliflower
+  rotate: false
+  xy: 2, 640
+  size: 214, 183
+  orig: 214, 183
+  offset: 0, 0
+  index: 1
+cauliflower
+  rotate: false
+  xy: 218, 829
+  size: 214, 183
+  orig: 214, 183
+  offset: 0, 0
+  index: 2
+cauliflower
+  rotate: false
+  xy: 2, 455
+  size: 214, 183
+  orig: 214, 183
+  offset: 0, 0
+  index: 3
+character_select
+  rotate: false
+  xy: 2, 2
+  size: 87, 87
+  orig: 87, 87
+  offset: 0, 0
+  index: -1
+chili
+  rotate: false
+  xy: 650, 286
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+chili
+  rotate: false
+  xy: 650, 104
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+clock
+  rotate: false
+  xy: 866, 832
+  size: 50, 62
+  orig: 50, 62
+  offset: 0, 0
+  index: -1
+cshadow
+  rotate: false
+  xy: 91, 35
+  size: 82, 25
+  orig: 82, 25
+  offset: 0, 0
+  index: -1
+tomato
+  rotate: false
+  xy: 218, 646
+  size: 214, 181
+  orig: 214, 181
+  offset: 0, 0
+  index: 4
+tomato
+  rotate: false
+  xy: 434, 831
+  size: 214, 181
+  orig: 214, 181
+  offset: 0, 0
+  index: 6
+tomato
+  rotate: false
+  xy: 866, 925
+  size: 114, 87
+  orig: 114, 87
+  offset: 0, 0
+  index: 5
+
+characterTexture2.png
+size: 864,910
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chili
+  rotate: false
+  xy: 2, 730
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+chili
+  rotate: false
+  xy: 2, 548
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+enoki
+  rotate: false
+  xy: 218, 730
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+enoki
+  rotate: false
+  xy: 2, 366
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+enoki
+  rotate: false
+  xy: 218, 548
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+enoki
+  rotate: false
+  xy: 434, 730
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+ginseng
+  rotate: false
+  xy: 2, 184
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+ginseng
+  rotate: false
+  xy: 2, 184
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+ginseng
+  rotate: false
+  xy: 2, 184
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+ginseng
+  rotate: false
+  xy: 2, 184
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+melon
+  rotate: false
+  xy: 218, 366
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+melon
+  rotate: false
+  xy: 434, 548
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+melon
+  rotate: false
+  xy: 650, 730
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+melon
+  rotate: false
+  xy: 2, 2
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+mushroom
+  rotate: false
+  xy: 218, 184
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+mushroom
+  rotate: false
+  xy: 434, 366
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+mushroom
+  rotate: false
+  xy: 650, 548
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+mushroom
+  rotate: false
+  xy: 218, 2
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+peas
+  rotate: false
+  xy: 434, 184
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+peas
+  rotate: false
+  xy: 650, 366
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+peas
+  rotate: false
+  xy: 434, 2
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+peas
+  rotate: false
+  xy: 650, 184
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+potatoes
+  rotate: false
+  xy: 650, 2
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+
+characterTexture3.png
+size: 432,910
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+potatoes
+  rotate: false
+  xy: 2, 730
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+potatoes
+  rotate: false
+  xy: 2, 548
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+potatoes
+  rotate: false
+  xy: 218, 730
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+radish
+  rotate: false
+  xy: 2, 366
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+radish
+  rotate: false
+  xy: 218, 548
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+radish
+  rotate: false
+  xy: 2, 184
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3
+radish
+  rotate: false
+  xy: 218, 366
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 4
+tomato
+  rotate: false
+  xy: 2, 2
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 1
+tomato
+  rotate: false
+  xy: 218, 184
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 2
+tomato
+  rotate: false
+  xy: 218, 2
+  size: 214, 180
+  orig: 214, 180
+  offset: 0, 0
+  index: 3

@@ -1,0 +1,174 @@
+
+NPC_EyuTexture.png
+size: 995,510
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_Eyu/BigXieB06
+  rotate: false
+  xy: 178, 120
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+NPC_Eyu/BigXieB11
+  rotate: false
+  xy: 178, 120
+  size: 168, 194
+  orig: 168, 194
+  offset: 0, 0
+  index: -1
+NPC_Eyu/BigXieB07
+  rotate: false
+  xy: 355, 316
+  size: 164, 194
+  orig: 164, 194
+  offset: 0, 0
+  index: -1
+NPC_Eyu/BigXieB08
+  rotate: false
+  xy: 184, 316
+  size: 169, 194
+  orig: 169, 194
+  offset: 0, 0
+  index: -1
+NPC_Eyu/BigXieB09
+  rotate: false
+  xy: 2, 316
+  size: 180, 194
+  orig: 180, 194
+  offset: 0, 0
+  index: -1
+NPC_Eyu/BigXieB10
+  rotate: false
+  xy: 2, 120
+  size: 174, 194
+  orig: 174, 194
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu01
+  rotate: false
+  xy: 348, 214
+  size: 145, 100
+  orig: 145, 100
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu02
+  rotate: false
+  xy: 348, 131
+  size: 90, 81
+  orig: 90, 81
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu04
+  rotate: false
+  xy: 495, 269
+  size: 44, 45
+  orig: 44, 45
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu07
+  rotate: false
+  xy: 2, 2
+  size: 144, 55
+  orig: 144, 55
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu08
+  rotate: false
+  xy: 148, 2
+  size: 144, 55
+  orig: 144, 55
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu10
+  rotate: false
+  xy: 440, 155
+  size: 44, 57
+  orig: 44, 57
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu13
+  rotate: false
+  xy: 581, 365
+  size: 65, 37
+  orig: 65, 37
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu16
+  rotate: false
+  xy: 228, 84
+  size: 90, 34
+  orig: 90, 34
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu22
+  rotate: false
+  xy: 521, 404
+  size: 132, 106
+  orig: 132, 106
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu24
+  rotate: false
+  xy: 655, 411
+  size: 108, 99
+  orig: 108, 99
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu26
+  rotate: false
+  xy: 495, 223
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu27
+  rotate: false
+  xy: 581, 322
+  size: 45, 41
+  orig: 45, 41
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu28
+  rotate: false
+  xy: 440, 112
+  size: 39, 41
+  orig: 39, 41
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu29
+  rotate: false
+  xy: 2, 59
+  size: 224, 59
+  orig: 224, 59
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu30
+  rotate: false
+  xy: 863, 400
+  size: 83, 110
+  orig: 83, 110
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu31
+  rotate: false
+  xy: 521, 334
+  size: 58, 68
+  orig: 58, 68
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu5
+  rotate: false
+  xy: 948, 412
+  size: 47, 98
+  orig: 47, 98
+  offset: 0, 0
+  index: -1
+NPC_Eyu/Eyu6
+  rotate: false
+  xy: 765, 413
+  size: 96, 97
+  orig: 96, 97
+  offset: 0, 0
+  index: -1

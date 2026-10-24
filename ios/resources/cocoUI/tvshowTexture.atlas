@@ -1,0 +1,55 @@
+
+tvshowTexture.png
+size: 896,61
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+tvshow01
+  rotate: false
+  xy: 2, 2
+  size: 157, 37
+  orig: 157, 37
+  offset: 0, 0
+  index: -1
+tvshow02
+  rotate: false
+  xy: 781, 7
+  size: 52, 29
+  orig: 52, 29
+  offset: 0, 0
+  index: -1
+tvshow03
+  rotate: false
+  xy: 781, 38
+  size: 115, 23
+  orig: 115, 23
+  offset: 0, 0
+  index: -1
+tvshow04
+  rotate: false
+  xy: 161, 16
+  size: 80, 23
+  orig: 80, 23
+  offset: 0, 0
+  index: -1
+tvshow05
+  rotate: false
+  xy: 625, 13
+  size: 154, 48
+  orig: 154, 48
+  offset: 0, 0
+  index: -1
+tvshow06
+  rotate: false
+  xy: 433, 16
+  size: 190, 45
+  orig: 190, 45
+  offset: 0, 0
+  index: -1
+tvshow07
+  rotate: false
+  xy: 2, 41
+  size: 429, 20
+  orig: 429, 20
+  offset: 0, 0
+  index: -1

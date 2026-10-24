@@ -1,0 +1,13 @@
+
+bg6Texture.png
+size: 535,856
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg6
+  rotate: false
+  xy: 2, 2
+  size: 533, 854
+  orig: 533, 854
+  offset: 0, 0
+  index: -1

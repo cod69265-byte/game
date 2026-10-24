@@ -1,0 +1,279 @@
+
+NPC_DaiNiaoTexture.png
+size: 509,126
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_DaiNiao/NPC_DaiNiao-shengdan1
+  rotate: false
+  xy: 57, 20
+  size: 41, 32
+  orig: 41, 32
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiao-shengdan2
+  rotate: false
+  xy: 2, 50
+  size: 53, 41
+  orig: 53, 41
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiao-shengdan3
+  rotate: false
+  xy: 450, 82
+  size: 52, 21
+  orig: 52, 21
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_attack
+  rotate: false
+  xy: 100, 51
+  size: 24, 39
+  orig: 24, 39
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_body1
+  rotate: false
+  xy: 181, 92
+  size: 48, 34
+  orig: 48, 34
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_bozi1
+  rotate: false
+  xy: 205, 35
+  size: 20, 25
+  orig: 20, 25
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_foot1
+  rotate: false
+  xy: 429, 69
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_foot2
+  rotate: false
+  xy: 276, 3
+  size: 16, 23
+  orig: 16, 23
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_hairL1
+  rotate: false
+  xy: 100, 19
+  size: 37, 30
+  orig: 37, 30
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_hairL2
+  rotate: false
+  xy: 249, 28
+  size: 36, 30
+  orig: 36, 30
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_hairR1
+  rotate: false
+  xy: 139, 16
+  size: 32, 35
+  orig: 32, 35
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_hairR2
+  rotate: false
+  xy: 229, 60
+  size: 37, 26
+  orig: 37, 26
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_handL1
+  rotate: false
+  xy: 276, 70
+  size: 9, 17
+  orig: 9, 17
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_handR1
+  rotate: false
+  xy: 429, 50
+  size: 18, 17
+  orig: 18, 17
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_head1
+  rotate: false
+  xy: 364, 90
+  size: 41, 36
+  orig: 41, 36
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_head2
+  rotate: false
+  xy: 407, 90
+  size: 41, 36
+  orig: 41, 36
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_head3
+  rotate: false
+  xy: 231, 88
+  size: 43, 38
+  orig: 43, 38
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_head4
+  rotate: false
+  xy: 276, 89
+  size: 42, 37
+  orig: 42, 37
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_weiba
+  rotate: false
+  xy: 227, 35
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoA_zhuangshi1
+  rotate: false
+  xy: 128, 91
+  size: 51, 35
+  orig: 51, 35
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoB_hairL1
+  rotate: false
+  xy: 320, 63
+  size: 37, 25
+  orig: 37, 25
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoB_hairR1
+  rotate: false
+  xy: 238, 2
+  size: 36, 24
+  orig: 36, 24
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoB_weiba
+  rotate: false
+  xy: 203, 62
+  size: 24, 28
+  orig: 24, 28
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoB_zhuangshi1
+  rotate: false
+  xy: 2, 93
+  size: 62, 33
+  orig: 62, 33
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoB_zhuangshi2
+  rotate: false
+  xy: 450, 105
+  size: 56, 21
+  orig: 56, 21
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_hairL1
+  rotate: false
+  xy: 359, 59
+  size: 37, 29
+  orig: 37, 29
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_hairR1
+  rotate: false
+  xy: 169, 54
+  size: 32, 35
+  orig: 32, 35
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_hairfire1
+  rotate: false
+  xy: 398, 58
+  size: 29, 30
+  orig: 29, 30
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_hairfire2
+  rotate: false
+  xy: 205, 2
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_hairfire3
+  rotate: false
+  xy: 173, 20
+  size: 30, 32
+  orig: 30, 32
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_hairfire4
+  rotate: false
+  xy: 481, 48
+  size: 28, 32
+  orig: 28, 32
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_hairfire5
+  rotate: false
+  xy: 287, 55
+  size: 28, 32
+  orig: 28, 32
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_hairfire6
+  rotate: false
+  xy: 450, 52
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_head1
+  rotate: false
+  xy: 57, 54
+  size: 41, 36
+  orig: 41, 36
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_head2
+  rotate: false
+  xy: 320, 90
+  size: 42, 36
+  orig: 42, 36
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_head3
+  rotate: false
+  xy: 2, 6
+  size: 45, 42
+  orig: 45, 42
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_head4
+  rotate: false
+  xy: 126, 53
+  size: 41, 36
+  orig: 41, 36
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiaoC_zhuangshi1
+  rotate: false
+  xy: 287, 36
+  size: 25, 17
+  orig: 25, 17
+  offset: 0, 0
+  index: -1
+NPC_DaiNiao/NPC_DaiNiao_shadow
+  rotate: false
+  xy: 66, 92
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,209 @@
+
+InterfaceTexture.png
+size: 1011,510
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+button_music01
+  rotate: false
+  xy: 804, 309
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+button_music02
+  rotate: false
+  xy: 449, 275
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+button_select
+  rotate: false
+  xy: 2, 17
+  size: 113, 46
+  orig: 113, 46
+  offset: 0, 0
+  index: 2
+button_select
+  rotate: false
+  xy: 117, 24
+  size: 97, 39
+  orig: 97, 39
+  offset: 0, 0
+  index: 1
+button_shop01
+  rotate: false
+  xy: 449, 187
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+button_sound01
+  rotate: false
+  xy: 537, 213
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+button_sound02
+  rotate: false
+  xy: 456, 99
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+heart_bg
+  rotate: false
+  xy: 896, 412
+  size: 115, 98
+  orig: 115, 98
+  offset: 0, 0
+  index: -1
+heart_bg02
+  rotate: false
+  xy: 472, 366
+  size: 111, 29
+  orig: 111, 29
+  offset: 0, 0
+  index: -1
+icon_get
+  rotate: false
+  xy: 896, 382
+  size: 31, 28
+  orig: 31, 28
+  offset: 0, 0
+  index: 1
+icon_heart
+  rotate: false
+  xy: 456, 2
+  size: 48, 39
+  orig: 48, 39
+  offset: 0, 0
+  index: 1
+icon_heart
+  rotate: false
+  xy: 506, 2
+  size: 48, 39
+  orig: 48, 39
+  offset: 0, 0
+  index: 2
+icon_heart
+  rotate: false
+  xy: 625, 202
+  size: 52, 40
+  orig: 52, 40
+  offset: 0, 0
+  index: 3
+icon_no1
+  rotate: false
+  xy: 625, 244
+  size: 47, 55
+  orig: 47, 55
+  offset: 0, 0
+  index: -1
+icon_no2
+  rotate: false
+  xy: 456, 43
+  size: 47, 54
+  orig: 47, 54
+  offset: 0, 0
+  index: -1
+icon_no3
+  rotate: false
+  xy: 505, 43
+  size: 47, 54
+  orig: 47, 54
+  offset: 0, 0
+  index: -1
+icon_star
+  rotate: false
+  xy: 537, 320
+  size: 43, 44
+  orig: 43, 44
+  offset: 0, 0
+  index: 1
+prop
+  rotate: false
+  xy: 237, 36
+  size: 108, 95
+  orig: 108, 95
+  offset: 0, 0
+  index: 2
+prop
+  rotate: false
+  xy: 347, 31
+  size: 107, 100
+  orig: 107, 100
+  offset: 0, 0
+  index: 1
+prop
+  rotate: false
+  xy: 585, 301
+  size: 108, 94
+  orig: 108, 94
+  offset: 0, 0
+  index: 3
+prop
+  rotate: false
+  xy: 695, 295
+  size: 107, 100
+  orig: 107, 100
+  offset: 0, 0
+  index: 4
+shopdg0
+  rotate: false
+  xy: 2, 363
+  size: 233, 147
+  orig: 233, 147
+  offset: 0, 0
+  index: -1
+shopdg1
+  rotate: false
+  xy: 2, 214
+  size: 233, 147
+  orig: 233, 147
+  offset: 0, 0
+  index: -1
+shopdg2
+  rotate: false
+  xy: 237, 363
+  size: 233, 147
+  orig: 233, 147
+  offset: 0, 0
+  index: -1
+shopdg3
+  rotate: false
+  xy: 2, 65
+  size: 233, 147
+  orig: 233, 147
+  offset: 0, 0
+  index: -1
+shopzhalan1
+  rotate: false
+  xy: 237, 248
+  size: 210, 113
+  orig: 210, 113
+  offset: 0, 0
+  index: -1
+shopzhalan2
+  rotate: false
+  xy: 472, 397
+  size: 210, 113
+  orig: 210, 113
+  offset: 0, 0
+  index: -1
+shopzhalan3
+  rotate: false
+  xy: 237, 133
+  size: 210, 113
+  orig: 210, 113
+  offset: 0, 0
+  index: -1
+shopzhalan4
+  rotate: false
+  xy: 684, 397
+  size: 210, 113
+  orig: 210, 113
+  offset: 0, 0
+  index: -1

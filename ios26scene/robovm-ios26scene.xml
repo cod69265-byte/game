@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RoboVM AOT configuration for 燃烧的蔬菜3HD — iOS 26 target, UIScene flavour.
+
+  This is robovm-ios26.xml with three edits:
+    * <mainClass> points at the scene launcher.
+    * <iosInfoPList> points at Info-scene.plist.xml, which declares
+      UIApplicationSceneManifest.
+    * <executableName> differs so the two flavours cannot overwrite each other
+      in the same build directory.
+
+  Everything else — arm64, MetalANGLE, the seven arm64 frameworks, the
+  forceLinkClasses set — is identical, because the game code and the libGDX
+  bridge are identical. See robovm-ios26.xml for the full rationale.
+-->
+<config>
+    <executableName>Veggies3HDScene</executableName>
+    <mainClass>com.soco.veggies3_4399.ios26.scene.IOSLauncher26Scene</mainClass>
+    <os>ios</os>
+    <arch>arm64</arch>
+    <target>ios</target>
+    <iosInfoPList>Info-scene.plist.xml</iosInfoPList>
+
+    <resources>
+        <resource>
+            <directory>resources</directory>
+            <includes>
+                <include>**</include>
+            </includes>
+            <skipPngCrush>true</skipPngCrush>
+        </resource>
+    </resources>
+
+    <!--
+      VegSceneDelegate must survive AOT: UIKit instantiates it by name from the
+      Info.plist UISceneDelegateClassName string, which RoboVM's reachability
+      analysis cannot see. The com.soco.** pattern below already covers it, but
+      the launcher is listed explicitly so the requirement is not silently lost
+      if that pattern is ever narrowed.
+    -->
+    <forceLinkClasses>
+        <pattern>com.soco.**</pattern>
+        <pattern>com.badlogic.gdx.**</pattern>
+        <pattern>com.esotericsoftware.**</pattern>
+        <pattern>com.jcraft.**</pattern>
+        <pattern>com.main.**</pattern>
+        <pattern>com.net.**</pattern>
+        <pattern>com.protocol.**</pattern>
+        <pattern>javazoom.**</pattern>
+        <pattern>org.robovm.apple.**</pattern>
+    </forceLinkClasses>
+
+    <frameworkPaths>
+        <path>libs/ios26</path>
+    </frameworkPaths>
+
+    <frameworks>
+        <framework>gdx</framework>
+        <framework>ObjectAL</framework>
+        <framework>gdx-freetype</framework>
+        <framework>MetalANGLEKit</framework>
+        <framework>libGLESv2</framework>
+        <framework>libEGL</framework>
+        <framework>libfeature_support</framework>
+        <framework>Metal</framework>
+        <framework>UIKit</framework>
+        <framework>QuartzCore</framework>
+        <framework>CoreGraphics</framework>
+        <framework>CoreFoundation</framework>
+        <framework>CoreText</framework>
+        <framework>CoreAudio</framework>
+        <framework>CoreMedia</framework>
+        <framework>Foundation</framework>
+        <framework>AudioToolbox</framework>
+        <framework>AVFoundation</framework>
+        <framework>OpenAL</framework>
+        <framework>SystemConfiguration</framework>
+        <framework>GameController</framework>
+    </frameworks>
+
+    <libs>
+        <lib>z</lib>
+        <lib>c++</lib>
+    </libs>
+</config>

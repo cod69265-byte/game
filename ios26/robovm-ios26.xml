@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RoboVM AOT configuration for 燃烧的蔬菜3HD — iOS 26 target.
+
+  Differences from the iOS <= 10 configuration (robovm.xml):
+    * <arch> is arm64, because iOS 11 dropped 32-bit executables entirely and
+      iOS 26 has no armv7 support at all.
+    * Graphics go through MetalANGLE: iOS 26 no longer ships an OpenGL ES
+      driver, so libGDX's iosgl backend cannot present a frame. The
+      gdx-backend-robovm-metalangle backend maps GLES2/3 calls onto Metal via
+      ANGLE, and its four frameworks (MetalANGLEKit, libGLESv2, libEGL,
+      libfeature_support) are linked instead of OpenGLES.
+    * libGDX 1.14.2 ships prebuilt arm64 frameworks rather than .a archives,
+      so <frameworkPaths> points at libs/ios26 and each framework is named
+      individually. RoboVM resolves <framework> to <path>/<name>.framework/<name>.
+    * The game's own classes are still the original dex bytecode (game-ios.jar),
+      untouched; the libGDX 1.14.2 API gap is bridged by gdx-1.14.2-ios.jar,
+      which is gdx-1.14.2 + gdx-freetype-1.14.2 with 26 members injected by
+      tools/src/InjectShim.java.
+-->
+<config>
+    <!--
+      RoboVM 2.3.19 only registers three placeholders — app.executable, app.id,
+      app.name (Config$Builder). There is no app.mainclass, so the entry point
+      and executable name are hard-coded. A leftover ${app.mainclass} would
+      surface as "main class not found: ${app.mainclass}" during AOT linking.
+    -->
+    <executableName>Veggies3HD</executableName>
+    <mainClass>com.soco.veggies3_4399.ios26.IOSLauncher26</mainClass>
+    <os>ios</os>
+    <arch>arm64</arch>
+    <target>ios</target>
+    <iosInfoPList>Info.plist.xml</iosInfoPList>
+
+    <resources>
+        <resource>
+            <directory>resources</directory>
+            <includes>
+                <include>**</include>
+            </includes>
+            <skipPngCrush>true</skipPngCrush>
+        </resource>
+    </resources>
+
+    <!--
+      RoboVM strips every class it cannot prove is reachable. The original code
+      resolves UI screens, Spine skeletons and particle configs by string name,
+      so the whole game namespace has to survive AOT.
+    -->
+    <forceLinkClasses>
+        <pattern>com.soco.**</pattern>
+        <pattern>com.badlogic.gdx.**</pattern>
+        <pattern>com.esotericsoftware.**</pattern>
+        <pattern>com.jcraft.**</pattern>
+        <pattern>com.main.**</pattern>
+        <pattern>com.net.**</pattern>
+        <pattern>com.protocol.**</pattern>
+        <pattern>javazoom.**</pattern>
+        <pattern>org.robovm.apple.**</pattern>
+    </forceLinkClasses>
+
+    <frameworkPaths>
+        <path>libs/ios26</path>
+    </frameworkPaths>
+
+    <frameworks>
+        <framework>gdx</framework>
+        <framework>ObjectAL</framework>
+        <framework>gdx-freetype</framework>
+        <framework>MetalANGLEKit</framework>
+        <framework>libGLESv2</framework>
+        <framework>libEGL</framework>
+        <framework>libfeature_support</framework>
+        <framework>Metal</framework>
+        <framework>UIKit</framework>
+        <framework>QuartzCore</framework>
+        <framework>CoreGraphics</framework>
+        <framework>CoreFoundation</framework>
+        <framework>CoreText</framework>
+        <framework>CoreAudio</framework>
+        <framework>CoreMedia</framework>
+        <framework>Foundation</framework>
+        <framework>AudioToolbox</framework>
+        <framework>AVFoundation</framework>
+        <framework>OpenAL</framework>
+        <framework>SystemConfiguration</framework>
+        <framework>GameController</framework>
+    </frameworks>
+
+    <libs>
+        <lib>z</lib>
+        <lib>c++</lib>
+    </libs>
+</config>

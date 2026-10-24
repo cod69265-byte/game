@@ -1,0 +1,216 @@
+
+PC_PeaTexture.png
+size: 753,126
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PC_Pea/PC_PeaA_roll1
+  rotate: false
+  xy: 323, 52
+  size: 60, 74
+  orig: 60, 74
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaA_roll2
+  rotate: false
+  xy: 385, 52
+  size: 60, 74
+  orig: 60, 74
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaA_roll3
+  rotate: false
+  xy: 447, 52
+  size: 60, 74
+  orig: 60, 74
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaA_roll4
+  rotate: false
+  xy: 509, 52
+  size: 60, 74
+  orig: 60, 74
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_apron1
+  rotate: false
+  xy: 627, 92
+  size: 64, 34
+  orig: 64, 34
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_apron2
+  rotate: false
+  xy: 241, 70
+  size: 80, 56
+  orig: 80, 56
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_apron3
+  rotate: false
+  xy: 152, 70
+  size: 87, 56
+  orig: 87, 56
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_arm1
+  rotate: false
+  xy: 296, 50
+  size: 10, 18
+  orig: 10, 18
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_arm2
+  rotate: false
+  xy: 655, 72
+  size: 10, 18
+  orig: 10, 18
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_body1
+  rotate: false
+  xy: 2, 18
+  size: 80, 108
+  orig: 80, 108
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_body2
+  rotate: false
+  xy: 152, 18
+  size: 52, 50
+  orig: 52, 50
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_body3
+  rotate: false
+  xy: 693, 36
+  size: 22, 90
+  orig: 22, 90
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_body4
+  rotate: false
+  xy: 84, 18
+  size: 66, 108
+  orig: 66, 108
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_eye1
+  rotate: false
+  xy: 206, 20
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_eye2
+  rotate: false
+  xy: 717, 64
+  size: 6, 12
+  orig: 6, 12
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_eye3
+  rotate: false
+  xy: 268, 36
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_eye4
+  rotate: false
+  xy: 60, 6
+  size: 6, 10
+  orig: 6, 10
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_leg1
+  rotate: false
+  xy: 745, 114
+  size: 8, 12
+  orig: 8, 12
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_mouth1
+  rotate: false
+  xy: 308, 64
+  size: 12, 4
+  orig: 12, 4
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaB_mouth2
+  rotate: false
+  xy: 50, 2
+  size: 8, 14
+  orig: 8, 14
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_arm1
+  rotate: false
+  xy: 571, 52
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_arm2
+  rotate: false
+  xy: 36, 2
+  size: 12, 14
+  orig: 12, 14
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_body1
+  rotate: false
+  xy: 571, 66
+  size: 54, 60
+  orig: 54, 60
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_body2
+  rotate: false
+  xy: 731, 94
+  size: 10, 8
+  orig: 10, 8
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_body3
+  rotate: false
+  xy: 268, 46
+  size: 26, 22
+  orig: 26, 22
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_body4
+  rotate: false
+  xy: 627, 68
+  size: 26, 22
+  orig: 26, 22
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_body5
+  rotate: false
+  xy: 717, 104
+  size: 26, 22
+  orig: 26, 22
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_eye1
+  rotate: false
+  xy: 2, 6
+  size: 32, 10
+  orig: 32, 10
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_mouth1
+  rotate: false
+  xy: 717, 78
+  size: 12, 24
+  orig: 12, 24
+  offset: 0, 0
+  index: -1
+PC_Pea/PC_PeaBaby_shadow
+  rotate: false
+  xy: 206, 34
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1

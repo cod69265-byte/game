@@ -1,0 +1,6 @@
+framework module MetalANGLEKit {
+  umbrella header "MetalANGLEKit.h"
+  export *
+
+  module * { export * }
+}

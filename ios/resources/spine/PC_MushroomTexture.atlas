@@ -1,0 +1,244 @@
+
+PC_MushroomTexture.png
+size: 1022,126
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PC_Mushroom/PC_Mushroom_arm1
+  rotate: false
+  xy: 314, 59
+  size: 11, 8
+  orig: 11, 8
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_arm2
+  rotate: false
+  xy: 1012, 97
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_arm3
+  rotate: false
+  xy: 140, 14
+  size: 10, 16
+  orig: 10, 16
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_body1
+  rotate: false
+  xy: 897, 85
+  size: 47, 41
+  orig: 47, 41
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_body2
+  rotate: false
+  xy: 946, 91
+  size: 51, 35
+  orig: 51, 35
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_body3
+  rotate: false
+  xy: 709, 96
+  size: 64, 30
+  orig: 64, 30
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_body4
+  rotate: false
+  xy: 229, 46
+  size: 62, 21
+  orig: 62, 21
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_body5
+  rotate: false
+  xy: 837, 67
+  size: 58, 59
+  orig: 58, 59
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_body6
+  rotate: false
+  xy: 87, 3
+  size: 51, 50
+  orig: 51, 50
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_eye
+  rotate: false
+  xy: 327, 59
+  size: 5, 8
+  orig: 5, 8
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_eyeL1
+  rotate: false
+  xy: 140, 32
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_eyeL2
+  rotate: false
+  xy: 293, 47
+  size: 14, 9
+  orig: 14, 9
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_eyeR1
+  rotate: false
+  xy: 999, 108
+  size: 12, 18
+  orig: 12, 18
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_eyeR2
+  rotate: false
+  xy: 1013, 117
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_eyebrow1
+  rotate: false
+  xy: 293, 58
+  size: 19, 9
+  orig: 19, 9
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_eyebrow2
+  rotate: false
+  xy: 897, 75
+  size: 21, 8
+  orig: 21, 8
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatB1
+  rotate: false
+  xy: 544, 92
+  size: 78, 34
+  orig: 78, 34
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatB2
+  rotate: false
+  xy: 624, 98
+  size: 83, 28
+  orig: 83, 28
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatF1
+  rotate: false
+  xy: 229, 69
+  size: 78, 57
+  orig: 78, 57
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatF2
+  rotate: false
+  xy: 2, 5
+  size: 83, 52
+  orig: 83, 52
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatF3
+  rotate: false
+  xy: 87, 55
+  size: 73, 71
+  orig: 73, 71
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatF4
+  rotate: false
+  xy: 2, 59
+  size: 83, 67
+  orig: 83, 67
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatspotF1
+  rotate: false
+  xy: 388, 70
+  size: 75, 56
+  orig: 75, 56
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatspotF2
+  rotate: false
+  xy: 465, 78
+  size: 77, 48
+  orig: 77, 48
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatspotF3
+  rotate: false
+  xy: 162, 50
+  size: 65, 76
+  orig: 65, 76
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_hatspotF4
+  rotate: false
+  xy: 309, 69
+  size: 77, 57
+  orig: 77, 57
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_highlight
+  rotate: false
+  xy: 999, 96
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_leg1
+  rotate: false
+  xy: 140, 2
+  size: 14, 10
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_leg2
+  rotate: false
+  xy: 920, 75
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_mouth1
+  rotate: false
+  xy: 152, 19
+  size: 5, 11
+  orig: 5, 11
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_mouth2
+  rotate: false
+  xy: 572, 83
+  size: 21, 7
+  orig: 21, 7
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_mouth3
+  rotate: false
+  xy: 544, 80
+  size: 26, 10
+  orig: 26, 10
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_shadow
+  rotate: false
+  xy: 775, 92
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1
+PC_Mushroom/PC_Mushroom_tear
+  rotate: false
+  xy: 934, 75
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1

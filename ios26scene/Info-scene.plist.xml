@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key>
+    <string>燃烧的蔬菜3HD</string>
+    <key>CFBundleName</key>
+    <string>${app.name}</string>
+    <key>CFBundleExecutable</key>
+    <string>${app.executable}</string>
+    <key>CFBundleIdentifier</key>
+    <string>${app.id}</string>
+    <!--
+      RoboVM 2.3.19 only registers three placeholders: app.executable, app.id,
+      app.name (verified against Config$Builder in robovm-compiler-2.3.19.jar).
+      ${app.version} does not exist and would be copied through verbatim, so the
+      version is hard-coded to match the Android build (versionName 1.5.2).
+    -->
+    <key>CFBundleVersion</key>
+    <string>1.5.2</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.5.2</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>zh_CN</string>
+
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+
+    <!--
+      UIScene lifecycle opt-in, stage 2 of Apple's TN3187 migration.
+
+      On iOS 26 a legacy UIApplicationDelegate app still launches and only logs
+      "This process does not adopt the UIScene lifecycle."; the SDK after iOS 26
+      refuses to launch it at all. Declaring UIApplicationSceneManifest here is
+      one of the two accepted signals (the other being an implemented
+      application:configurationForConnectingSceneSession:options: on the app
+      delegate — IOSLauncher26Scene provides both).
+
+      UISceneDelegateClassName points at the Objective-C name RoboVM registers
+      for IOSLauncher26Scene.VegSceneDelegate. RoboVM derives that name in
+      ObjCMemberPlugin.getCustomClassName: with no @CustomClass annotation it is
+      "j_" + <fully qualified Java name with '.' replaced by '_'>, and inner
+      classes keep their '$' because only '.' is substituted. So the exact value
+      is j_com_soco_veggies3_4399_ios26_scene_IOSLauncher26Scene$VegSceneDelegate.
+      Getting this wrong is silent: UIKit finds no class, never calls
+      willConnect, and the app shows a black screen with no window attached.
+    -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Veggies3HD Default</string>
+                    <key>UISceneClassName</key>
+                    <string>UIWindowScene</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>j_com_soco_veggies3_4399_ios26_scene_IOSLauncher26Scene$VegSceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+
+    <!--
+      iOS 14 replaced launch images with a launch screen, and iOS 26 ignores
+      Default*.png entirely. RoboVM 2.3.19 cannot compile a storyboard, so the
+      plist-only UILaunchScreen dictionary is used instead: no .storyboard file
+      is needed, the system just paints the given image.
+    -->
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UIImageName</key>
+        <string>Default</string>
+        <key>UIImageRespectsSafeAreaInsets</key>
+        <true/>
+    </dict>
+
+    <!-- Fixed 533x854 portrait surface (GameConfig.OSW / OSH). -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+    </array>
+
+    <key>UIStatusBarHidden</key>
+    <true/>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
+    <key>UIRequiresFullScreen</key>
+    <true/>
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+
+    <key>MinimumOSVersion</key>
+    <string>12.0</string>
+    <key>UIDeviceFamily</key>
+    <array>
+        <integer>1</integer>
+        <integer>2</integer>
+    </array>
+
+    <!-- iOS 11+ only runs 64-bit code; arm64 is what the frameworks provide. -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+        <string>metal</string>
+    </array>
+
+    <key>CFBundleIcons</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>Icon-60</string>
+                <string>Icon-40</string>
+                <string>Icon-29</string>
+                <string>Icon-20</string>
+            </array>
+            <key>UIPrerenderedIcon</key>
+            <false/>
+        </dict>
+    </dict>
+    <key>CFBundleIcons~ipad</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>Icon-76</string>
+                <string>Icon-83.5</string>
+                <string>Icon-40</string>
+                <string>Icon-29</string>
+            </array>
+            <key>UIPrerenderedIcon</key>
+            <false/>
+        </dict>
+    </dict>
+
+    <key>NSHighResolutionCapable</key>
+    <true/>
+
+    <!--
+      SynTime probes http://115.28.162.6:8080/... and the original game still
+      references the socogame.com endpoints. ATS blocks plain HTTP by default
+      from iOS 9 on, so arbitrary loads stay enabled.
+    -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+    </dict>
+
+    <!-- Save data lives in Library/local (libGDX FileType.Local). -->
+    <key>UIFileSharingEnabled</key>
+    <false/>
+</dict>
+</plist>

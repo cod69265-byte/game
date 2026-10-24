@@ -1,0 +1,28 @@
+# ---- Gradle ----------------------------------------------------------------
+.gradle/
+build/
+*/build/
+local.properties
+
+# ---- Vendored Maven repo ----------------------------------------------------
+# offline-repo/ holds 173 MB of pre-downloaded jars so that a machine with no
+# network can run `./gradlew --offline :ios26:createIPA`. It is deliberately NOT
+# committed: GitHub Actions has network access and resolves the same artifacts
+# from mavenCentral(). Keep it locally, or fetch it from wherever you got this
+# archive.
+offline-repo/
+
+# ---- Reverse-engineering scratch -------------------------------------------
+# work/ holds decompiled libGDX/MetalANGLE sources used to write the shims.
+# Nothing in the build reads it.
+work/
+
+# ---- macOS noise -----------------------------------------------------------
+.DS_Store
+*.xcuserdatad
+xcuserdata/
+
+# ---- Build products --------------------------------------------------------
+*.ipa
+*.app/
+*.dSYM/

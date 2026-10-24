@@ -1,0 +1,146 @@
+
+PC_EnokiTexture.png
+size: 248,126
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PC_Enoki/Tshirt1
+  rotate: false
+  xy: 206, 99
+  size: 42, 27
+  orig: 42, 27
+  offset: 0, 0
+  index: -1
+PC_Enoki/Tshirt2
+  rotate: false
+  xy: 233, 64
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+PC_Enoki/arm1
+  rotate: false
+  xy: 206, 20
+  size: 11, 21
+  orig: 11, 21
+  offset: 0, 0
+  index: -1
+PC_Enoki/body1
+  rotate: false
+  xy: 2, 10
+  size: 45, 68
+  orig: 45, 68
+  offset: 0, 0
+  index: -1
+PC_Enoki/earphone1
+  rotate: false
+  xy: 49, 51
+  size: 25, 27
+  orig: 25, 27
+  offset: 0, 0
+  index: -1
+PC_Enoki/earphone2
+  rotate: false
+  xy: 181, 31
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+PC_Enoki/earphone3
+  rotate: false
+  xy: 2, 80
+  size: 72, 46
+  orig: 72, 46
+  offset: 0, 0
+  index: -1
+PC_Enoki/earphone4
+  rotate: false
+  xy: 127, 3
+  size: 13, 18
+  orig: 13, 18
+  offset: 0, 0
+  index: -1
+PC_Enoki/eye1
+  rotate: false
+  xy: 83, 2
+  size: 42, 19
+  orig: 42, 19
+  offset: 0, 0
+  index: -1
+PC_Enoki/eyeball1
+  rotate: false
+  xy: 219, 28
+  size: 8, 13
+  orig: 8, 13
+  offset: 0, 0
+  index: -1
+PC_Enoki/glasses1
+  rotate: false
+  xy: 206, 77
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1
+PC_Enoki/hair1
+  rotate: false
+  xy: 49, 9
+  size: 32, 40
+  orig: 32, 40
+  offset: 0, 0
+  index: -1
+PC_Enoki/headband1
+  rotate: false
+  xy: 76, 89
+  size: 63, 37
+  orig: 63, 37
+  offset: 0, 0
+  index: -1
+PC_Enoki/headband2
+  rotate: false
+  xy: 141, 89
+  size: 63, 37
+  orig: 63, 37
+  offset: 0, 0
+  index: -1
+PC_Enoki/headband3
+  rotate: false
+  xy: 83, 23
+  size: 58, 28
+  orig: 58, 28
+  offset: 0, 0
+  index: -1
+PC_Enoki/headband4
+  rotate: false
+  xy: 138, 56
+  size: 58, 31
+  orig: 58, 31
+  offset: 0, 0
+  index: -1
+PC_Enoki/mouth1
+  rotate: false
+  xy: 143, 26
+  size: 36, 28
+  orig: 36, 28
+  offset: 0, 0
+  index: -1
+PC_Enoki/mouth2
+  rotate: false
+  xy: 206, 43
+  size: 30, 14
+  orig: 30, 14
+  offset: 0, 0
+  index: -1
+PC_Enoki/pants1
+  rotate: false
+  xy: 198, 59
+  size: 33, 16
+  orig: 33, 16
+  offset: 0, 0
+  index: -1
+PC_Enoki/shadow1
+  rotate: false
+  xy: 76, 53
+  size: 60, 34
+  orig: 60, 34
+  offset: 0, 0
+  index: -1

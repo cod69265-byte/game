@@ -1,0 +1,76 @@
+
+buttonTexture.png
+size: 928,112
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+button
+  rotate: false
+  xy: 349, 48
+  size: 157, 64
+  orig: 157, 64
+  offset: 0, 0
+  index: 8
+button
+  rotate: false
+  xy: 508, 52
+  size: 160, 60
+  orig: 160, 60
+  offset: 0, 0
+  index: 1
+button
+  rotate: false
+  xy: 2, 6
+  size: 119, 38
+  orig: 119, 38
+  offset: 0, 0
+  index: 5
+hd
+  rotate: false
+  xy: 123, 2
+  size: 81, 42
+  orig: 81, 42
+  offset: 0, 0
+  index: 4
+sell
+  rotate: false
+  xy: 792, 80
+  size: 73, 32
+  orig: 73, 32
+  offset: 0, 0
+  index: 7
+text
+  rotate: false
+  xy: 2, 46
+  size: 181, 66
+  orig: 181, 66
+  offset: 0, 0
+  index: 3
+text
+  rotate: false
+  xy: 185, 46
+  size: 162, 66
+  orig: 162, 66
+  offset: 0, 0
+  index: 4
+text
+  rotate: false
+  xy: 670, 80
+  size: 120, 32
+  orig: 120, 32
+  offset: 0, 0
+  index: 1
+text
+  rotate: false
+  xy: 867, 80
+  size: 61, 32
+  orig: 61, 32
+  offset: 0, 0
+  index: 2
+text_cancel001
+  rotate: false
+  xy: 206, 12
+  size: 63, 32
+  orig: 63, 32
+  offset: 0, 0
+  index: -1

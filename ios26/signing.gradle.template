@@ -1,0 +1,26 @@
+// 真机签名配置 — 把这段覆盖到 ios-port/build.gradle 的 project(':ios26') { robovm { } } 里
+//
+// 先把 .p12 和 .mobileprovision 放进 ios26/ 目录，然后：
+//   security find-identity -v -p codesigning     # 拿到身份字符串
+//   security cms -D -i ios26/YourProfile.mobileprovision | plutil -extract Name raw -
+//
+// 免费 Apple ID 签出来 7 天有效、最多 3 个 App；
+// 付费账号签出来 1 年有效。
+//
+// 注意：iosSkipSigning = true 时也能 createIPA，但产物只能在模拟器或越狱设备上装。
+//       iosSignIdentity / iosProvisioningProfile 都在 RoboVMPluginExtension 上，
+//       javap 已确认 getter/setter 齐全。
+
+robovm {
+    // iOS 26 只跑 64 位，别写 thumbv7。
+    archs 'arm64'
+    iosSkipSigning = false
+    iosSignIdentity = 'Apple Development: YOUR NAME (XXXXXXXXXX)'
+    iosProvisioningProfile = file('YourProfile.mobileprovision').absolutePath
+    configFile file('robovm-ios26.xml')
+}
+
+// CFBundleIdentifier 来自 ios26/Info.plist.xml 的 ${app.id}，必须与 profile 的 App ID 匹配：
+//   gradle :ios26:createIPA -Probovm.app.id=com.yourorg.veggies3
+//
+// 如果 profile 是通配符（com.yourorg.*），上面这行可省。

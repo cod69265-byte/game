@@ -1,0 +1,461 @@
+
+NPC_RenShenTexture.png
+size: 1022,510
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+NPC_RenShen/EFF_Tianfuhit_renshen000
+  rotate: false
+  xy: 306, 258
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen001
+  rotate: false
+  xy: 458, 380
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen002
+  rotate: false
+  xy: 590, 380
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen003
+  rotate: false
+  xy: 722, 380
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen004
+  rotate: false
+  xy: 854, 380
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen005
+  rotate: false
+  xy: 154, 14
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen006
+  rotate: false
+  xy: 306, 126
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen007
+  rotate: false
+  xy: 438, 248
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen008
+  rotate: false
+  xy: 570, 248
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen009
+  rotate: false
+  xy: 702, 248
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen010
+  rotate: false
+  xy: 834, 248
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/EFF_Tianfuhit_renshen011
+  rotate: false
+  xy: 438, 116
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+NPC_RenShen/arm1
+  rotate: false
+  xy: 561, 34
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+NPC_RenShen/arm2
+  rotate: false
+  xy: 286, 16
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+NPC_RenShen/arm3
+  rotate: false
+  xy: 966, 360
+  size: 11, 18
+  orig: 11, 18
+  offset: 0, 0
+  index: -1
+NPC_RenShen/arm4
+  rotate: false
+  xy: 539, 27
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+NPC_RenShen/body1
+  rotate: false
+  xy: 334, 51
+  size: 46, 73
+  orig: 46, 73
+  offset: 0, 0
+  index: -1
+NPC_RenShen/body2
+  rotate: false
+  xy: 382, 56
+  size: 47, 68
+  orig: 47, 68
+  offset: 0, 0
+  index: -1
+NPC_RenShen/bullet
+  rotate: false
+  xy: 986, 475
+  size: 36, 35
+  orig: 36, 35
+  offset: 0, 0
+  index: -1
+NPC_RenShen/cage1
+  rotate: false
+  xy: 570, 121
+  size: 100, 125
+  orig: 100, 125
+  offset: 0, 0
+  index: -1
+NPC_RenShen/cage2
+  rotate: false
+  xy: 672, 134
+  size: 97, 27
+  orig: 97, 27
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eff_renshen001
+  rotate: false
+  xy: 2, 390
+  size: 150, 120
+  orig: 150, 120
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eff_renshen002
+  rotate: false
+  xy: 2, 268
+  size: 150, 120
+  orig: 150, 120
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eff_renshen003
+  rotate: false
+  xy: 154, 390
+  size: 150, 120
+  orig: 150, 120
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eff_renshen004
+  rotate: false
+  xy: 2, 146
+  size: 150, 120
+  orig: 150, 120
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eff_renshen005
+  rotate: false
+  xy: 154, 268
+  size: 150, 120
+  orig: 150, 120
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eff_renshen006
+  rotate: false
+  xy: 306, 390
+  size: 150, 120
+  orig: 150, 120
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eff_renshen007
+  rotate: false
+  xy: 2, 24
+  size: 150, 120
+  orig: 150, 120
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eff_renshen008
+  rotate: false
+  xy: 154, 146
+  size: 150, 120
+  orig: 150, 120
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eye1
+  rotate: false
+  xy: 127, 2
+  size: 12, 4
+  orig: 12, 4
+  offset: 0, 0
+  index: -1
+NPC_RenShen/eye2
+  rotate: false
+  xy: 438, 382
+  size: 17, 6
+  orig: 17, 6
+  offset: 0, 0
+  index: -1
+NPC_RenShen/foot1
+  rotate: false
+  xy: 286, 126
+  size: 14, 18
+  orig: 14, 18
+  offset: 0, 0
+  index: -1
+NPC_RenShen/foot2
+  rotate: false
+  xy: 986, 423
+  size: 13, 15
+  orig: 13, 15
+  offset: 0, 0
+  index: -1
+NPC_RenShen/foot3
+  rotate: false
+  xy: 852, 165
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+NPC_RenShen/foot4
+  rotate: false
+  xy: 161, 2
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+NPC_RenShen/fruit1
+  rotate: false
+  xy: 149, 2
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+NPC_RenShen/gourd1
+  rotate: false
+  xy: 286, 46
+  size: 46, 78
+  orig: 46, 78
+  offset: 0, 0
+  index: -1
+NPC_RenShen/gourd2
+  rotate: false
+  xy: 750, 87
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+NPC_RenShen/gourd3
+  rotate: false
+  xy: 127, 8
+  size: 20, 14
+  orig: 20, 14
+  offset: 0, 0
+  index: -1
+NPC_RenShen/hair1
+  rotate: false
+  xy: 286, 29
+  size: 23, 15
+  orig: 23, 15
+  offset: 0, 0
+  index: -1
+NPC_RenShen/hair2
+  rotate: false
+  xy: 746, 101
+  size: 25, 31
+  orig: 25, 31
+  offset: 0, 0
+  index: -1
+NPC_RenShen/help1
+  rotate: false
+  xy: 672, 163
+  size: 100, 83
+  orig: 100, 83
+  offset: 0, 0
+  index: -1
+NPC_RenShen/help2
+  rotate: false
+  xy: 495, 81
+  size: 79, 33
+  orig: 79, 33
+  offset: 0, 0
+  index: -1
+NPC_RenShen/leaf1
+  rotate: false
+  xy: 986, 440
+  size: 27, 33
+  orig: 27, 33
+  offset: 0, 0
+  index: -1
+NPC_RenShen/mouth1
+  rotate: false
+  xy: 539, 16
+  size: 15, 9
+  orig: 15, 9
+  offset: 0, 0
+  index: -1
+NPC_RenShen/mouth2
+  rotate: false
+  xy: 311, 39
+  size: 14, 5
+  orig: 14, 5
+  offset: 0, 0
+  index: -1
+NPC_RenShen/mouth3
+  rotate: false
+  xy: 431, 119
+  size: 4, 5
+  orig: 4, 5
+  offset: 0, 0
+  index: -1
+NPC_RenShen/pot1
+  rotate: false
+  xy: 685, 101
+  size: 59, 31
+  orig: 59, 31
+  offset: 0, 0
+  index: -1
+NPC_RenShen/pot2
+  rotate: false
+  xy: 774, 157
+  size: 59, 17
+  orig: 59, 17
+  offset: 0, 0
+  index: -1
+NPC_RenShen/pot3
+  rotate: false
+  xy: 2, 2
+  size: 45, 20
+  orig: 45, 20
+  offset: 0, 0
+  index: -1
+NPC_RenShen/pot4
+  rotate: false
+  xy: 495, 47
+  size: 76, 32
+  orig: 76, 32
+  offset: 0, 0
+  index: -1
+NPC_RenShen/pot5
+  rotate: false
+  xy: 49, 6
+  size: 76, 16
+  orig: 76, 16
+  offset: 0, 0
+  index: -1
+NPC_RenShen/pot6
+  rotate: false
+  xy: 685, 73
+  size: 63, 26
+  orig: 63, 26
+  offset: 0, 0
+  index: -1
+NPC_RenShen/rod1
+  rotate: false
+  xy: 936, 178
+  size: 21, 68
+  orig: 21, 68
+  offset: 0, 0
+  index: -1
+NPC_RenShen/roll01
+  rotate: false
+  xy: 334, 2
+  size: 53, 47
+  orig: 53, 47
+  offset: 0, 0
+  index: -1
+NPC_RenShen/roll02
+  rotate: false
+  xy: 631, 70
+  size: 52, 49
+  orig: 52, 49
+  offset: 0, 0
+  index: -1
+NPC_RenShen/roll03
+  rotate: false
+  xy: 495, 2
+  size: 42, 43
+  orig: 42, 43
+  offset: 0, 0
+  index: -1
+NPC_RenShen/roll11
+  rotate: false
+  xy: 431, 59
+  size: 62, 55
+  orig: 62, 55
+  offset: 0, 0
+  index: -1
+NPC_RenShen/roll115
+  rotate: false
+  xy: 576, 68
+  size: 53, 51
+  orig: 53, 51
+  offset: 0, 0
+  index: -1
+NPC_RenShen/roll12
+  rotate: false
+  xy: 431, 2
+  size: 62, 55
+  orig: 62, 55
+  offset: 0, 0
+  index: -1
+NPC_RenShen/roll13
+  rotate: false
+  xy: 774, 176
+  size: 79, 70
+  orig: 79, 70
+  offset: 0, 0
+  index: -1
+NPC_RenShen/roll14
+  rotate: false
+  xy: 855, 176
+  size: 79, 70
+  orig: 79, 70
+  offset: 0, 0
+  index: -1
+NPC_RenShen/smoke1
+  rotate: false
+  xy: 966, 349
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+NPC_RenShen/smoke2
+  rotate: false
+  xy: 672, 121
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+NPC_RenShen/smoke3
+  rotate: false
+  xy: 835, 160
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1

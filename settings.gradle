@@ -1,0 +1,12 @@
+rootProject.name = 'Veggies3HD-iOS'
+
+// :core   + :ios          legacy armv7 / OpenGL ES / libGDX 1.1.0  (iOS <= 10.3.3)
+// :core26 + :ios26        arm64 / Metal / libGDX 1.14.2           (iOS 12 … 26.x)
+// :core26 + :ios26scene   same as :ios26 but on the UIScene lifecycle
+//                         (required by the SDK after iOS 26, TN3187)
+include 'core', 'core26', 'ios', 'ios26', 'ios26scene'
+
+// The scene flavour is a thin overlay: it reuses ios26/src (which already holds
+// both launchers) plus the shared resources and libs junctions, so it only needs
+// its own source directory for the Gradle project to exist.
+project(':ios26scene').projectDir = file('ios26scene')
