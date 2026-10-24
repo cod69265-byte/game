@@ -113,7 +113,9 @@ jobs:
             exit 1
           fi
           echo "ipa=$IPA" >> "$GITHUB_OUTPUT"
-          ls -lh "$IPA"      - name: Upload IPA
+          ls -lh "$IPA"
+
+      - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
           name: Veggies3HD-${{ inputs.flavour }}-unsigned
