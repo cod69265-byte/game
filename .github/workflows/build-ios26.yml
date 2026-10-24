@@ -72,6 +72,17 @@ jobs:
           restore-keys: |
             robovm-cache-${{ inputs.flavour }}-
 
+      # Runs #3/#4 both went completely silent for 73/79 minutes after the
+      # 10-minute "Compiling ..." phase — no log line at all until the 90-min
+      # timeout cancelled the job, so it is impossible to tell whether the
+      # hang is in LLVM opt, linking, or something else. This sampler writes
+      # process tables + java stack samples into the workspace, which the
+      # always() upload below then captures even on cancel.
+      - name: Sample hung build
+        run: |
+          chmod +x tools/ci_sample.sh
+          nohup ./tools/ci_sample.sh >/dev/null 2>&1 &
+
       - name: Build IPA
         run: |
           # gradle.properties sets -Xmx4g for the daemon. That file matters: the
@@ -126,6 +137,7 @@ jobs:
           name: build-logs-${{ github.run_number }}
           path: |
             **/*.log
+            build-diagnostics/**
             **/*.o
             **/*.a
             !**/offline-repo/**
@@ -143,4 +155,4 @@ jobs:
           echo "=== workspace object/archive files ==="
           find . -path ./offline-repo -prune -o \( -name '*.o' -o -name '*.a' -o -name '*.ipa' -o -name 'robovm.xml' \) -print 2>/dev/null | head -n 60 || true
           echo "=== gradle daemon log tail ==="
-          tail -n 100 ~/.gradle/daemon/8.0.10/*.log 2>/dev/null || ls ~/.gradle/daemon 2>/dev/null || true
+          tail -n 100 ~/.gradle/daemon/*/*.log 2>/dev/null || ls ~/.gradle/daemon 2>/dev/null || true
