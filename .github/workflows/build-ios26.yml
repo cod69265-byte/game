@@ -1,4 +1,4 @@
-name: build-ios26-ipa
+﻿name: build-ios26-ipa
 
 # Builds the iOS 26.3 IPA on a GitHub-hosted macOS runner.
 #
@@ -32,7 +32,7 @@ jobs:
     # minutes cold. 90 leaves headroom for a slow runner without letting a hung
     # build burn an hour of quota silently — which is exactly what run #1 did
     # (see the heap note below).
-    timeout-minutes: 90
+    timeout-minutes: 150
 
     steps:
       - name: Checkout
