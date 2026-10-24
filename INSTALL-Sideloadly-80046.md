@@ -143,3 +143,82 @@ $env:PYTHONPATH = "C:\Users\oo\AppData\Local\Programs\iPASide\engine\python\Lib\
 - [AltStore issue #1840：-80046](https://github.com/altstoreio/AltStore/issues/1840)
 - [Apple GSA 503 与 client-info 的关系（AltStore PR #1790）](https://github.com/altstoreio/AltStore/pull/1790)
 - [iloader / Sideloadly / Impactor 登录失败 429](https://onejailbreak.com/blog/iloader-sideloadly-impactor-apple-id-login-fail-429)
+---
+
+# 附录：App ID 创建失败（error 35 / appIdName）
+
+登录通过之后，iPASide 走到 `Creating the App ID...` 会失败：
+
+```
+Sideload failed
+35: An invalid value '燃烧的蔬菜3HD' was provided for the parameter 'appIdName'.
+```
+
+## 原因
+
+Apple 的 `appIdName` 只接受 **ASCII 字母数字 + 空格**（≤50 字符）。
+iPASide 的 `developer._sanitize_name()` 原本这样过滤：
+
+```python
+cleaned = "".join(ch for ch in name if ch.isalnum() or ch == " ").strip()
+```
+
+`str.isalnum()` 对 CJK 字符返回 **True** —— 它是「Unicode 字母数字」不是「ASCII 字母数字」。
+所以中文原样穿过过滤器，Apple 直接拒掉整个 `addAppId.action` 调用。
+
+```
+>>> ''.join(c for c in '燃烧的蔬菜3HD' if c.isalnum() or c == ' ')
+'燃烧的蔬菜3HD'
+```
+
+## 修法
+
+`C:\Users\oo\AppData\Local\Programs\iPASide\engine\python\Lib\site-packages\ipaside_engine\developer.py`
+
+```python
+def _sanitize_name(name: str, fallback: str = "iPASide") -> str:
+    cleaned = "".join(ch for ch in name if ch.isascii() and (ch.isalnum() or ch == " "))
+    cleaned = " ".join(cleaned.split())[:50].strip()
+    if len(cleaned) < 4:
+        return fallback
+    return cleaned
+```
+
+`add_app_id()` 传入 bundle id 末段作为 fallback：
+
+```python
+def add_app_id(team_id: str, bundle_id: str, name: str) -> dict[str, Any]:
+    fallback = bundle_id.rsplit(".", 1)[-1] or "iPASide App"
+    result = _request(
+        "ios/addAppId.action",
+        {"identifier": bundle_id, "name": _sanitize_name(name, fallback)},
+        team_id=team_id,
+    )
+    return result.get("appId", {})
+```
+
+`len(cleaned) < 4` 这个阈值是必要的：`燃烧的蔬菜3HD` 过滤后只剩 `3HD`，
+虽然能注册成功，但在开发者后台里读起来像乱码，不如回落到 `veggies3_4399`。
+
+## 结果
+
+```
+App IDs registered: 1
+  com.soco.veggies3_4399.HMT45URQAG   veggies3_4399
+
+Sideloaded Veggies3HD (com.soco.veggies3_4399.HMT45URQAG).
+  Uploading 72 / 72 MB · Installing · Postflighting · Sandboxing · Installed
+
+com.soco.veggies3_4399.HMT45URQAG    Veggies3HD  [7 days left]
+```
+
+**装成功了。** 首次启动需要在 iPhone 上信任开发者：
+`设置 → 通用 → VPN 与设备管理 → 开发者 App → 敬良 李 → 信任`。
+
+## 顺带说明
+
+- 免费账号无法注册真实 App Store 标识符（Apple 返回 9401），所以 iPASide 自动追加 team id：
+  `com.soco.veggies3_4399` → `com.soco.veggies3_4399.HMT45URQAG`。这是正常的，不影响运行。
+- 显示名仍然是中文（`CFBundleDisplayName` 没动），桌面上看到的还是「燃烧的蔬菜3HD」。
+- `--name Veggies3HD` 只是绕过上面那个 bug 的临时手段；打完补丁后不带这个参数也能装。
+- 这个补丁在 iPASide 重装后会被覆盖，需要重新打（备份在 `developer.py.bak-*`）。
