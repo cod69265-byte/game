@@ -173,6 +173,11 @@ public final class LazyGameListener implements ApplicationListener {
 
     @Override
     public void create() {
+        // First point where Gdx.app, Gdx.gl and the game's own logger are all live, so it is
+        // also the earliest point a background sampler can produce readable output. See
+        // com.soco.util.libgdx.DshDiag for why a watchdog thread is needed to observe the
+        // freeze that a timeout inside the loader could not catch.
+        com.soco.util.libgdx.DshDiag.startWatchdog();
         delegate().create();
     }
 
